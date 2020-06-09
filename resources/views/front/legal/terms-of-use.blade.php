@@ -9,13 +9,13 @@
 @markdown
 #  Terms of Use Laravel Package Training
 
-These Laravel Package Training terms of use (the “Terms of Use”) apply to all services provided through <https://laravelpackage.training/terms-of-use> by Spatie BV, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Package Training” “we”, “us” or “our”.
+These Laravel Package Training terms of use (the “Terms of Use”) apply to all services provided through <https://laravel-beyond-crud.com/terms-of-use> by Spatie BV, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Package Training” “we”, “us” or “our”.
 
 By buying and downloading our video course, You explicitly agree to these Terms of Use.
 
 We reserve however the right, in our sole discretion, to change, modify, add or remove these Terms of Use or parts of it at any time. When we make material changes to the Terms of Use, we shall send You a clear notice, as appropriate given the particular circumstances. Therefore, You should check these Terms of Use periodically for modifications. By buying and using our video course after having modified these Terms of Use, we presume You have read and agreed to accept these modifications. If You do not agree to these Terms of Use, You should not use our video course any longer and remove all courses from your devices (computer, laptop, tablet, smartphone, etc.) instantly.
 
-We shall make sure that the latest version of these Terms of Use shall always be available on <https://laravelpackage.training/terms-of-use>.
+We shall make sure that the latest version of these Terms of Use shall always be available on <https://laravel-beyond-crud.com/terms-of-use>.
 
 If you have any questions or concerns, you may contact us by at [info@spatie.be](mailto:info@spatie.be).
 
@@ -23,20 +23,20 @@ If you have any questions or concerns, you may contact us by at [info@spatie.be]
 
 The following definitions apply to these Terms of Use:
 
-1. “Fee”: the amount to be paid to Spatie to obtain the complete video course. This fee shall always be available at <https://laravelpackage.training>;
-2. “Video Course”: the Laraval Package Training video's as an educational product listed and described on <https://laravelpackage.training>, including all course material through videos;
+1. “Fee”: the amount to be paid to Spatie to obtain the complete video course. This fee shall always be available at <https://laravel-beyond-crud.com>;
+2. “Video Course”: the Laraval Package Training video's as an educational product listed and described on <https://laravel-beyond-crud.com>, including all course material through videos;
 3. “Terms of Use”: these terms of use;
 4. “You”: any user will buy the video course and who will use it for educational purposes.
 
 ## 2. Content of the Video Course
 
-2.1. By accepting these Terms of Use, Spatie grants You access to the complete video course after the payment of the Fee. You can always read the content of the video course and all of its features at: <https://laravelpackage.training>.
+2.1. By accepting these Terms of Use, Spatie grants You access to the complete video course after the payment of the Fee. You can always read the content of the video course and all of its features at: <https://laravel-beyond-crud.com>.
 
 ## 3. Purchase and download of the Video Course
 
 3.1. By purchasing the Video Course, You consent to these Terms of Use. The Video Course cannot be used or downloaded without explicitly consenting to these Terms of Use.
 
-3.2. The entire Video Course shall be available for download after the payment of the Fee. You have to fill in a purchase form at <https://laravelpackage.training> with your personal- and payment information. Spatie reserves the right to cancel the purchase if the purchase form is incomplete or incorrect.
+3.2. The entire Video Course shall be available for download after the payment of the Fee. You have to fill in a purchase form at <https://laravel-beyond-crud.com> with your personal- and payment information. Spatie reserves the right to cancel the purchase if the purchase form is incomplete or incorrect.
 
 3.3. When You purchase the Video Course, You shall be able to download the most recent version of the Video Course.
 
@@ -82,7 +82,7 @@ The following definitions apply to these Terms of Use:
 
 ## 7. General Terms of Payment
 
-7.1. All payments concerning the purchase of the Video Course shall be handled by [Paddle](https://paddle.com/) in accordance with its terms and conditions. Paddle handles all payments through <https://laravelpackage.training> by using Paddle’s SDK. Spatie does not store any of your payment details.
+7.1. All payments concerning the purchase of the Video Course shall be handled by [Paddle](https://paddle.com/) in accordance with its terms and conditions. Paddle handles all payments through <https://laravel-beyond-crud.com> by using Paddle’s SDK. Spatie does not store any of your payment details.
 
 7.2. All invoices with a one-time only purchase fee for the purchase of the Video Course shall be sent as a PDF and are automatically charged. Payments have to be completed with a credit card or PayPal unless Paddle offers alternative payment methods.
 
@@ -92,7 +92,7 @@ The following definitions apply to these Terms of Use:
 
 8.2. Intellectual property rights protect the content of the entire Video Course.
 
-8.4. It is forbidden to duplicate the content of the Video Course to develop your own Video Course. Spatie reserves all its rights to take legal action if the content of its Video Course is being used without given prior notice. 
+8.4. It is forbidden to duplicate the content of the Video Course to develop your own Video Course. Spatie reserves all its rights to take legal action if the content of its Video Course is being used without given prior notice.
 
 8.5. All the ideas within the Video Course shall remain the exclusive property of Spatie and shall under no circumstances be communicated to third parties. Duplicating the content of the Video Course in any form whatsoever, is strictly forbidden.
 

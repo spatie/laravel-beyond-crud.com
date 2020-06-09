@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/willem/Sites/laravelpackage.training/resources/js/app.js'");
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/willem/Sites/laravel-beyond-crud.com/resources/js/app.js'");
 
 /***/ }),
 
@@ -115,8 +115,8 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/willem/Sites/laravelpackage.training/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/willem/Sites/laravelpackage.training/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! /Users/willem/Sites/laravel-beyond-crud.com/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/willem/Sites/laravel-beyond-crud.com/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })

@@ -11,7 +11,7 @@
 
 This the Laravel Package Training privacy and cookie policy. Laravel Package Training is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596, here hereafter referred to as Spatie.
 
-Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://laravelpackage.training](https://laravelpackage.training/); by creating an account, by contacting us by email/phone, by subscribing for our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
+Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://laravel-beyond-crud.com](https://laravel-beyond-crud.com/); by creating an account, by contacting us by email/phone, by subscribing for our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
 
 ## 1. General terms
 
@@ -103,7 +103,7 @@ This is without prejudice to a provision before the Civil Court. If you have suf
 
 6.2. Spatie shall not be liable in any way for direct or indirect damages caused by a wrongful or improper use of the Laravel Package Training Video Course by a third party.
 
-6.3. At any time, you must comply with the safety standards, for instance, by avoiding all non-authorized access you Laravel Package Training account that is required to buy the Video Course on the website. You are solely responsible for the use of your own account. 
+6.3. At any time, you must comply with the safety standards, for instance, by avoiding all non-authorized access you Laravel Package Training account that is required to buy the Video Course on the website. You are solely responsible for the use of your own account.
 
 ## 7. Cookies
 
