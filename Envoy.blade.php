@@ -129,7 +129,6 @@ php artisan config:clear
 php artisan cache:clear
 php artisan config:cache
 php artisan view:cache
-php artisan route:cache
 
 sudo service php7.4-fpm restart
 sudo supervisorctl restart all
@@ -155,7 +154,6 @@ php artisan config:clear
 php artisan cache:clear
 php artisan config:cache
 php artisan view:cache
-php artisan route:cache
 sudo service php7.4-fpm restart
 sudo supervisorctl restart all
 @endtask
