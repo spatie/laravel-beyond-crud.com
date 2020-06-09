@@ -125,7 +125,6 @@ php artisan migrate --force;
 ln -nfs {{ $newReleaseDir }} {{ $currentDir }};
 cd {{ $newReleaseDir }}
 
-php artisan horizon:terminate
 php artisan config:clear
 php artisan cache:clear
 php artisan config:cache
@@ -158,6 +157,5 @@ php artisan config:cache
 php artisan view:cache
 php artisan route:cache
 sudo service php7.4-fpm restart
-php artisan horizon:terminate
 sudo supervisorctl restart all
 @endtask
