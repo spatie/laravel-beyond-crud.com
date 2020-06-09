@@ -3,6 +3,7 @@
 namespace App\Http\Front\Controllers;
 
 use App\Http\Front\Requests\SubscribeToEmailListRequest;
+use Exception;
 use Illuminate\Support\Facades\Http;
 
 class SubscribeToEmailListController
@@ -21,9 +22,7 @@ class SubscribeToEmailListController
         if (! $response->successful()) {
             ld()->error('Something went wrong', $response, $response);
 
-            flash()->error('Something went wrong, please try again later');
-
-            return back();
+            throw new Exception('Could not subscribe');
         }
 
         flash()->success('Thank you for subscribing');
