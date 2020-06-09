@@ -1,0 +1,33 @@
+.border-scoop:before,
+.border-scoop:after,
+.border-scoop-inset:before,
+.border-scoop-inset:after {
+    content: "";
+    @apply absolute;
+    @apply block;
+    @apply bg-white;
+    width: 2rem;
+    height: 2rem;
+    @apply rounded-full;
+    @apply z-10;
+}
+
+.border-scoop:before {
+    top: -1rem;
+    left: -1rem;
+}
+
+.border-scoop:after {
+    top: -1rem;
+    right: -1rem;
+}
+
+.border-scoop-inset:before {
+    bottom: -1rem;
+    left: -1rem;
+}
+
+.border-scoop-inset:after {
+    bottom: -1rem;
+    right: -1rem;
+}

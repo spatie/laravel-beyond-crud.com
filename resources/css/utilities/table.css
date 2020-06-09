@@ -1,0 +1,120 @@
+.table {
+    @apply table-fixed;
+    @apply border-collapse;
+    @apply border-b;
+    @apply border-gray-100;
+    width: calc(100% + 1.5rem);
+    overflow-x: visible;
+    @apply -mx-3;
+}
+
+@screen lg {
+    .table {
+        @apply w-full;
+        @apply mx-0;
+    }
+}
+
+.table:not(:first-child) {
+    @apply mt-8;
+}
+
+.table thead tr {
+    @apply border-b-2;
+    @apply border-gray-100;
+    font-size: 0.875em;
+}
+
+.table th,
+.table td {
+    @apply py-3;
+    @apply px-3;
+    @apply align-top;
+}
+
+.table th {
+    @apply text-left;
+    @apply font-semibold;
+    @apply whitespace-no-wrap;
+    @apply uppercase;
+    @apply text-xs;
+    @apply tracking-wider;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+.table tbody tr:nth-child(even) .td-action {
+    background-color: #f7f9fc;
+}
+
+.tr-h-double td {
+    height: 4rem;
+}
+
+.table thead .th-numeric,
+.table tbody .td-numeric {
+    @apply text-right;
+    font-variant-numeric: tabular-nums;
+    @apply whitespace-no-wrap;
+}
+
+.table thead a {
+    @apply flex;
+    @apply items-center;
+}
+
+.table thead i {
+    @apply mx-1;
+}
+
+.table thead .th-numeric a {
+    @apply flex;
+    @apply flex-row-reverse;
+}
+
+.td-secondary-line {
+    @apply text-xs;
+    @apply text-gray-300;
+    @apply leading-tight;
+}
+
+.table-status {
+    @apply py-8;
+    @apply text-xs;
+    @apply text-gray-300;
+    @apply text-center;
+}
+
+.table .td-action {
+    @apply text-right;
+    @apply px-6;
+}
+
+@screen md {
+    .table .td-action {
+        @apply px-4;
+    }
+}
+
+.table-actions {
+    @apply flex;
+    @apply flex-wrap;
+    @apply items-center;
+    @apply justify-between;
+    @apply -mt-4;
+    @apply mb-8;
+}
+
+.table-actions > * {
+    @apply mt-4;
+}
+
+.table-filters {
+    @apply flex;
+    @apply items-center;
+    @apply justify-end;
+    @apply ml-auto;
+    @apply pl-4;
+}

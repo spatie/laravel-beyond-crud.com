@@ -1,0 +1,12 @@
+.layout-col {
+    @apply w-full;
+    @apply max-w-6xl;
+    @apply mx-auto;
+    @apply px-8;
+}
+
+@screen md {
+    .layout-col {
+        @apply px-16;
+    }
+}

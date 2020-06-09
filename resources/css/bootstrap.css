@@ -1,0 +1,117 @@
+@tailwind base;
+
+:root {
+    --white: #fff;
+    --black: #0b2642;
+    --backdrop: rgba(0, 0, 0, 0.75);
+
+    --blue-50: #efedf3;
+    --blue-100: #e0daee;
+    --blue-200: #c9baf0;
+    --blue-300: #a688f1;
+    --blue-400: #8358f0;
+    --blue-500: #682df9;
+    --blue-600: #4c17d1;
+    --blue-700: #390fa1;
+    --blue-800: #280b72;
+    --blue-900: #1b074b;
+
+    --green-100: #ebf9ea;
+    --green-200: #c7f0bf;
+    --green-300: #b6e4b3;
+    --green-400: rgb(135, 202, 138);
+    --green-500: #5bba64;
+    --green-600: #429b59;
+    --green-700: #337c4d;
+    --green-800: #235c41;
+    --green-900: #133d35;
+
+    --orange-100: #fcf5d4;
+    --orange-200: #fcd99f;
+    --orange-300: #f6cc6e;
+    --orange-400: #fdaa3e;
+    --orange-500: #f9933a;
+    --orange-600: #da9215;
+    --orange-700: #995218;
+    --orange-800: #74431b;
+    --orange-900: #4f331d;
+
+    --red-100: #f0e7e6;
+    --red-200: #f0d2d1;
+    --red-300: #de9fa6;
+    --red-400: #cc6875;
+    --red-500: #cc344c;
+    --red-600: #a93147;
+    --red-700: #862f42;
+    --red-800: #632c3d;
+    --red-900: #402938;
+
+    --gray-100: #f8f7f6;
+    --gray-200: #e5e3e1;
+    --gray-300: #b8b5b0;
+    --gray-400: #918f8b;
+    --gray-500: #6b6a67;
+    --gray-600: #575654;
+    --gray-700: #4f4e4c;
+    --gray-800: #3d3c3b;
+    --gray-900: #242323;
+
+    --light-100: rgba(255, 255, 255, 0.1);
+    --light-200: rgba(255, 255, 255, 0.2);
+    --light-300: rgba(255, 255, 255, 0.3);
+    --light-400: rgba(255, 255, 255, 0.4);
+    --light-500: rgba(255, 255, 255, 0.5);
+    --light-600: rgba(255, 255, 255, 0.6);
+    --light-700: rgba(255, 255, 255, 0.7);
+    --light-800: rgba(255, 255, 255, 0.8);
+    --light-900: rgba(255, 255, 255, 0.9);
+
+    --dark-50: rgba(22, 11, 66, 0.05);
+    --dark-100: rgba(22, 11, 66, 0.1);
+    --dark-200: rgba(22, 11, 66, 0.2);
+    --dark-300: rgba(22, 11, 66, 0.3);
+    --dark-400: rgba(22, 11, 66, 0.4);
+    --dark-500: rgba(22, 11, 66, 0.5);
+    --dark-600: rgba(22, 11, 66, 0.6);
+    --dark-700: rgba(22, 11, 66, 0.7);
+    --dark-800: rgba(22, 11, 66, 0.8);
+    --dark-900: rgba(22, 11, 66, 0.9);
+    --dark-950: rgba(19, 8, 57, 0.95);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+@screen md {
+    html {
+        font-size: 14px;
+    }
+}
+
+@screen lg {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Exclude iframes like 1Password save modals */
+*:not(iframe),
+*:after,
+*:before {
+    position: relative;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+body {
+    @apply font-sans;
+    @apply text-black;
+    @apply leading-normal;
+    @apply w-full;
+
+    font-feature-settings: "ss01" 1;
+}

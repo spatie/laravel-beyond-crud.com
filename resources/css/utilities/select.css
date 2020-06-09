@@ -1,0 +1,43 @@
+.select {
+    @apply h-10;
+    @apply max-w-full;
+}
+
+.select-arrow {
+    display: grid;
+    place-items: center;
+    @apply pointer-events-none;
+    @apply absolute;
+    @apply top-0;
+    @apply right-0;
+    @apply w-8;
+    @apply h-full;
+    opacity: 0.75;
+}
+
+.select select {
+    @apply w-full;
+    @apply max-w-full;
+    @apply min-h-10;
+    @apply px-2;
+    @apply rounded-sm;
+    @apply bg-white;
+    @apply border;
+    @apply border-transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    @apply pr-8;
+    @apply h-full;
+    @apply min-h-0;
+}
+
+.select select:focus {
+    @apply border-blue-500;
+    @apply outline-none;
+    @apply bg-white;
+}
+
+select:disabled {
+    @apply opacity-50;
+    @apply cursor-not-allowed;
+}

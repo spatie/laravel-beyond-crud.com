@@ -1,0 +1,14 @@
+config:
+  target: 'https://laravelpackage.training'
+  phases:
+    - duration: 120
+      arrivalRate: 0
+      rampTo: 50
+  processor: "./loadtest.js"
+scenarios:
+  - flow:
+      - post:
+          url: "/ses-feedback"
+          beforeRequest: "setJSONBody"
+          headers:
+            X-Amz-Sns-Message-Type: "Notification"

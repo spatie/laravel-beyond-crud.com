@@ -1,0 +1,33 @@
+name: Prettier
+
+on:
+  push:
+    paths:
+      - 'resources/**'
+
+jobs:
+    style:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Install
+              run: yarn install
+              env:
+                CI: true
+
+            - name: Run prettier
+              run: yarn run format
+
+            - name: Extract branch name
+              shell: bash
+              run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+              id: extract_branch
+
+            - uses: stefanzweifel/git-auto-commit-action@v2.1.0
+              with:
+                commit_message: Prettier
+                branch: ${{ steps.extract_branch.outputs.branch }}
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
