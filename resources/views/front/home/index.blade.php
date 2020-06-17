@@ -1,45 +1,45 @@
 @extends('front.layouts.master', ['inversNav' => true])
 
-@section('title', 'Learn to create Laravel packages')
+@section('title', 'Building larger-than-average web applications')
 
-@section('description', 'The Laravel Package training video course is the best way to learn how to create PHP and Laravel packages. A premium video course by Spatie.')
+@section('description', 'Building larger-than-average web applications by Brent Roose. An ebook and premium video course by Spatie.')
 
 @section('content')
-    @include('front.partials.background')
 
-    <img alt="dripping paint" loading="lazy" style="top:50rem; width:75%; opacity: 0.1" class="absolute right-0 h-auto" src="/images/paint-purple.jpg">
 
-    <main class="z-20 shadow-xl">
-            <section class="layout-col">
-                @include('front.home.partials.intro')
-
-                <div class="mx-auto grid w-full max-w-lg z-10 shadow-2xl rounded | md:max-w-none">
-                    @include('front.home.partials.priceCard')
-                </div>
-            </section>
-
-        <div id="toc" class="py-24">
-            <section class="layout-col">
-                @include('front.home.partials.toc')
-            </section>
+    <header class="py-16">
+        <div class="absolute inset-0 w-full">
+            <img class="absolute w-full h-full object-cover object-bottom" src="/images/painting.jpg">
+            <div class="absolute inset-0" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.3))"></div>
         </div>
 
-        @include('front.home.partials.cta')
-
-
-        <div class="pb-24 bg-blue-50">
-            <div id="testimonials" class="mb-24">
-                <img alt="background pattern" loading="lazy" style="opacity: 0.075" class="absolute inset-0 w-full h-full" src="/images/instructor.png">           
-
-                @include('front.home.partials.testimonials')
+        <div class="z-10 px-8 py-8 bg-red-100">
+            <div class="max-w-2xl mx-auto flex items-center justify-between">
+                <span class="inline-flex items-center  h-8 text-spatie-500">
+                    @include('shared.partials.logo')
+                    <span class="px-3 uppercase text-sm tracking-wider text-spatie-500 font-semibold">Presents</span>
+                </span>
+                <button class="px-3 h-8 bg-red-300 text-gray-800 uppercase text-sm font-bold tracking-wider leading-none">
+                    Buy course
+                </button>
             </div>
-
-            <section class="layout-col">
-                @include('front.home.partials.instructor')
-            </section>
         </div>
+        
+        <div class="mt-32 max-w-2xl mx-auto text-red-100">
+            <h1 class="text-5xl uppercase font-bold leading-tight tracking-wider">
+                Laravel<br>
+                Beyond CRUD
+            </h1>
+            <p class="mt-8 font-semibold text-xl">
+                Building larger-than-average web applications
+            </p>
+            <p class="text-xl">
+                A course by Brent Roose
+            </p>
+        </div>
+    </header>
 
-
+    <main class="mt-32">
     </main>
 
 @endsection
