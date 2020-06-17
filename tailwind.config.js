@@ -1,10 +1,10 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
     important: true,
     theme: {
         fontFamily: {
-            sans: ['Jost', ...defaultTheme.fontFamily.sans],
+            sans: ["Jost", ...defaultTheme.fontFamily.sans]
         },
         colors: {
             transparent: "transparent",
@@ -13,27 +13,27 @@ module.exports = {
             blue: {
                 300: "var(--blue-300)",
                 400: "var(--blue-400)",
-                500: "var(--blue-500)",
+                500: "var(--blue-500)"
             },
 
             spatie: {
                 500: "var(--spatie-500)",
-                600: "var(--spatie-600)",
+                600: "var(--spatie-600)"
             },
             green: {
                 300: "var(--green-300)",
                 400: "var(--green-400)",
                 500: "var(--green-500)",
                 600: "var(--green-600)",
-                700: "var(--green-700)",
+                700: "var(--green-700)"
             },
             orange: {
                 400: "var(--orange-400)",
-                500: "var(--orange-500)",
+                500: "var(--orange-500)"
             },
             yellow: {
                 400: "var(--yellow-400)",
-                500: "var(--yellow-500)",
+                500: "var(--yellow-500)"
             },
             red: {
                 100: "var(--red-100)",
@@ -42,7 +42,7 @@ module.exports = {
                 400: "var(--red-400)",
                 500: "var(--red-500)",
                 600: "var(--red-600)",
-                700: "var(--red-700)",
+                700: "var(--red-700)"
             },
             gray: {
                 100: "var(--gray-100)",
@@ -52,17 +52,17 @@ module.exports = {
                 500: "var(--gray-500)",
                 600: "var(--gray-600)",
                 700: "var(--gray-700)",
-                800: "var(--gray-800)",
-            },
+                800: "var(--gray-800)"
+            }
         },
-       
+
         extend: {
             inset: {
                 full: "100%"
             },
             fill: theme => ({
-                'white': theme('colors.white'),
-              }),
+                white: theme("colors.white")
+            })
         }
     }
 };
