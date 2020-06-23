@@ -25,7 +25,8 @@ module.exports = {
                 400: "var(--green-400)",
                 500: "var(--green-500)",
                 600: "var(--green-600)",
-                700: "var(--green-700)"
+                700: "var(--green-700)",
+                800: "var(--green-800)",
             },
             orange: {
                 400: "var(--orange-400)",
@@ -37,12 +38,14 @@ module.exports = {
             },
             red: {
                 100: "var(--red-100)",
+                150: "var(--red-150)",
                 200: "var(--red-200)",
                 300: "var(--red-300)",
                 400: "var(--red-400)",
                 500: "var(--red-500)",
                 600: "var(--red-600)",
-                700: "var(--red-700)"
+                700: "var(--red-700)",
+                
             },
             gray: {
                 100: "var(--gray-100)",
@@ -59,6 +62,9 @@ module.exports = {
         extend: {
             inset: {
                 full: "100%"
+            },
+            boxShadow: {
+                nav:'0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025)'
             },
             fill: theme => ({
                 white: theme("colors.white")

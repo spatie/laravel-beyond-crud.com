@@ -21,7 +21,8 @@
     --yellow-400: #e5d292;
     --yellow-500: #fcc80f;
 
-    --red-100: #f9f5f4;
+    --red-100: #faf9f8;
+    --red-150: #f7f2f0;
     --red-200: #f7e3dc;
     --red-300: #efbdb9;
     --red-400: #e1897b;
@@ -58,4 +59,12 @@ html {
     html {
         font-size: 16px;
     }
+}
+
+.fix-z {
+    transform: translateZ(1px)
+}
+
+.blend-multiply {
+    mix-blend-mode: multiply;
 }
