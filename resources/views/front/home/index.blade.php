@@ -46,7 +46,7 @@
             </div>
 
             <div class="px-8">
-                <div class="mt-48 max-w-2xl mx-auto text-red-100">
+                <div class="mt-48 md:mt-64 max-w-2xl mx-auto text-red-100">
                     <h1 class="text-5xl uppercase font-bold leading-tight tracking-wider">
                         Laravel<br>
                         Beyond CRUD
