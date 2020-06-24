@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="xs:z-20 xs:fix-z -mt-4 xs:-mx-4 flex-none">
+                <div class="-mt-4 xs:-mx-4 flex-none">
                     <div class="bg-green-500 h-4"></div>
                     <div class="border-b border-r border-l border-gray-200 bg-white">    
                         <div class="text-center py-12 leading-none">
@@ -240,7 +240,7 @@
 
                         <div class="mt-4 flex items-center text-lg">
                             <div class="mr-4">
-                                <img src="/images/avatar.jpg" class="w-12 h-12 bg-gray-200" alt="Avatar">
+                                <img src="/images/avatar.jpg" class="w-12 h-12" alt="Avatar">
                                 <div class="absolute w-full h-2 top-full left-0 bg-red-700"></div>
                             </div>
                             @brendt_gd
