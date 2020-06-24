@@ -238,10 +238,13 @@
                             In al these years we’ve built Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dignissim arcu. Curabitur accumsan placerat efficitur. Praesent quis semper mi. Pellentesque in mauris quis dolor molestie maximus et in purus. Pellentesque accumsan quam sem, eget volutpat dolor pellentesque nec. 
                         </p>
 
-                        <p class="mt-4 flex items-center text-lg">
-                            <img src="" class="w-12 h-12 bg-gray-200 mr-4" alt="Avatar">
+                        <div class="mt-4 flex items-center text-lg">
+                            <div class="mr-4">
+                                <img src="/images/avatar.jpg" class="w-12 h-12 bg-gray-200" alt="Avatar">
+                                <div class="absolute w-full h-2 top-full left-0 bg-red-700"></div>
+                            </div>
                             @brendt_gd
-                        </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -255,10 +258,13 @@
                             Spatie has lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dignissim arcu. Curabitur accumsan placerat efficitur. Praesent quis semper mi. Pellentesque in mauris quis dolor molestie maximus et in purus. Pellentesque accumsan quam sem, eget volutpat dolor pellentesque nec. 
                         </p>
 
-                        <p class="mt-4 flex items-center text-lg">
-                            <img src="" class="w-8 h-8 bg-gray-200 mr-4" alt="Avatar">
+                        <div class="mt-4 flex items-center text-lg">
+                            <div class="mr-4">
+                                <img src="/images/avatar.jpg" class="w-8 h-8 bg-gray-200" alt="Avatar">
+                                <div class="absolute w-full h-1 top-full left-0 bg-red-100"></div>
+                            </div>
                             Client x
-                        </p>
+                        </div>
                     </div>
                 </div>
 
@@ -268,10 +274,13 @@
                             Spatie has lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dignissim arcu. Curabitur accumsan placerat efficitur. Praesent quis semper mi. Pellentesque in mauris quis dolor molestie maximus et in purus. Pellentesque accumsan quam sem, eget volutpat dolor pellentesque nec. 
                         </p>
 
-                        <p class="mt-4 flex items-center text-lg">
-                            <img src="" class="w-8 h-8 bg-gray-200 mr-4" alt="Avatar">
+                        <div class="mt-4 flex items-center text-lg">
+                            <div class="mr-4">
+                                <img src="/images/avatar.jpg" class="w-8 h-8 bg-gray-200" alt="Avatar">
+                                <div class="absolute w-full h-1 top-full left-0 bg-red-100"></div>
+                            </div>
                             Client x
-                        </p>
+                        </div>
                     </div>
 
                     <div class="w-2/3 xs:w-1/2 pt-16 pl-8">
@@ -279,10 +288,13 @@
                             Spatie has lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dignissim arcu. Curabitur accumsan placerat efficitur. Praesent quis semper mi. Pellentesque in mauris quis dolor molestie maximus et in purus. Pellentesque accumsan quam sem, eget volutpat dolor pellentesque nec. 
                         </p>
 
-                        <p class="mt-4 flex items-center text-lg">
-                            <img src="" class="w-8 h-8 bg-gray-200 mr-4" alt="Avatar">
+                        <div class="mt-4 flex items-center text-lg">
+                            <div class="mr-4">
+                                <img src="/images/avatar.jpg" class="w-8 h-8 bg-gray-200" alt="Avatar">
+                                <div class="absolute w-full h-1 top-full left-0 bg-red-100"></div>
+                            </div>
                             Client x
-                        </p>
+                        </div>
                     </div>
                 </div>
             </section>
