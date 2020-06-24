@@ -38,6 +38,7 @@
     --gray-600: #798689;
     --gray-700: #586264;
     --gray-800: #2b2f30;
+    --gray-900: #121313;
 }
 
 * {
@@ -46,7 +47,13 @@
 
 html {
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 11px;
+}
+
+@screen sm {
+    html {
+        font-size: 12px;
+    }
 }
 
 @screen md {
@@ -61,9 +68,18 @@ html {
     }
 }
 
-.fix-z {
-    transform: translateZ(1px);
+@screen xl {
+    html {
+        font-size: 18px;
+    }
 }
+
+@responsive {
+    .fix-z {
+        transform: translateZ(1px);
+    }
+}
+
 
 .blend-multiply {
     mix-blend-mode: multiply;

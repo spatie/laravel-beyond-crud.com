@@ -54,7 +54,8 @@ module.exports = {
                 500: "var(--gray-500)",
                 600: "var(--gray-600)",
                 700: "var(--gray-700)",
-                800: "var(--gray-800)"
+                800: "var(--gray-800)",
+                900: "var(--gray-900)"
             }
         },
 
@@ -68,7 +69,10 @@ module.exports = {
             },
             fill: theme => ({
                 white: theme("colors.white")
-            })
+            }),
+            screens: {
+                'xs': '420px',
+            }
         }
     }
 };
