@@ -20,6 +20,7 @@
 
     --yellow-400: #e5d292;
     --yellow-500: #fcc80f;
+    --yellow-600: #e8b912;
 
     --red-100: #faf9f8;
     --red-150: #f7f2f0;
@@ -72,14 +73,4 @@ html {
     html {
         font-size: 18px;
     }
-}
-
-@responsive {
-    .fix-z {
-        transform: translateZ(1px);
-    }
-}
-
-.blend-multiply {
-    mix-blend-mode: multiply;
 }

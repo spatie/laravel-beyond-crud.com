@@ -12,10 +12,10 @@
         <div class="px-8 bg-red-100 shadow-nav">
             <div class="max-w-2xl mx-auto h-24 flex items-center justify-between">
                 <span class="flex items-center uppercase text-sm font-semibold tracking-wider leading-none">
-                    <img class="h-auto w-4 mr-3" src="/images/logo.svg">
+                    <img class="h-auto w-4 mr-3" src="/images/logo.svg" alt="logo">
                      Laravel Beyond Crud
                 </span>
-                <button class="px-3 h-8 bg-gray-300 text-gray-800 uppercase text-sm font-bold tracking-wider leading-none">
+                <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-bold tracking-wider leading-none">
                     Buy course
                 </button>
             </div>
@@ -34,7 +34,7 @@
     <main class="bg-white">
         <div class="pt-8 pb-16 -mt-48">
             <div class="absolute inset-0 w-full">
-                <img class="absolute w-full h-full object-cover object-bottom" 
+                <img class="absolute w-full h-full object-cover object-bottom bg-green-600" 
                     srcset="/images/painting-2400.jpg 2400w,
                         /images/painting-1600.jpg 1600w,
                         /images/painting-800.jpg 800w"
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="text-center z-10 -mb-4">
-                            <button class="px-3 h-8 bg-yellow-500 text-gray-800 uppercase text-base font-bold tracking-wider leading-none">
+                            <button class="px-3 h-8 bg-yellow-500 hover:bg-yellow-600 text-gray-800 uppercase text-base font-bold tracking-wider leading-none">
                                 Buy bundle
                             </button>
                         </div>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="text-center z-10 -mb-4">
-                            <button class="px-3 h-8 bg-gray-300 text-gray-800 uppercase text-base font-bold tracking-wider leading-none">
+                            <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-base font-bold tracking-wider leading-none">
                                 Buy ebook
                             </button>
                         </div>
@@ -162,7 +162,7 @@
                                     /images/cover-500.jpg 500w"
                                 sizes="(max-width: 420px) 75vw,
                                     50vw"
-                                alt="Abstract painting"
+                                alt="Ebook cover"
                                 src="/images/cover-2000.jpg"
                             >
                             <span class="absolute w-4 h-full bg-green-600 top-0 left-0"></span>
@@ -178,15 +178,26 @@
                         <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
                     </ul>
                 </div>
-                <div class="mt-12 w-2/3 xs:w-1/2 xs:pr-8">
+                <div class="mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ open: false }">
                     <div class="w-full h-0 bg-gray-800" style="padding-bottom:56%">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <button class="text-white uppercase tracking-widest text-xs">
+                        <button class="absolute inset-0 w-full flex items-center justify-center hover:opacity-75 " @click="open = true">
+                            <div class="text-white uppercase tracking-widest text-xs">
                                 View example <i class="ml-2 fas fa-play"></i>
-                            </button>
-                        </div>
+                            </div>
+                        </button>
                         <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0"></span>
                     </div>
+
+                    <template x-if="open">
+                        <div style="background-color:rgba(0,0,0,0.75)" class="fixed inset-0 p-8 lg:p-16 z-50 flex items-center justify-center" @keydown.window.escape="open = false">
+                            <button class="absolute top-0 right-0 m-6 leading-none text-light-700 text-3xl">&times;</button>
+                            <div class="w-full">
+                                <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
+                                    <iframe src="https://player.vimeo.com/video/418813035?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
                 </div>
                 <div class="mt-12 xs:w-1/2 xs:pl-8">
                     <h3 class="mb-6 font-semibold uppercase tracking-wider text-xl">Videos</h3>
@@ -201,7 +212,7 @@
         </section>
 
         <div class="overflow-hidden">
-            <div class="z-10 absolute top-0 bottom-0 left-0 w-full blend-multiply">
+            <div class="z-10 absolute top-0 bottom-0 left-0 w-full blend-multiply pointer-events-none">
                 <section class="h-full px-8">
                     <div class="h-full max-w-2xl mx-auto flex justify-start">
                         <div class="w-1/3 pr-8">
@@ -228,7 +239,7 @@
                         </p>
 
                         <p class="mt-4 flex items-center text-lg">
-                            <img src="" class="w-12 h-12 bg-gray-200 mr-4">
+                            <img src="" class="w-12 h-12 bg-gray-200 mr-4" alt="Avatar">
                             @brendt_gd
                         </p>
                     </div>
@@ -245,7 +256,7 @@
                         </p>
 
                         <p class="mt-4 flex items-center text-lg">
-                            <img src="" class="w-8 h-8 bg-gray-200 mr-4">
+                            <img src="" class="w-8 h-8 bg-gray-200 mr-4" alt="Avatar">
                             Client x
                         </p>
                     </div>
@@ -258,7 +269,7 @@
                         </p>
 
                         <p class="mt-4 flex items-center text-lg">
-                            <img src="" class="w-8 h-8 bg-gray-200 mr-4">
+                            <img src="" class="w-8 h-8 bg-gray-200 mr-4" alt="Avatar">
                             Client x
                         </p>
                     </div>
@@ -269,7 +280,7 @@
                         </p>
 
                         <p class="mt-4 flex items-center text-lg">
-                            <img src="" class="w-8 h-8 bg-gray-200 mr-4">
+                            <img src="" class="w-8 h-8 bg-gray-200 mr-4" alt="Avatar">
                             Client x
                         </p>
                     </div>
@@ -279,14 +290,14 @@
             <aside class="z-20 px-8 bg-red-100 shadow-lg">
                 <div class="max-w-2xl mx-auto xs:flex items-center justify-between">
                     <ul class="xs:w-1/3 xs:pr-8 py-8 font-semibold text-green-500 text-lg">
-                        <li><a href="#" class="underline">Email us</a></li>
-                        <li class="mt-2"><a href="#" class="underline">Follow us @spatie_be</a></li>
+                        <li><a href="#" class="underline hover:text-green-600">Email us</a></li>
+                        <li class="mt-2"><a href="#" class="underline hover:text-green-600">Follow us @spatie_be</a></li>
                     </ul>
                     <form class="py-8 xs:w-2/3 xs:pl-8">
                         <p class="text-green-500 font-semibold">Receive updates, nothing more</p>
                         <div class="flex mt-2">
                             <input class="px-2 flex-grow bg-gray-200 focus:bg-blue-300 focus:outline-none" type="text">
-                            <button class="flex-none px-3 h-8 bg-green-500 text-white uppercase text-sm font-bold tracking-wider leading-none">
+                            <button class="flex-none px-3 h-8 bg-green-500 hover:bg-green-600 text-white uppercase text-sm font-bold tracking-wider leading-none">
                                 Subscribe
                             </button>
                         </div>
@@ -298,9 +309,9 @@
                 <div class="max-w-2xl mx-auto flex justify-end">
                     <div class="xs:w-2/3 pl-8">
                         <p class="flex items-center justify-end">
-                            <a href="#" class="underline mr-4 xs:mr-12">Terms of Use</a>
-                            <a href="#" class="underline mr-4 xs:mr-12">Privacy &amp; Cookie Policy</a>
-                            <a href="http://spatie.be" class="h-6 xs:h-8 text-red-600">
+                            <a href="#" class="underline mr-4 xs:mr-12 hover:opacity-75">Terms of Use</a>
+                            <a href="#" class="underline mr-4 xs:mr-12 hover:opacity-75">Privacy &amp; Cookie Policy</a>
+                            <a href="http://spatie.be" class="h-6 xs:h-8 text-red-600 hover:opacity-75">
                                 @include('shared.partials.logo')
                             </a>
                         </p>
