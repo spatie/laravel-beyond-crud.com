@@ -249,7 +249,7 @@
                 </div>
             </section>
 
-            <section class="px-8 py-16 bg-red-500 text-red-100 overflow-hidden">
+            <section class="px-8 pt-16 pb-24 bg-red-500 text-red-100 overflow-hidden">
                 <div class="max-w-2xl mx-auto flex justify-end">
                     <div class="w-2/3 pl-8">
                         <h2 class="font-bold text-4xl leading-tight mb-16 mt-2">What others say</h2>
@@ -317,7 +317,7 @@
                 </div>
             </aside>
 
-            <small class="block px-8 pt-16 pb-8 bg-red-500 text-red-100 overflow-hidden">
+            <small class="block px-8 pt-24 pb-8 bg-red-500 text-red-100 overflow-hidden">
                 <div class="max-w-2xl mx-auto flex justify-end">
                     <div class="xs:w-2/3 pl-8">
                         <p class="flex items-center justify-end">
