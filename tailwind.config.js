@@ -71,7 +71,7 @@ module.exports = {
                 white: theme("colors.white")
             }),
             screens: {
-                'xs': '420px',
+                xs: "420px"
             }
         }
     }
