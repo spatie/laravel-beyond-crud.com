@@ -320,7 +320,7 @@
                     <form class="py-8 xs:w-2/3 xs:pl-8">
                         <p class="text-green-500 font-semibold">Receive updates, nothing more</p>
                         <div class="flex mt-2">
-                            <input class="px-2 flex-grow bg-gray-200 focus:bg-blue-300 focus:outline-none" type="text">
+                            <input type=email name=email id=email class="px-2 flex-grow bg-gray-200 focus:bg-blue-300 focus:outline-none" type="text">
                             <button class="flex-none px-3 h-8 bg-green-500 hover:bg-green-600 text-white uppercase text-sm font-bold tracking-wider leading-none">
                                 Subscribe
                             </button>
