@@ -241,14 +241,13 @@
                 <section class="h-full px-8">
                     <div class="h-full max-w-2xl mx-auto flex justify-start">
                         <div class="w-1/3 pr-8">
-                            <img style="right:2rem; width:33vw" class="absolute max-w-none h-full object-cover object-right-top"
-                                srcset="/images/fragment-3200.jpg 3200h,
-                                    /images/fragment-2400.jpg 2400h,
-                                    /images/fragment-1600.jpg 1600h,
-                                    /images/fragment-800.jpg 800h"
+                            <img style="right:2rem; width:33vw" class="absolute max-w-none h-full object-contain object-right-top"
+                                srcset="/images/fragment-800.jpg 800w,
+                                    /images/fragment-600.jpg 600w,
+                                    /images/fragment-400.jpg 400w"
                                 sizes="33vw"
                                 alt="Abstract painting"
-                                src="/images/fragment-3200.jpg"
+                                src="/images/fragment-800.jpg"
                             >
                         </div>
                     <div>
