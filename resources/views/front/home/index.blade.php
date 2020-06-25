@@ -185,7 +185,7 @@
                                     /images/cover-1000.jpg 1000w,
                                     /images/cover-500.jpg 500w"
                                 sizes="(max-width: 420px) 75vw,
-                                    50vw"
+                                    33vw"
                                 alt="Ebook cover"
                                 src="/images/cover-2000.jpg"
                                 class="w-full"
