@@ -39,7 +39,7 @@
 
         <script src="/js/alpine.js" defer></script>
     </head>
-    <body class="relative min-h-screen max-w-4xl mx-auto bg-red-150">
+    <body class="bg-red-150 overflow-x-hidden">
         @yield('content')
 
         @include('shared.partials.gtm-body')
