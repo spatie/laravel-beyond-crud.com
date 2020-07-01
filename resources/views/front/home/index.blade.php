@@ -152,7 +152,7 @@
             <div class="pr-8 xs:px-8">
                 <div class="max-w-2xl mx-auto pl-16 text-2xl">
                     <blockquote class="font-semibold">
-The goal of this course is not about learning patterns to quickly solve your problems; I want to teach you to find these solutions yourself, I want to share our thought process with you.                    </blockquote>
+                        The goal of this course is not about learning patterns to quickly solve your problems; I want to teach you to find these solutions yourself, I want to share our thought process with you. </blockquote>
                     <p class="mt-6">
                         Brent Roose, author
                     </p>
@@ -169,7 +169,7 @@ The goal of this course is not about learning patterns to quickly solve your pro
             </div>
 
             <div class="max-w-2xl mx-auto my-16 py-16 xs:flex xs:flex-wrap">
-                <div class="w-screen h-full absolute top-0 right-0 bg-gray-200">
+                <div class="w-screen h-full absolute top-0 right-0 -mr-8 bg-gray-200">
                 </div>
                 <div class="mb-12 xs:mb-0 w-2/3 xs:w-1/2 xs:pr-8">
                     <div class="h-full xs:-ml-4">
@@ -184,11 +184,8 @@ The goal of this course is not about learning patterns to quickly solve your pro
                 </div>
                 <div class="xs:w-1/2 xs:pl-8">
                     <h3 class="mb-6 font-semibold uppercase tracking-wider text-xl">Ebook</h3>
-                    <ul>
-                        <li><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
-                        <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
-                        <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
-                    </ul>
+                    This <strong class="font-semibold">100+ pages ebook</strong> guides you from concepts like DDD to scaffolding complexer Laravel applications.
+                    Beautifully designed by Seb De Deyne!
                 </div>
                 <div class="mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ open: false }">
                     <div class="w-full h-0 bg-gray-800" style="padding-bottom:56%">
@@ -213,9 +210,9 @@ The goal of this course is not about learning patterns to quickly solve your pro
                 </div>
                 <div class="mt-12 xs:w-1/2 xs:pl-8">
                     <h3 class="mb-6 font-semibold uppercase tracking-wider text-xl">Videos</h3>
-                    <ul class="">
-                        <li><i class="fas fa-check text-xs text-green-500"></i> 2 hours of video</li>
-                    </ul>
+                    <p>
+                        During these <strong class="font-semibold">2 hours of video</strong>–spread over 12 episodes– Brent talks you through the content of the book with lots of pratical examples and live coding. Serious content, brought in his enthousiastic manner!
+                    </p>
                 </div>
             </div>
         </section>
@@ -238,10 +235,10 @@ The goal of this course is not about learning patterns to quickly solve your pro
                     <div class="w-2/3 pl-8">
                         <h2 class="font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
 
-                        <p class="text-lg font-semibold leading-relaxed">
+                        <p class="text-lg leading-relaxed">
                             Brent has been working almost exclusivly on large web applications for the past years now. He did lots of self education on topics like DDD and event sourcing.
-Doing so, he applied many of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
-Besides his work at Spatie, Brent is also very active in the PHP community, most notably with <a class="text-red-600 hover:text-red-500 underline" href="https://stitcher.io/">his blog</a> where he writes about programming, PHP and the web in general. 
+                            Doing so, he applied many of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
+                            Besides his work at Spatie, Brent is also very active in the PHP community, most notably with <a class="text-red-600 hover:text-red-500 underline" href="https://stitcher.io/">his blog</a> where he writes about programming, PHP and the web in general.
                         </p>
 
                         <div class="mt-6 flex items-center text-lg">
@@ -320,7 +317,7 @@ Besides his work at Spatie, Brent is also very active in the PHP community, most
                     </div>
                     <div class="z-30 w-screen h-4 absolute top-0 left-0 bg-gray-900 opacity-25"></div>
                     <div class="z-30 w-full px-8">
-                    
+
                         <h2 class="font-bold text-4xl leading-tight mb-2">Never stop learning!</h2>
 
                         <p class="text-lg font-semibold text-red-300 leading-relaxed mb-16 ">
@@ -329,7 +326,7 @@ Besides his work at Spatie, Brent is also very active in the PHP community, most
 
                         <div class="mt-16 flex items-center text-lg">
                             <div class="flex-none mr-8 flex items-center justify-center w-24 h-24 rounded-full bg-red-500 overflow-hidden">
-                                 <a class="" href="https://laravelpackage.training" target="_blank">
+                                <a class="" href="https://laravelpackage.training" target="_blank">
                                     <img src="/images/laravel-package-training.svg" class="z-10 w-12 h-12" alt="Laravel Package Training">
                                 </a>
                             </div>
@@ -338,7 +335,7 @@ Besides his work at Spatie, Brent is also very active in the PHP community, most
                                     Laravel Package Training
                                 </h3>
                                 <p class="text-sm">
-                                    Learn how to create a Laravel package in this 4 hour video course. 
+                                    Learn how to create a Laravel package in this 4 hour video course.
                                 </p>
                                 <p class="text-xs">
                                     <a class="underline text-red-300" href="https://laravelpackage.training" target="_blank">laravelpackge.training</a>
@@ -348,7 +345,7 @@ Besides his work at Spatie, Brent is also very active in the PHP community, most
 
                         <div class="mt-8 flex items-center text-lg">
                             <div class="flex-none mr-8 flex items-center justify-center w-24 h-24 rounded-full bg-green-500 overflow-hidden">
-                                 <a href="https://mailcoach.app/videos" target="_blank">
+                                <a href="https://mailcoach.app/videos" target="_blank">
                                     <img src="/images/mailcoach.svg" class="z-10 w-12 h-12" alt="Laravel Package Training">
                                 </a>
                             </div>
@@ -379,7 +376,7 @@ Besides his work at Spatie, Brent is also very active in the PHP community, most
             </small>
         </div>
     </main>
-    
+
 
 </div>
 @endsection
