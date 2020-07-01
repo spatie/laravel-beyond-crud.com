@@ -31,7 +31,7 @@
         </div>
     </nav>
 
-    <main class="bg-white16">
+    <main class="bg-white">
         <div class="pt-8 pb-16 -mt-48">
             <div class="absolute inset-0 w-full">
                 <img class="absolute w-full h-full object-cover object-bottom bg-green-600" srcset="/images/painting-2400.jpg 2400w,
@@ -105,9 +105,9 @@
                         <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-100">
                             <div>
                                 <ul class="pb-3">
-                                    <li><i class="fas fa-check text-xs text-green-500"></i> 4 hours of video</li>
-                                    <li><i class="fas fa-check text-xs text-green-500"></i> 172 pages of premium content</li>
-                                    <li><i class="fas fa-check text-xs text-green-500"></i> Code samples and cases</li>
+                                    <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 2 hours of video</li>
+                                    <li><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
+                                    <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
                                     <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
                                 </ul>
                             </div>
@@ -134,9 +134,8 @@
                         </div>
                         <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-200">
                             <ul>
-                                <li><i class="fas fa-check text-xs text-green-500"></i> 4 hours of video</li>
-                                <li><i class="fas fa-check text-xs text-green-500"></i> 172 pages of premium content</li>
-                                <li><i class="fas fa-check text-xs text-green-500"></i> Code samples and cases</li>
+                                <li><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
+                                <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
                                 <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
                             </ul>
                         </div>
@@ -153,8 +152,7 @@
             <div class="pr-8 xs:px-8">
                 <div class="max-w-2xl mx-auto pl-16 text-2xl">
                     <blockquote class="font-semibold">
-                        During al these years we’ve built Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dignissim arcu. Curabitur accumsan placerat efficitur. Praesent quis semper mi. Pellentesque in mauris quis dolor molestie maximus et in purus.
-                    </blockquote>
+The goal of this course is not about learning patterns to quickly solve your problems; I want to teach you to find these solutions yourself, I want to share our thought process with you.                    </blockquote>
                     <p class="mt-6">
                         Brent Roose, author
                     </p>
@@ -186,10 +184,9 @@
                 </div>
                 <div class="xs:w-1/2 xs:pl-8">
                     <h3 class="mb-6 font-semibold uppercase tracking-wider text-xl">Ebook</h3>
-                    <ul class="">
-                        <li><i class="fas fa-check text-xs text-green-500"></i> 4 hours of video</li>
-                        <li><i class="fas fa-check text-xs text-green-500"></i> 172 pages of premium content</li>
-                        <li><i class="fas fa-check text-xs text-green-500"></i> Code samples and cases</li>
+                    <ul>
+                        <li><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
+                        <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
                         <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
                     </ul>
                 </div>
@@ -217,10 +214,7 @@
                 <div class="mt-12 xs:w-1/2 xs:pl-8">
                     <h3 class="mb-6 font-semibold uppercase tracking-wider text-xl">Videos</h3>
                     <ul class="">
-                        <li><i class="fas fa-check text-xs text-green-500"></i> 4 hours of video</li>
-                        <li><i class="fas fa-check text-xs text-green-500"></i> 172 pages of premium content</li>
-                        <li><i class="fas fa-check text-xs text-green-500"></i> Code samples and cases</li>
-                        <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
+                        <li><i class="fas fa-check text-xs text-green-500"></i> 2 hours of video</li>
                     </ul>
                 </div>
             </div>
@@ -245,15 +239,20 @@
                         <h2 class="font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
 
                         <p class="text-lg font-semibold leading-relaxed">
-                            In al these years we’ve built Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dignissim arcu. Curabitur accumsan placerat efficitur. Praesent quis semper mi. Pellentesque in mauris quis dolor molestie maximus et in purus. Pellentesque accumsan quam sem, eget volutpat dolor pellentesque nec.
+                            Brent has been working almost exclusivly on large web applications for the past years now. He did lots of self education on topics like DDD and event sourcing.
+Doing so, he applied many of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
+Besides his work at Spatie, Brent is also very active in the PHP community, most notably with <a class="text-red-600 hover:text-red-500 underline" href="https://stitcher.io/">his blog</a> where he writes about programming, PHP and the web in general. 
                         </p>
 
-                        <div class="mt-4 flex items-center text-lg">
+                        <div class="mt-6 flex items-center text-lg">
                             <div class="mr-4">
-                                <img src="/images/avatar.jpg" class="z-10 w-12 h-12" alt="Avatar">
+                                <img src="/images/avatar.jpg" class="z-10 w-16 h-16" alt="Avatar">
                                 <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-red-200"></div>
                             </div>
-                            @brendt_gd
+                            <div class="leading-tight">
+                                <div class="font-semibold">Brent Roose</div>
+                                <a class="text-base hover:text-red-500" href="https://twitter.com/brendt_gd">@brendt_gd</a>
+                            </div>
                         </div>
                     </div>
                 </div>
