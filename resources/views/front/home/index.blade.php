@@ -389,8 +389,8 @@
                     <a href="http://spatie.be" class="z-10 h-6 xs:h-8 text-red-600 hover:opacity-75">
                         @include('shared.partials.logo')
                     </a>
-                    <a href="#" class="underline ml-auto hover:opacity-75">Terms of Use</a>
-                    <a href="#" class="underline ml-4 xs:ml-12 hover:opacity-75">Privacy &amp; Cookie Policy</a>
+                    <a href="{{route('termsOfUse')}}" class="underline ml-auto hover:opacity-75">Terms of Use</a>
+                    <a href="{{route('privacy')}}" class="underline ml-4 xs:ml-12 hover:opacity-75">Privacy &amp; Cookie Policy</a>
                 </div>
             </small>
         </div>

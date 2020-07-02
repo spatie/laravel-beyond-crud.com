@@ -6,6 +6,8 @@
 
 @import "tailwindcss/utilities";
 
+@import "./utilities/markup.css";
+
 @responsive {
     .fix-z {
         transform: translateZ(1px);

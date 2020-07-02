@@ -35,22 +35,24 @@
 
 .markup h1,
 .markup-h1 {
+    @apply font-display;
     @apply font-bold;
-    @apply font-serif;
     @apply text-4xl;
     @apply leading-tight;
 }
 
 .markup h2,
 .markup-h2 {
+    @apply font-display;
     @apply font-semibold;
     @apply text-xl;
 }
 
 .markup h3,
 .markup-h3 {
+    @apply font-display;
     @apply uppercase;
-    @apply font-medium;
+    @apply font-semibold;
     @apply text-sm;
     @apply tracking-widest;
 }
@@ -58,7 +60,7 @@
 .markup-baseline {
     opacity: 0.7;
     @apply text-xl;
-    @apply font-medium;
+    @apply font-semibold;
     @apply mt-1;
 }
 
@@ -72,7 +74,7 @@
 .markup-lists-alt ul > li,
 .markup-ul > li,
 .markup-ul-alt > li {
-    padding-left: 1.5em;
+    padding-left: 1.15em;
 }
 
 .markup-lists ul > li:before,
@@ -86,8 +88,8 @@
 
 .markup-lists-alt ul > li:before,
 .markup-ul-alt > li:before {
-    content: "->";
-    @apply text-blue-300;
+    content: "•";
+    @apply text-gray-500;
     @apply absolute;
     @apply left-0;
 }
@@ -112,7 +114,7 @@
     @apply absolute;
     @apply left-0;
     content: counter(customOl);
-    @apply bg-blue-500;
+    @apply bg-red-500;
     @apply rounded-full;
     @apply flex-none;
     @apply flex;
@@ -142,26 +144,26 @@
 
 .markup-links a,
 .markup-link {
-    @apply text-blue-500;
+    @apply text-red-500;
     @apply underline;
-    text-decoration-color: var(--blue-400);
+    text-decoration-color: var(--red-400);
 }
 
 .markup-links a:hover,
 .markup-link:hover {
-    text-decoration-color: var(--blue-500);
+    text-decoration-color: var(--red-500);
 }
 
 .markup-links-invers a,
 .markup-link-invers {
     @apply text-white;
     @apply underline;
-    text-decoration-color: var(--light-700);
+    text-decoration-color: var(--gray-100);
 }
 
 .markup-links-invers a:hover,
 .markup-link-invers:hover {
-    text-decoration-color: var(--light-800);
+    text-decoration-color: var(--gray-200);
 }
 
 .markup-links-gray a,
@@ -178,14 +180,14 @@
 
 .markup-links-dark a,
 .markup-link-dark {
-    @apply text-dark-600;
+    @apply text-gray-600;
     @apply underline;
-    text-decoration-color: var(--dark-500);
+    text-decoration-color: var(--gray-500);
 }
 
 .markup-links-dark a:hover,
 .markup-link-dark:hover {
-    text-decoration-color: var(--dark-600);
+    text-decoration-color: var(--gray-600);
 }
 
 /* Code styles */
@@ -210,12 +212,12 @@
 }
 
 .markup-code pre::-webkit-scrollbar-thumb {
-    @apply bg-dark-300;
+    @apply bg-gray-300;
     border-radius: 2px;
 }
 
 .markup-code pre {
-    @apply border-dark-50;
+    @apply border-gray-100;
     @apply my-6;
     @apply shadow;
 }
@@ -229,7 +231,7 @@
 
 .markup-code :not(pre) > code {
     @apply rounded-sm;
-    @apply bg-dark-50;
+    @apply bg-gray-100;
     @apply text-gray-700;
     font-size: 0.85em;
     @apply p-1;
@@ -245,17 +247,17 @@
     @apply border-collapse;
     @apply border-t;
     @apply border-b;
-    @apply border-dark-300;
+    @apply border-gray-300;
     @apply w-full;
     @apply text-sm;
     @apply my-6;
 }
 
 .markup-table table thead tr {
-    @apply bg-dark-100;
-    @apply text-dark-500;
+    @apply bg-gray-100;
+    @apply text-gray-500;
     @apply border-b;
-    @apply border-dark-200;
+    @apply border-gray-200;
     font-size: 0.875em;
 }
 
@@ -283,7 +285,7 @@
 
 .markup-table table tbody tr {
     @apply border-t;
-    @apply border-dark-100;
+    @apply border-gray-100;
 }
 
 .markup-table table thead .th-numeric,
