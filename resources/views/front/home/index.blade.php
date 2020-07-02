@@ -235,7 +235,7 @@
                     <div class="w-2/3 pl-8">
                         <h2 class="font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
 
-                        <p class="text-lg leading-relaxed">
+                        <p class="text-lg leading-relaxed font-semibold">
                             Brent has been working almost exclusivly on large web applications for the past years now. He did lots of self education on topics like DDD and event sourcing.
                             Doing so, he applied many of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
                             Besides his work at Spatie, Brent is also very active in the PHP community, most notably with <a class="text-red-600 hover:text-red-500 underline" href="https://stitcher.io/">his blog</a> where he writes about programming, PHP and the web in general.
@@ -255,7 +255,7 @@
                 </div>
             </section>
 
-            <section class="px-8 pt-16 pb-24 bg-red-500 text-red-100 overflow-hidden">
+            <section class="px-8 py-16 bg-red-500 text-red-100 overflow-hidden">
                 <div class="max-w-2xl mx-auto flex justify-end">
                     <div class="w-2/3 pl-8 pb-16">
                         <h2 class="font-bold text-4xl leading-tight mb-16 mt-2">What others say</h2>
@@ -291,28 +291,8 @@
                 </div>
             </section>
 
-            <section class="z-30 xs:sticky xs:top-0 xs:fix-z overflow-hidden">
-                <div class="px-8 bg-red-100 shadow-lg">
-                    <div class="max-w-2xl mx-auto xs:flex items-center justify-between">
-                        <ul class="xs:w-1/3 xs:pr-8 py-8 font-semibold text-green-500 text-lg">
-                            <li><a href="#" class="underline hover:text-green-600">Email us</a></li>
-                            <li class="mt-2"><a href="#" class="underline hover:text-green-600">Follow us @spatie_be</a></li>
-                        </ul>
-                        <form class="py-8 xs:w-2/3 xs:pl-8">
-                            <p class="text-green-500 font-semibold">Receive updates, nothing more</p>
-                            <div class="flex mt-2">
-                                <input type=email name=email id=email class="px-2 flex-grow bg-gray-200 focus:bg-blue-300 focus:outline-none" type="text">
-                                <button class="flex-none px-3 h-8 bg-green-500 hover:bg-green-600 text-white uppercase text-sm font-bold tracking-wider leading-none">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            <aside class="px-8 pt-16 text-red-100 bg-red-500 overflow-hidden">
-                <div class="z-20 max-w-2xl mx-auto mt-16 py-16 xs:flex xs:flex-wrap">
+            <aside class="px-8 pt-8 pb-24 text-red-100 bg-red-500 overflow-hidden">
+                <div class="z-10 max-w-2xl mx-auto py-16 xs:flex xs:flex-wrap">
                     <div class="z-20 w-screen h-full absolute top-0 left-0 bg-gray-900 opacity-50">
                     </div>
                     <div class="z-30 w-screen h-4 absolute top-0 left-0 bg-gray-900 opacity-25"></div>
@@ -361,9 +341,48 @@
                                 </p>
                             </div>
                         </div>
+
+                        <div class="mt-8 flex items-center text-lg">
+                            <div class="flex-none mr-8 flex items-center justify-center w-24 h-24 rounded-full bg-gray-900 overflow-hidden">
+                                <a href="https://spatie.be/videos" target="_blank">
+                                    <img src="/images/github.svg" class="z-10 w-12 h-12" alt="Laravel Package Training">
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="uppercase text-sm font-semibold tracking-wider">
+                                    Sponsor us on GitHub
+                                </h3>
+                                <p class="text-sm">
+                                    Get early access to our video insights to improve your web development skills.
+                                </p>
+                                <p class="text-xs">
+                                    <a class="underline text-red-300" href="https://spatie.be/videos" target="_blank">spatie.be/videos</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </aside>
+
+             <section class="z-30 xs:sticky xs:top-0 xs:fix-z overflow-hidden">
+                <div class="px-8 bg-red-100 shadow-lg">
+                    <div class="max-w-2xl mx-auto xs:flex items-center justify-between">
+                        <ul class="xs:w-1/3 xs:pr-8 py-8 font-semibold text-green-500 text-lg">
+                            <li><a href="#" class="underline hover:text-green-600">Email us</a></li>
+                            <li class="mt-2"><a href="#" class="underline hover:text-green-600">Follow us @spatie_be</a></li>
+                        </ul>
+                        <form class="py-8 xs:w-2/3 xs:pl-8">
+                            <p class="text-green-500 font-semibold">Receive updates, nothing more</p>
+                            <div class="flex mt-2">
+                                <input type=email name=email id=email class="px-2 flex-grow bg-gray-200 focus:bg-blue-300 focus:outline-none" type="text">
+                                <button class="flex-none px-3 h-8 bg-green-500 hover:bg-green-600 text-white uppercase text-sm font-bold tracking-wider leading-none">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
             <small class="block px-8 pt-8 pb-8 bg-red-500 text-red-100 overflow-hidden">
                 <div class="max-w-2xl mx-auto flex items-center">
