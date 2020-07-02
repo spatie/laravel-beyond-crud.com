@@ -5,7 +5,7 @@
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="dns-prefetch" href="//use.fontawesome.com">
         <link rel="dns-prefetch" href="//www.googletagmanager.com">
-        @include('shared.partials.gtm-head')
+        @include('partials.gtm-head')
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-        @include('shared.partials.favicon')
+        @include('partials.favicon')
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:creator" content="@spatie_be"/>
@@ -42,6 +42,6 @@
     <body class="bg-red-150 overflow-x-hidden font-sans">
         @yield('content')
 
-        @include('shared.partials.gtm-body')
+        @include('partials.gtm-body')
     </body>
 </html>

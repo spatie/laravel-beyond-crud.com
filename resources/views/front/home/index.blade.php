@@ -25,7 +25,7 @@
     <nav class="absolute top-0 w-full z-20 px-8 pointer-events-none">
         <div class="max-w-2xl mx-auto h-24 flex items-center justify-between">
             <span class="z-20 w-full h-8 inline-flex items-center text-spatie-500 bg-red-100">
-                @include('shared.partials.logo')
+                @include('partials.logo')
                 <span class="px-3 uppercase text-sm tracking-wider text-gray-500 font-display font-semibold">Presents…</span>
             </span>
         </div>
@@ -49,12 +49,12 @@
                     <p class="mt-2 font-display font-semibold text-2xl">
                         Building larger-than-average web applications
                     </p>
-                    <p class="my-8 text-2xl max-w-md font-display">
+                    <p class="my-8 text-lg max-w-md">
                        Learn how to structure and maintain complex Laravel projects in this course from Brent Roose…
                     </p>
                 </div>
 
-                <div class="xs:absolute bottom-0 right-0 mx-auto mb-24 w-2/3 sm:-mr-4 md:-mr-8 lg:-mr-12 xl:-mr-16 xs:w-1/2" x-data="{ open: false }">
+                <div class="xs:absolute bottom-0 right-0 mx-auto mb-20 w-2/3 sm:-mr-4 md:-mr-8 lg:-mr-12 xl:-mr-16 xs:w-1/2" x-data="{ open: false }">
                     <div class="w-full h-0 bg-gray-800" style="padding-bottom:56%">
                         <button class="absolute inset-0 w-full flex items-center justify-center hover:opacity-75 " @click="open = true">
                             <div class="text-white uppercase tracking-widest text-xs font-display">
@@ -255,7 +255,7 @@
                 </div>
             </section>
 
-            <section class="px-8 py-16 bg-red-500 text-red-100 overflow-hidden">
+            <section class="px-8 pt-16 bg-red-500 text-red-100 overflow-hidden">
                 <div class="max-w-2xl mx-auto flex justify-end">
                     <div class="w-2/3 pl-8 pb-16">
                         <h2 class="font-display font-bold text-4xl leading-tight mb-16 mt-2">What others say</h2>
@@ -291,108 +291,7 @@
                 </div>
             </section>
 
-            <aside class=" px-8 pt-8 pb-24 text-red-100 bg-red-500 overflow-hidden">
-                <div class="z-10 max-w-2xl mx-auto py-16 xs:flex xs:flex-wrap">
-                    <div class="z-20 w-screen h-full absolute top-0 left-0 bg-gray-900 opacity-50">
-                    </div>
-                    <div class="z-30 w-screen h-4 absolute top-0 left-0 bg-gray-900 opacity-25"></div>
-                    <div class="z-30 w-full px-8">
-
-                        <h2 class="font-display font-bold text-4xl leading-tight mb-2">Never stop learning!</h2>
-
-                        <p class="text-lg font-display font-semibold text-red-300 leading-relaxed mb-16 ">
-                           Other related courses and videos from Spatie
-                        </p>
-
-                        <div class="mt-16 flex items-center text-lg">
-                            <div class="flex-none mr-8 flex items-center justify-center w-20 h-20 rounded-full bg-red-500 overflow-hidden">
-                                <a class="" href="https://laravelpackage.training" target="_blank">
-                                    <img src="/images/laravel-package-training.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
-                                </a>
-                            </div>
-                            <div>
-                                <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
-                                    Laravel Package Training
-                                </h3>
-                                <p class="text-sm">
-                                    Learn how to create a Laravel package in this 4 hour video course.
-                                </p>
-                                <p class="text-xs">
-                                    <a class="underline text-red-300" href="https://laravelpackage.training" target="_blank">laravelpackge.training</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="mt-8 flex items-center text-lg">
-                            <div class="flex-none mr-8 flex items-center justify-center w-20 h-20 rounded-full bg-green-500 overflow-hidden">
-                                <a href="https://mailcoach.app/videos" target="_blank">
-                                    <img src="/images/mailcoach.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
-                                </a>
-                            </div>
-                            <div>
-                                <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
-                                    Mailcoach
-                                </h3>
-                                <p class="text-sm">
-                                    Mailcoach is –besides a great email marketing tool– also a video course with Laravel insights.
-                                </p>
-                                <p class="text-xs">
-                                    <a class="underline text-red-300" href="https://mailcoach.app/videos" target="_blank">mailcoach.app/videos</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="mt-8 flex items-center text-lg">
-                            <div class="flex-none mr-8 flex items-center justify-center w-20 h-20 rounded-full bg-gray-900 overflow-hidden">
-                                <a href="https://spatie.be/videos" target="_blank">
-                                    <img src="/images/github.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
-                                </a>
-                            </div>
-                            <div>
-                                <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
-                                    Sponsor us on GitHub
-                                </h3>
-                                <p class="text-sm">
-                                    Get early access to our video insights to improve your web development skills.
-                                </p>
-                                <p class="text-xs">
-                                    <a class="underline text-red-300" href="https://spatie.be/videos" target="_blank">spatie.be/videos</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-
-             <section class="z-30 xs:sticky xs:top-0 xs:fix-z overflow-hidden">
-                <div class="px-8 bg-red-100 shadow-lg">
-                    <div class="max-w-2xl mx-auto xs:flex items-center justify-between">
-                        <ul class="xs:w-1/3 xs:pr-8 py-8 font-display font-semibold text-green-500 text-lg">
-                            <li><a href="#" class="underline hover:text-green-600"><i class="mr-2 fas fa-envelope opacity-75"></i>Email us</a></li>
-                            <li class="mt-2"><a href="#" class="underline hover:text-green-600"><i class="mr-2 fab fa-twitter opacity-75"></i>Follow us</a></li>
-                        </ul>
-                        <form class="py-8 xs:w-2/3 xs:pl-8">
-                            <p class="text-green-500 font-display font-semibold leading-tight">We'll notify you on updates of this course! </p>
-                            <div class="flex mt-2">
-                                <input type=email name=email id=email class="px-2 flex-grow bg-gray-200 focus:bg-blue-300 focus:outline-none" type="text">
-                                <button class="flex-none px-3 h-8 bg-green-500 hover:bg-green-600 text-white uppercase text-sm font-display font-bold tracking-wider leading-none">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            <small class="block px-8 pt-8 pb-8 bg-red-500 text-red-100 overflow-hidden">
-                <div class="max-w-2xl mx-auto flex items-center">
-                    <a href="http://spatie.be" class="z-10 h-6 xs:h-8 text-red-600 hover:opacity-75">
-                        @include('shared.partials.logo')
-                    </a>
-                    <a href="{{route('termsOfUse')}}" class="underline ml-auto hover:opacity-75">Terms of Use</a>
-                    <a href="{{route('privacy')}}" class="underline ml-4 xs:ml-12 hover:opacity-75">Privacy &amp; Cookie Policy</a>
-                </div>
-            </small>
+            @include('partials.footer')
         </div>
     </main>
 
