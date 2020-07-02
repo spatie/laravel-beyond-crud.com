@@ -29,3 +29,7 @@
     width: 100%;
     height: 100%;
 }
+
+button:active {
+    transform: translateY(1px);
+}

@@ -13,7 +13,7 @@
         <meta name="description" content="@yield('description')">
         <link rel="canonical" href="{{ url()->current() }}"/>
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:400,600,700&amp;display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600|Jost:400,600,700&amp;display=swap">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
@@ -39,7 +39,7 @@
 
         <script src="/js/alpine.js" defer></script>
     </head>
-    <body class="bg-red-150 overflow-x-hidden">
+    <body class="bg-red-150 overflow-x-hidden font-sans">
         @yield('content')
 
         @include('shared.partials.gtm-body')

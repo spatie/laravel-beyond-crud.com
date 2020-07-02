@@ -4,7 +4,8 @@ module.exports = {
     important: true,
     theme: {
         fontFamily: {
-            sans: ["Jost", ...defaultTheme.fontFamily.sans]
+            sans: ["Inter", ...defaultTheme.fontFamily.sans],
+            display: ["Jost", ...defaultTheme.fontFamily.sans]
         },
         colors: {
             transparent: "transparent",
