@@ -152,7 +152,8 @@
             <div class="pr-8 xs:px-8">
                 <div class="max-w-2xl mx-auto pl-16 text-2xl">
                     <blockquote class="font-display font-semibold">
-                        The goal of this course is not about learning patterns to quickly solve your problems; I want to teach you to find these solutions yourself, I want to share our thought process with you. </blockquote>
+                        When building larger than average applications, you'll be faced with a unique set of problems to solve. In this course, I'll show you our solutions and our though process behind those. This way, you'll be able to solve the problems unique to your team and project.
+                    </blockquote>
                     <p class="font-display mt-6">
                         Brent Roose, author
                     </p>
