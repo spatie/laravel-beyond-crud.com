@@ -7,7 +7,7 @@
 
             <h2 class="font-display font-bold text-4xl leading-tight mb-2">Never stop learning!</h2>
 
-            <p class="text-lg font-display font-semibold text-red-300 leading-snug mb-16 ">
+            <p class="text-lg font-display font-semibold text-red-300 mb-16 ">
                 Other related courses and videos from Spatie
             </p>
 

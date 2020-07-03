@@ -164,7 +164,7 @@
             <div class="max-w-2xl mx-auto flex">
                 <div class="xs:ml-auto xs:w-1/2 xs:pl-8">
                     <h2 class="mb-2 font-display font-bold text-4xl">What's inside?</h2>
-                    <p class="font-display text-lg leading-snug">
+                    <p class="font-display text-lg">
                         The knowledge in this course is built from the years of experience our team has building large, robust applications.
                     </p>
                 </div>
