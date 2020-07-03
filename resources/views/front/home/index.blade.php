@@ -50,7 +50,7 @@
                         Building larger-than-average web applications
                     </p>
                     <p class="my-8 text-lg max-w-md">
-                       Learn how to structure and maintain complex Laravel projects in this course from Brent Roose…
+                        Learn how to structure and maintain complex Laravel projects in this course from Brent Roose…
                     </p>
                 </div>
 
@@ -104,7 +104,7 @@
                         </div>
                         <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-100">
                             <div>
-                                <ul class="pb-3">
+                                <ul class="pb-3 leading-relaxed">
                                     <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
                                     <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 2 hours of video</li>
                                     <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
@@ -133,7 +133,7 @@
                             </button>
                         </div>
                         <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-200">
-                            <ul>
+                            <ul class="leading-relaxed">
                                 <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
                                 <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
                                 <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
@@ -158,8 +158,8 @@
                         Brent Roose, author
                     </p>
                     <span class="absolute w-4 h-full bg-red-500 top-0 left-0"></span>
-                    <div>
-                        <div>
+                </div>
+            </div>
         </section>
 
         <section class="px-8 pt-16 overflow-hidden">
@@ -209,11 +209,37 @@
                         </div>
                     </template>
                 </div>
-                <div class="mt-12 xs:w-1/2 xs:pl-8">
+                <div class="mt-12 xs:w-1/2 xs:pl-8 markup-lists-alt">
                     <h3 class="mb-6 font-display font-semibold uppercase tracking-wider text-xl">Videos</h3>
-                    <p>
+                    <p class="mt-4">
                         During these <strong class="font-semibold">2 hours of video</strong>–spread over 12 episodes– Brent talks you through the content of the book with lots of pratical examples and live coding. Serious content, brought in his enthousiastic manner!
                     </p>
+                </div>
+
+                <div class="mt-12 w-full pl-8 xs:pl-16 xs:pr-8 markup-lists-alt">
+                    <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
+                    <h3 class="mb-6 font-display font-semibold text-2xl">Table of Contents</h3>
+
+                    <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
+                    <ul class="text-sm">
+                        <li>The basic principles of domains, and ways to apply them in a Laravel project</li>
+                        <li>Thinking of "data" and "functionality" as two first-class citizen of your codebase</li>
+                        <li>Enriching model functionality, while keeping model classes small and clean</li>
+                        <li>The state pattern to model complex, state-specific, flows</li>
+                    </ul>
+
+                    <h4 class="mt-4 font-display font-semibold">Testing domains</h4>
+                    <ul class="text-sm">
+                        <li>Testing actions, DTOs and model-related classes</li>
+                        <li>Using enhanced test factories to improve your test workflow</li>
+                    </ul>
+
+                    <h4 class="mt-4 font-display font-semibold">Entering the application layer</h4>
+                    <ul class="text-sm">
+                        <li>The difference between application- and domain code</li>
+                        <li>A better project structure when dealing with hundreds of application classes</li>
+                        <li>View models: the missing link between controllers and domain code</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -231,14 +257,18 @@
                 </section>
             </div>
 
-            <section class="px-8 pb-16">
+            <section class="px-8 pb-24">
                 <div class="max-w-2xl mx-auto flex justify-end">
                     <div class="w-2/3 pl-8">
                         <h2 class="font-display font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
 
                         <p class="text-lg leading-relaxed">
                             Brent has been working almost exclusivly on large web applications for the past years now. He did lots of self education on topics like DDD and event sourcing.
+                        </p>
+                        <p class="mt-4 text-lg leading-relaxed">
                             Doing so, he applied many of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
+                        </p>
+                        <p class="mt-4 text-lg leading-relaxed">
                             Besides his work at Spatie, Brent is also very active in the PHP community, most notably with <a class="text-red-600 hover:text-red-500 underline" href="https://stitcher.io/">his blog</a> where he writes about programming, PHP and the web in general.
                         </p>
 
