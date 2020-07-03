@@ -13,7 +13,7 @@
             <div class="max-w-2xl mx-auto h-24 flex items-center justify-between">
                 <span class="flex items-center uppercase text-sm font-display font-semibold tracking-wider leading-none">
                     <img class="h-auto w-4 mr-3" src="/images/logo.svg" alt="logo">
-                    Laravel Beyond Crud
+                    Laravel Beyond CRUD
                 </span>
                 <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
                     Buy course
@@ -150,7 +150,7 @@
             <div class="pr-8 xs:px-8">
                 <div class="max-w-2xl mx-auto pl-16 text-2xl">
                     <blockquote class="font-display font-semibold">
-                        When building larger than average applications, you'll be faced with a unique set of problems to solve. In this course, I'll show you our solutions and our though process behind those. This way, you'll be able to solve the problems unique to your team and project.
+                        You'll face a unique set of problems while building larger-than-average applications. In this course, I'll share our thought process and solutions. This way, you'll be able to solve the problems unique to your team and project.
                     </blockquote>
                     <p class="font-display mt-6">
                         Brent Roose, author
