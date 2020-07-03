@@ -46,15 +46,13 @@
                         Laravel<br>
                         Beyond CRUD
                     </h1>
-                    <p class="mt-2 font-display font-semibold text-2xl">
-                        Building larger-than-average web applications
-                    </p>
-                    <p class="my-8 text-lg max-w-md">
-                        Learn how to structure and maintain complex Laravel projects in this course from Brent Roose…
+                    <p class="mt-2 mb-8 font-display font-semibold text-2xl leading-snug max-w-md">
+                        Learn how to build larger-than-average Laravel applications
+                        and maintain them for years to come.
                     </p>
                 </div>
 
-                <div class="xs:absolute bottom-0 right-0 mx-auto mb-20 w-2/3 sm:-mr-4 md:-mr-8 lg:-mr-12 xl:-mr-16 xs:w-1/2" x-data="{ open: false }">
+                <div class="xs:absolute bottom-0 right-0 mx-auto mb-4 w-2/3 sm:-mr-4 md:-mr-8 lg:-mr-12 xl:-mr-16 xs:w-1/2" x-data="{ open: false }">
                     <div class="w-full h-0 bg-gray-800" style="padding-bottom:56%">
                         <button class="absolute inset-0 w-full flex items-center justify-center hover:opacity-75 " @click="open = true">
                             <div class="text-white uppercase tracking-widest text-xs font-display">
@@ -165,7 +163,10 @@
         <section class="px-8 pt-16 overflow-hidden">
             <div class="max-w-2xl mx-auto flex">
                 <div class="xs:ml-auto xs:w-1/2 xs:pl-8">
-                    <h2 class="font-display font-bold text-4xl">What's inside?</h2>
+                    <h2 class="mb-2 font-display font-bold text-4xl">What's inside?</h2>
+                    <p class="font-display text-lg leading-snug">
+                        The knowledge in this course is built from the years of experience our team has building large, robust applications.
+                    </p>
                 </div>
             </div>
 
@@ -184,9 +185,9 @@
                     </div>
                 </div>
                 <div class="xs:w-1/2 xs:pl-8">
-                    <h3 class="mb-6 font-display font-semibold uppercase tracking-wider text-xl">Ebook</h3>
-                    This <strong class="font-semibold">100+ pages ebook</strong> guides you from concepts like DDD to scaffolding complexer Laravel applications.
-                    Beautifully designed by Seb De Deyne!
+                    <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">Ebook</h3>
+                    <p class="text-sm">The ebook is <strong class="font-semibold">your guide for building large maintainable Laravel applications</strong>. Along the way, you'll be introduced to concepts like DDD and hexagonal design, all while still embracing Laravel's focus on elegant code. The book is beautifully designed by Sebastian De Deyne.
+                    </p>
                 </div>
                 <div class="mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ open: false }">
                     <div class="w-full h-0 bg-gray-800" style="padding-bottom:56%">
@@ -210,15 +211,15 @@
                     </template>
                 </div>
                 <div class="mt-12 xs:w-1/2 xs:pl-8 markup-lists-alt">
-                    <h3 class="mb-6 font-display font-semibold uppercase tracking-wider text-xl">Videos</h3>
-                    <p class="mt-4">
-                        During these <strong class="font-semibold">2 hours of video</strong>–spread over 12 episodes– Brent talks you through the content of the book with lots of pratical examples and live coding. Serious content, brought in his enthousiastic manner!
+                    <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">Videos</h3>
+                    <p class="text-sm">
+                        During <strong class="font-semibold">2 hours of video</strong>–spread over 12 episodes– Brent talks you through the content of the book with lots of pratical examples and live coding. Serious content, brought in Brent's enthousiastic manner!
                     </p>
                 </div>
 
                 <div class="mt-12 w-full pl-8 xs:pl-16 xs:pr-8 markup-lists-alt">
                     <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
-                    <h3 class="mb-6 font-display font-semibold text-2xl">Table of Contents</h3>
+                    <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">Table of Contents</h3>
 
                     <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
                     <ul class="text-sm">
