@@ -211,7 +211,7 @@
                         <div style="background-color:rgba(0,0,0,0.75)" class="fixed inset-0 p-8 lg:p-16 z-50 fix-z flex items-center justify-center" @keydown.window.escape="spread = false">
                             <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl" @click="spread = false">&times;</button>
                             <div class="w-full flex items-center justify-center">
-                                <img src="/images/inset-book.jpg" class="max-h-full rounded-sm shadow-xl">
+                                <img src="/images/book-spread.jpg" class="max-h-full rounded-sm shadow-xl">
                             </div>
                         </div>
                     </template>
