@@ -1,5 +1,6 @@
+<div id="newsletter">
 @if(session()->has('subscribed'))
-    <p id="newsletter" class="fixed top-0 z-50 px-8 py-6 bg-green-500 text-white text-center">
+    <p class="fixed left-0 w-full top-0 z-50 px-8 py-8 bg-green-500 text-white text-center">
         We have sent you an email with a link to confirm your subscription.
     </p>
 @endif
@@ -9,13 +10,14 @@
             Shoot! {{ $message }}
         </p>
     @else
-        <p class="text-green-500 font-display font-semibold leading-tight">We'll notify you on updates of this course! </p>
+        <p class="text-green-500 font-display font-semibold leading-tight">
+           {{ $message ?? 'We\'ll notify you on updates of this course!' }} 
+        </p>
     @enderror
     <form
         action="{{ action(\App\Http\Front\Controllers\SubscribeToEmailListController::class) }}#newsletter"
         method="post"
         accept-charset="utf-8"
-        id="newsletter"
         class=""
     >
         @csrf
@@ -28,3 +30,5 @@
             </button>        
         </div>
     </form>
+
+</div>

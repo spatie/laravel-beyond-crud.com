@@ -15,14 +15,16 @@
                     <img class="h-auto w-4 mr-3" src="/images/logo.svg" alt="logo">
                     Laravel Beyond CRUD
                 </span>
+                {{--
                 <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
                     Buy course
                 </button>
+                --}}
             </div>
         </div>
     </header>
 
-    <nav class="absolute top-0 w-full z-20 px-8 pointer-events-none">
+    <nav class="absolute top-0 w-full fix-z z-20 px-8 pointer-events-none">
         <div class="max-w-2xl mx-auto h-24 flex items-center justify-between">
             <span class="z-20 w-full h-8 inline-flex items-center text-spatie-500 bg-red-100">
                 @include('partials.logo')
@@ -76,6 +78,21 @@
             </div>
         </div>
 
+         <section class="px-8 flex justify-center">
+            <div class="max-w-md mx-auto xs:flex xs:w-full">
+            <div class="-mt-6 -mx-4 flex-grow shadow-2xl">
+                    <div class="bg-yellow-500 h-6"></div>
+                    <div class="border-l border-r border-b border-gray-200 bg-white">
+                        <div class="text-center py-12 px-12">
+                            <h1 class="mb-8 font-bold font-display text-3xl text-center leading-tight">Sit in the front row when we launch this course!</h1>
+                            @include('partials.newsletter', ['message' => ''])
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{--
         <section class="px-8 flex justify-center">
             <div class="max-w-2xl mx-auto xs:flex xs:w-full">
                 <div class="z-10 xs:z-30 xs:fix-z -mt-6 -mx-4 flex-grow shadow-2xl">
@@ -141,6 +158,7 @@
                 </div>
             </div>
         </section>
+        --}}
 
         <section class="my-16 py-16">
             <div class="absolute inset-0">
@@ -173,7 +191,7 @@
             <div class="max-w-2xl mx-auto my-16 py-16 xs:flex xs:flex-wrap">
                 <div class="w-screen h-full absolute top-0 right-0 -mr-8 bg-gray-200">
                 </div>
-                <div class="mb-12 xs:mb-0 w-2/3 xs:w-1/2 xs:pr-8">
+                <div class="mb-12 xs:mb-0 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ spread: false }">
                     <div class="h-full xs:-ml-4">
                         <div class="xs:z-30 xs:fix-z xs:absolute left-0 bottom-0 w-full shadow-2xl">
                             <img srcset="/images/cover-2000.jpg 2000w,
@@ -181,17 +199,31 @@
                                     /images/cover-500.jpg 500w" sizes="(max-width: 420px) 75vw,
                                     33vw" alt="Ebook cover" src="/images/cover-2000.jpg" class="w-full">
                             <span class="absolute w-4 h-full bg-green-600 top-0 left-0"></span>
+                            <button class="absolute inset-0 w-full flex items-center justify-center" @click="spread = true">
+                                <div class="py-2 px-3 font-display text-white bg-blue-500 uppercase tracking-widest text-xs">
+                                    View sample page
+                                </div>
+                            </button>
                         </div>
                     </div>
+
+                    <template x-if="spread">
+                        <div style="background-color:rgba(0,0,0,0.75)" class="fixed inset-0 p-8 lg:p-16 z-50 fix-z flex items-center justify-center" @keydown.window.escape="spread = false">
+                            <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl" @click="spread = false">&times;</button>
+                            <div class="w-full flex items-center justify-center">
+                                <img src="/images/inset-book.jpg" class="max-h-full rounded-sm shadow-xl">
+                            </div>
+                        </div>
+                    </template>
                 </div>
                 <div class="xs:w-1/2 xs:pl-8">
                     <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">Ebook</h3>
                     <p class="text-sm">The ebook is <strong class="font-semibold">your guide for building large maintainable Laravel applications</strong>. Along the way, you'll be introduced to concepts like DDD and hexagonal design, all while still embracing Laravel's focus on elegant code. The book is beautifully designed by Sebastian De Deyne.
                     </p>
                 </div>
-                <div class="mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ open: false }">
+                <div class="mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ video: false }">
                     <div class="w-full h-0 bg-gray-800" style="padding-bottom:56%">
-                        <button class="absolute inset-0 w-full flex items-center justify-center hover:opacity-75 " @click="open = true">
+                        <button class="absolute inset-0 w-full flex items-center justify-center" @click="video = true">
                             <div class="font-display text-white uppercase tracking-widest text-xs">
                                 View example <i class="ml-2 fas fa-play"></i>
                             </div>
@@ -199,9 +231,9 @@
                         <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0"></span>
                     </div>
 
-                    <template x-if="open">
-                        <div style="background-color:rgba(0,0,0,0.75)" class="fixed inset-0 p-8 lg:p-16 z-50 fix-z flex items-center justify-center" @keydown.window.escape="open = false">
-                            <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl">&times;</button>
+                    <template x-if="video">
+                        <div style="background-color:rgba(0,0,0,0.75)" class="fixed inset-0 p-8 lg:p-16 z-50 fix-z flex items-center justify-center" @keydown.window.escape="video = false">
+                            <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl"  @click="video = false">&times;</button>
                             <div class="w-full">
                                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
                                     <iframe src="https://player.vimeo.com/video/418813035?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
