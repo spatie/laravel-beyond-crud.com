@@ -5,7 +5,7 @@
         <div class="z-30 w-screen h-4 absolute top-0 left-0 bg-gray-900 opacity-25"></div>
         <div class="z-30 w-full px-8">
 
-            <h2 class="font-display font-bold text-4xl leading-tight mb-2">Never stop learning!</h2>
+            <h2 class="font-display font-bold text-4xl leading-tight mb-2">Pick your next class</h2>
 
             <p class="text-lg font-display font-semibold text-red-300 mb-16 ">
                 Other related courses and videos from Spatie
