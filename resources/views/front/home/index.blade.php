@@ -272,6 +272,7 @@
                         <li>Passing data around in a structured way using Data Transfer Objects</li>
                         <li>Using PhpStorm's refactoring tools to move classes and entire namespaces around</li>
                         <li>How to make code reusable by using actions</li>
+                        <li>Improving code clarity by using meaningful names</li>
                         <li>Keep controllers light by using view models</li>
                         <li>Adding behaviour to collections</li>
                         <li>Writing robust code by using the types and static analysis </li>
