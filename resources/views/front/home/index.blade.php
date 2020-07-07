@@ -78,14 +78,14 @@
             </div>
         </div>
 
-         <section class="px-8 flex justify-center">
+        <section class="px-8 flex justify-center">
             <div class="max-w-md mx-auto xs:flex xs:w-full">
-            <div class="-mt-6 -mx-4 flex-grow shadow-2xl">
+                <div class="-mt-6 -mx-4 flex-grow shadow-2xl">
                     <div class="bg-yellow-500 h-6"></div>
                     <div class="border-l border-r border-b border-gray-200 bg-white">
                         <div class="text-center py-12 px-12">
                             <h1 class="mb-8 font-bold font-display text-3xl text-center leading-tight">Sit in the front row when we launch this course!</h1>
-                            @include('partials.newsletter', ['message' => ''])
+                            @include('partials.newsletter', ['intro' => ''])
                         </div>
                     </div>
                 </div>
@@ -390,15 +390,18 @@
                 </div>
             </section>
 
+                {{--
             <section class="px-8 pt-16 bg-red-500 text-red-100 overflow-hidden">
                 <div class="max-w-2xl mx-auto flex justify-end">
                     <div class="w-2/3 pl-8 pb-16">
                         <h2 class="font-display font-bold text-4xl leading-tight mb-16 mt-2">What others say</h2>
 
                         <p class="text-lg leading-relaxed">
-                            Spatie has lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dignissim arcu. Curabitur accumsan placerat efficitur. Praesent quis semper mi. Pellentesque in mauris quis dolor molestie maximus et in purus. Pellentesque accumsan quam sem, eget volutpat dolor pellentesque nec.
+                            Testimonials on a course that hasn't been launched yet? What an idea. 
+                            <br>This section will be updated soon!
                         </p>
 
+                        
                         <div class="mt-4 flex items-center font-display font-semibold text-lg">
                             <div class="mr-4">
                                 <img src="/images/avatar.jpg" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
@@ -409,6 +412,7 @@
                     </div>
                 </div>
 
+                
                 <div class="z-10 max-w-2xl mx-auto flex flex-wrap justify-end">
                     <div class="w-2/3 xs:w-3/5 pl-8">
                         <p class="text-sm leading-relaxed">
@@ -425,6 +429,7 @@
                     </div>
                 </div>
             </section>
+                --}}
 
             @include('partials.footer')
         </div>

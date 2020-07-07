@@ -6,16 +6,16 @@
 @endif
 
     @error('email')
-        <p class="text-red-500 font-display font-semibold leading-tight">
+        <p class="fixed left-0 w-full top-0 z-50 px-8 py-8 bg-red-500 text-white text-center">
             Shoot! {{ $message }}
         </p>
     @else
         <p class="text-green-500 font-display font-semibold leading-tight">
-           {{ $message ?? 'We\'ll notify you on updates of this course!' }} 
+           {{ $intro ?? 'We\'ll notify you on updates of this course!' }} 
         </p>
     @enderror
     <form
-        action="{{ action(\App\Http\Front\Controllers\SubscribeToEmailListController::class) }}#newsletter"
+        action="{{ action(\App\Http\Front\Controllers\SubscribeToEmailListController::class) }}"
         method="post"
         accept-charset="utf-8"
         class=""
