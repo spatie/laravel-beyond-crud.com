@@ -290,11 +290,11 @@
                     </p>
                     --}}
 
-                    <div class="pl-8 xs:pl-16 xs:pr-8">
-                        <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
+                    <div class="pb-12 pl-8 xs:pl-16 xs:pr-8">
+                        <span class="absolute w-4 h-full bg-blue-300 top-0 left-0"></span>
                         <h4 class="font-display font-semibold text-xl">Domain oriented Laravel</h4>
 
-                        <p class="text-sm mb-2">
+                        <p class="text-sm mb-4">
                             Most principles in this course are based on best practices in domain driven design, and hexagonal architectures.
                             These proven principles will be our guide throughout building large Laravel applications.
                             Some of the theoretical topics we'll cover include:
@@ -311,11 +311,11 @@
                         </ul>
                     </div>
 
-                    <div class="mt-12 -mr-8 pr-8 xs:pr-16">
-                        <span class="absolute w-4 h-full bg-blue-400 top-0 right-0"></span>
-                        <h4 class="mt-4 font-display font-semibold text-xl">In practice</h4>
+                    <div class="pb-12 pl-8 xs:pl-16 xs:pr-8">
+                        <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
+                        <h4 class="font-display font-semibold text-xl">In practice</h4>
 
-                        <p class="text-sm mb-2">
+                        <p class="text-sm mb-4">
                             We're nothing with theory if we can't apply it in practice. This course highly focuses on combining the two:
                             in each episode we'll do live coding, and build a project from the ground up:
                         </p>
@@ -335,11 +335,11 @@
                         </ul>
                     </div>
 
-                    <div class="mt-12 pl-8 xs:pl-16 xs:pr-8">
-                        <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
-                        <h4 class="mt-4 font-display font-semibold text-xl">For everyone</h4>
+                    <div class="pl-8 xs:pl-16 xs:pr-8">
+                        <span class="absolute w-4 h-full bg-blue-500 top-0 left-0"></span>
+                        <h4 class="font-display font-semibold text-xl">For everyone</h4>
 
-                        <p class="text-sm mb-2">
+                        <p class="text-sm mb-4">
                             While the main focus of this course lies on larger projects,
                             there are many principles in it that you can apply today, in your own projects;
                             even when they aren't large at all.
