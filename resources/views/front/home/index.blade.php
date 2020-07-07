@@ -254,9 +254,8 @@
                         During <strong class="font-semibold">2 hours of video</strong> Brent talks you through the content of the book with lots of practical examples and live coding. Serious content, brought in Brent's enthusiastic manner!
                     </p>
                 </div>
-                <div class="mt-12 w-full pl-8 xs:pl-16 xs:pr-8 markup-lists-alt">
-{{--
-                    <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
+                <div class="mt-12 w-full markup-lists-alt">
+                    {{--
                     <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">What we'll cover</h3>
 
                     <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
@@ -291,62 +290,70 @@
                     </p>
                     --}}
 
+                    <div class="pl-8 xs:pl-16 xs:pr-8">
+                        <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
+                        <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
 
-                    <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
+                        <p class="text-sm mb-2">
+                            Most principles in this course are based on best practices in domain driven design, and hexagonal architectures.
+                            These proven principles will be our guide throughout building large Laravel applications.
+                            Some of the theoretical topics we'll cover include:
+                        </p>
 
-                    <p class="text-sm mb-2">
-                        Most principles in this course are based on best practices in domain driven design, and hexagonal architectures.
-                        These proven principles will be our guide throughout building large Laravel applications.
-                        Some of the theoretical topics we'll cover include:
-                    </p>
+                        <ul class="text-sm">
+                            <li>The basic idea of domain groups explained</li>
+                            <li>Practically applying DDD and hexagonal architecture principles in Laravel projects</li>
+                            <li>When to use domains, and when to stick to Laravel's default structure</li>
+                            <li>Thinking of "data" and "functionality" as two first-class citizens of your codebase</li>
+                            <li>The state pattern to model complex, state-specific, flows</li>
+                            <li>The difference between application- and domain code</li>
+                            <li>Writing robust code by using the types and static analysis</li>
+                        </ul>
+                    </div>
 
-                    <ul class="text-sm">
-                        <li>The basic idea of domain groups explained</li>
-                        <li>Practically applying DDD and hexagonal architecture principles in Laravel projects</li>
-                        <li>When to use domains, and when to stick to Laravel's default structure</li>
-                        <li>Thinking of "data" and "functionality" as two first-class citizens of your codebase</li>
-                        <li>The state pattern to model complex, state-specific, flows</li>
-                        <li>The difference between application- and domain code</li>
-                        <li>Writing robust code by using the types and static analysis</li>
-                    </ul>
+                    <div class="mt-12 -mr-8 pr-8 xs:pr-16">
+                        <span class="absolute w-4 h-full bg-blue-400 top-0 right-0"></span>
+                        <h4 class="mt-4 font-display font-semibold">In practice</h4>
 
-                    <h4 class="mt-4 font-display font-semibold">In practice</h4>
+                        <p class="text-sm mb-2">
+                            We're nothing with theory if we can't apply it in practice. This course highly focuses on combining the two:
+                            in each episode we'll do live coding, and build a project from the ground up:
+                        </p>
 
-                    <p class="text-sm mb-2">
-                        We're nothing with theory if we can't apply it in practice. This course highly focuses on combining the two:
-                        in each episode we'll do live coding, and build a project from the ground up:
-                    </p>
+                        <ul class="text-sm">
+                            <li>Keeping model classes small and clean</li>
+                            <li>Structuring complex queries</li>
+                            <li>Passing data around in a structured way using Data Transfer Objects</li>
+                            <li>How to make code reusable by using actions</li>
+                            <li>Improving code clarity by using meaningful names</li>
+                            <li>Keep controllers light by using view models</li>
+                            <li>Adding behaviour to collections</li>
+                            <li>Testing actions, DTOs and model-related classes</li>
+                            <li>Using enhanced test factories to seed data for every scenario</li>
+                            <li>Using PhpStorm's refactoring tools to manage classes and namespaces</li>
+                            <li>Scaffold different types of classes using PhpStorm templates</li>
+                        </ul>
+                    </div>
 
-                    <ul class="text-sm">
-                        <li>Keeping model classes small and clean</li>
-                        <li>Structuring complex queries</li>
-                        <li>Passing data around in a structured way using Data Transfer Objects</li>
-                        <li>How to make code reusable by using actions</li>
-                        <li>Improving code clarity by using meaningful names</li>
-                        <li>Keep controllers light by using view models</li>
-                        <li>Adding behaviour to collections</li>
-                        <li>Testing actions, DTOs and model-related classes</li>
-                        <li>Using enhanced test factories to seed data for every scenario</li>
-                        <li>Using PhpStorm's refactoring tools to manage classes and namespaces</li>
-                        <li>Scaffold different types of classes using PhpStorm templates</li>
-                    </ul>
+                    <div class="mt-12 pl-8 xs:pl-16 xs:pr-8">
+                        <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
+                        <h4 class="mt-4 font-display font-semibold">For everyone</h4>
 
-                    <h4 class="mt-4 font-display font-semibold">For everyone</h4>
+                        <p class="text-sm mb-2">
+                            While the main focus of this course lies on larger projects,
+                            there are many principles in it that you can apply today, in your own projects;
+                            even when they aren't large at all.
+                            We've used many of these principles ourselves, also in our smaller projects:
+                        </p>
 
-                    <p class="text-sm mb-2">
-                        While the main focus of this course lies on larger projects,
-                        there are many principles in it that you can apply today, in your own projects;
-                        even when they aren't large at all.
-                        We've used many of these principles ourselves, also in our smaller projects:
-                    </p>
-
-                    <ul class="text-sm">
-                        <li>Data transfer objects always have a significant impact, regardless of project size</li>
-                        <li>Whatever type of project, you will be dealing with controllers, so view models will improve your workflow</li>
-                        <li>Actions are a structured solution for code that would otherwise end up spread across the project</li>
-                        <li>Even the smallest MVC app also deals with querying models, understanding Laravel's query builders will be an asset</li>
-                        <li>Most principles in this course can be cherry-picked by you to solve your problems. Nothing is set in stone: there are no hard rules, only guidelines</li>
-                    </ul>
+                        <ul class="text-sm">
+                            <li>Data transfer objects always have a significant impact, regardless of project size</li>
+                            <li>Whatever type of project, you will be dealing with controllers, so view models will improve your workflow</li>
+                            <li>Actions are a structured solution for code that would otherwise end up spread across the project</li>
+                            <li>Even the smallest MVC app also deals with querying models, understanding Laravel's query builders will be an asset</li>
+                            <li>Most principles in this course can be cherry-picked by you to solve your problems. Nothing is set in stone: there are no hard rules, only guidelines</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
