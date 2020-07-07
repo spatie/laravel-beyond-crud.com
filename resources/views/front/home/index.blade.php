@@ -292,7 +292,7 @@
 
                     <div class="pl-8 xs:pl-16 xs:pr-8">
                         <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
-                        <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
+                        <h4 class="font-display font-semibold text-xl">Domain oriented Laravel</h4>
 
                         <p class="text-sm mb-2">
                             Most principles in this course are based on best practices in domain driven design, and hexagonal architectures.
@@ -313,7 +313,7 @@
 
                     <div class="mt-12 -mr-8 pr-8 xs:pr-16">
                         <span class="absolute w-4 h-full bg-blue-400 top-0 right-0"></span>
-                        <h4 class="mt-4 font-display font-semibold">In practice</h4>
+                        <h4 class="mt-4 font-display font-semibold text-xl">In practice</h4>
 
                         <p class="text-sm mb-2">
                             We're nothing with theory if we can't apply it in practice. This course highly focuses on combining the two:
@@ -337,7 +337,7 @@
 
                     <div class="mt-12 pl-8 xs:pl-16 xs:pr-8">
                         <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
-                        <h4 class="mt-4 font-display font-semibold">For everyone</h4>
+                        <h4 class="mt-4 font-display font-semibold text-xl">For everyone</h4>
 
                         <p class="text-sm mb-2">
                             While the main focus of this course lies on larger projects,
