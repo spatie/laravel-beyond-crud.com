@@ -75,8 +75,8 @@
     <div class="px-8 bg-red-100 shadow-lg">
         <div class="max-w-2xl mx-auto xs:flex items-center justify-between">
             <ul class="xs:w-1/3 xs:pr-8 py-8 font-display font-semibold text-green-500 text-lg">
-                <li><a href="#" class="underline hover:text-green-600"><i class="mr-2 fas fa-envelope opacity-75"></i>Email us</a></li>
-                <li class="mt-2"><a href="#" class="underline hover:text-green-600"><i class="mr-2 fab fa-twitter opacity-75"></i>Follow us</a></li>
+                <li><a href="mailto:info@spatie.be" class="underline hover:text-green-600"><i class="mr-2 fas fa-envelope opacity-75"></i>Email us</a></li>
+                <li class="mt-2"><a href="https://twitter.com/spatie_be" class="underline hover:text-green-600"><i class="mr-2 fab fa-twitter opacity-75"></i>Follow us</a></li>
             </ul>
             <div class="py-8 xs:w-2/3 xs:pl-8">
                 @include('partials.newsletter')
