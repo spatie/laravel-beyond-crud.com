@@ -69,7 +69,7 @@
                             <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl">&times;</button>
                             <div class="w-full">
                                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                                    <iframe src="https://player.vimeo.com/video/418813035?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                                    <iframe src="https://player.vimeo.com/video/434969839?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -169,6 +169,9 @@
                 <div class="max-w-2xl mx-auto pl-16 text-2xl">
                     <blockquote class="font-display font-semibold">
                         You'll face a unique set of problems while building larger-than-average applications. In this course, I'll share our thought process and solutions. This way, you'll be able to solve the problems unique to your team and project.
+                        <p class="mt-4">
+                            Join me as I start building a Laravel project from scratch. I'm sure you can pick up some new techniques, regardless of the size of projects you're working on.
+                        </p>
                     </blockquote>
                     <p class="font-display mt-6">
                         Brent Roose, author
@@ -245,33 +248,35 @@
                 <div class="mt-12 xs:w-1/2 xs:pl-8 markup-lists-alt">
                     <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">Videos</h3>
                     <p class="text-sm">
-                        During <strong class="font-semibold">2 hours of video</strong>–spread over 12 episodes– Brent talks you through the content of the book with lots of pratical examples and live coding. Serious content, brought in Brent's enthousiastic manner!
+                        During <strong class="font-semibold">2 hours of video</strong>–spread over 12 episodes– Brent talks you through the content of the book with lots of practical examples and live coding. Serious content, brought in Brent's enthusiastic manner!
                     </p>
                 </div>
 
                 <div class="mt-12 w-full pl-8 xs:pl-16 xs:pr-8 markup-lists-alt">
                     <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
-                    <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">Table of Contents</h3>
-
+                    <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">What we'll cover</h3>
                     <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
                     <ul class="text-sm">
                         <li>The basic principles of domains, and ways to apply them in a Laravel project</li>
-                        <li>Thinking of "data" and "functionality" as two first-class citizen of your codebase</li>
-                        <li>Enriching model functionality, while keeping model classes small and clean</li>
+                        <li>When to use domains, and when to stick to Laravel's default structure</li>
+                        <li>Thinking of "data" and "functionality" as two first-class citizens of your codebase</li>
                         <li>The state pattern to model complex, state-specific, flows</li>
-                    </ul>
-
-                    <h4 class="mt-4 font-display font-semibold">Testing domains</h4>
-                    <ul class="text-sm">
-                        <li>Testing actions, DTOs and model-related classes</li>
-                        <li>Using enhanced test factories to improve your test workflow</li>
+                        <li>The difference between application- and domain code</li>
                     </ul>
 
                     <h4 class="mt-4 font-display font-semibold">Entering the application layer</h4>
                     <ul class="text-sm">
-                        <li>The difference between application- and domain code</li>
-                        <li>A better project structure when dealing with hundreds of application classes</li>
-                        <li>View models: the missing link between controllers and domain code</li>
+                        <li>Moving to a better project structure when dealing with hundreds of application classes</li>
+                        <li>Keeping model classes small and clean</li>
+                        <li>Structuring complex queries</li>
+                        <li>Passing data around in a structured way using Data Transfer Objects</li>
+                        <li>Using PhpStorm's refactoring tools to move classes and entire namespaces around</li>
+                        <li>How to make code reusable by using actions</li>
+                        <li>Keep controllers light by using view models</li>
+                        <li>Adding behaviour to collections</li>
+                        <li>Writing robust code by using the types and static analysis </li>
+                        <li>Testing actions, DTOs and model-related classes</li>
+                        <li>Using enhanced test factories to seed data for every scenario</li>
                     </ul>
                 </div>
             </div>
