@@ -1,19 +1,8 @@
 <div id="newsletter">
-@if(session()->has('subscribed'))
-    <p class="fixed left-0 w-full top-0 z-50 px-8 py-8 bg-green-500 text-white text-center">
-        We have sent you an email with a link to confirm your subscription.
+    <p class="text-green-500 font-display font-semibold leading-tight">
+        {{ $intro ?? 'We\'ll notify you on updates of this course!' }} 
     </p>
-@endif
-
-    @error('email')
-        <p class="fixed left-0 w-full top-0 z-50 px-8 py-8 bg-red-500 text-white text-center">
-            Shoot! {{ $message }}
-        </p>
-    @else
-        <p class="text-green-500 font-display font-semibold leading-tight">
-           {{ $intro ?? 'We\'ll notify you on updates of this course!' }} 
-        </p>
-    @enderror
+    
     <form
         action="{{ action(\App\Http\Front\Controllers\SubscribeToEmailListController::class) }}"
         method="post"

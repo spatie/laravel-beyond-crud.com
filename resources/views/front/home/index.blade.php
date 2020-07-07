@@ -8,6 +8,9 @@
 
 
 <div class="mt-16 mx-auto max-w-4xl">
+
+    @include('partials.newsletter-feedback')
+
     <header class="z-20 sticky top-0 overflow-hidden pb-8">
         <div class="px-8 bg-red-100 shadow-nav">
             <div class="max-w-2xl mx-auto h-24 flex items-center justify-between">
@@ -78,7 +81,7 @@
             </div>
         </div>
 
-        <section class="px-8 flex justify-center">
+        <section class="z-10 fix-z px-8 flex justify-center">
             <div class="max-w-md mx-auto xs:flex xs:w-full">
                 <div class="-mt-6 -mx-4 flex-grow shadow-2xl">
                     <div class="bg-yellow-500 h-6"></div>
