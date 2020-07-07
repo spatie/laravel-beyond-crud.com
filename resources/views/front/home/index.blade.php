@@ -291,7 +291,7 @@
                     --}}
 
                     <div class="pb-12 pl-8 xs:pl-16 xs:pr-8">
-                        <span class="absolute w-4 h-full bg-blue-300 top-0 left-0"></span>
+                        <span class="absolute w-4 h-full bg-blue-400 opacity-50 top-0 left-0"></span>
                         <h4 class="font-display font-semibold text-xl">Domain oriented Laravel</h4>
 
                         <p class="text-sm mb-4">
@@ -312,7 +312,7 @@
                     </div>
 
                     <div class="pb-12 pl-8 xs:pl-16 xs:pr-8">
-                        <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
+                        <span class="absolute w-4 h-full bg-blue-400 opacity-75 top-0 left-0"></span>
                         <h4 class="font-display font-semibold text-xl">In practice</h4>
 
                         <p class="text-sm mb-4">
@@ -336,7 +336,7 @@
                     </div>
 
                     <div class="pl-8 xs:pl-16 xs:pr-8">
-                        <span class="absolute w-4 h-full bg-blue-500 top-0 left-0"></span>
+                        <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
                         <h4 class="font-display font-semibold text-xl">For everyone</h4>
 
                         <p class="text-sm mb-4">
