@@ -248,26 +248,61 @@
                 <div class="mt-12 xs:w-1/2 xs:pl-8 markup-lists-alt">
                     <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">Videos</h3>
                     <p class="text-sm">
-                        During <strong class="font-semibold">2 hours of video</strong>–spread over 12 episodes– Brent talks you through the content of the book with lots of practical examples and live coding. Serious content, brought in Brent's enthusiastic manner!
+                        During <strong class="font-semibold">2 hours of video</strong> Brent talks you through the content of the book with lots of practical examples and live coding. Serious content, brought in Brent's enthusiastic manner!
                     </p>
                 </div>
-
                 <div class="mt-12 w-full pl-8 xs:pl-16 xs:pr-8 markup-lists-alt">
+{{--
                     <span class="absolute w-4 h-full bg-blue-400 top-0 left-0"></span>
                     <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">What we'll cover</h3>
+
+                    <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
+                    <p class="text-sm">
+                        Based on paradigms like DDD and hexagonal architecture, we rethink a Laravel application from the ground up. Our goal is to make our codebase maintainable within a team of developers, for years to come.
+                    </p>
+
+                    <h4 class="mt-4 font-display font-semibold">Data and functionality</h4>
+                    <p class="text-sm">
+                        We treat them as the two pillars we'll build the core of our application with: data and functionality are the elementary building blocks to model business functionality. We'll discuss patterns to handle these core concerns.
+                    </p>
+
+                    <h4 class="mt-4 font-display font-semibold">Enriching model functionality</h4>
+                    <p class="text-sm">
+                        We'll embrace Laravel's rich model functionality, and discuss ways to improve on them to keep our code maintainable and concise: query builders, collection classes, event driven models, projected data and the state pattern are solutions we'll look at in depth.
+                    </p>
+
+                    <h4 class="mt-4 font-display font-semibold">Testing domains</h4>
+                    <p class="text-sm">
+                       Tests are a given in these kinds of applications, we'll dedicate a whole topic on them, I'll show you that all the work we've done before will pay off immensely in our test suite.
+                    </p>
+
+                    <h4 class="mt-4 font-display font-semibold">Entering the application layer</h4>
+
+                    <p class="text-sm">
+                       It's worth understanding the difference between application- and domain code, and I'll explain our thinking in depth on this topic. I'll show you common pitfalls of how code can grow out of hand very quickly in large projects, and how to prevent this.
+                    </p>
+
+                    <h4 class="mt-4 font-display font-semibold">View models</h4>
+                    <p class="text-sm">
+                       The missing link between controllers and domain code: we'll discuss the view model pattern in depth, and you'll learn all its benefits.
+                    </p>
+                    --}}
+
+
                     <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
                     <ul class="text-sm">
                         <li>The basic principles of domains, and ways to apply them in a Laravel project</li>
                         <li>When to use domains, and when to stick to Laravel's default structure</li>
+                        <li>Exploring hexagonal architecture</li>
                         <li>Thinking of "data" and "functionality" as two first-class citizens of your codebase</li>
                         <li>The state pattern to model complex, state-specific, flows</li>
                         <li>The difference between application- and domain code</li>
+                        <li>Keeping model classes small and clean</li>
+                        <li>Moving to a better project structure when dealing with hundreds of application classes</li>
                     </ul>
 
                     <h4 class="mt-4 font-display font-semibold">Entering the application layer</h4>
                     <ul class="text-sm">
-                        <li>Moving to a better project structure when dealing with hundreds of application classes</li>
-                        <li>Keeping model classes small and clean</li>
                         <li>Structuring complex queries</li>
                         <li>Passing data around in a structured way using Data Transfer Objects</li>
                         <li>Using PhpStorm's refactoring tools to move classes and entire namespaces around</li>
@@ -275,8 +310,9 @@
                         <li>Improving code clarity by using meaningful names</li>
                         <li>Keep controllers light by using view models</li>
                         <li>Adding behaviour to collections</li>
-                        <li>Writing robust code by using the types and static analysis </li>
+                        <li>Writing robust code by using the types and static analysis using Psalm</li>
                         <li>Testing actions, DTOs and model-related classes</li>
+                        <li>Scaffold different types of classes using PhpStorm templates</li>
                         <li>Using enhanced test factories to seed data for every scenario</li>
                     </ul>
                 </div>
