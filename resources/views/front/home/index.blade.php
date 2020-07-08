@@ -291,7 +291,7 @@
                     </p>
                     --}}
 
-                    <div class="pb-12 pl-8 xs:pl-16 xs:pr-8">
+                    <div class="mt-12 pb-12 pl-8 xs:pl-16 xs:pr-8">
                         <span class="absolute w-4 h-full bg-blue-300 top-0 left-0"></span>
                         <h4 class="font-display font-semibold text-xl">Domain oriented Laravel</h4>
 
