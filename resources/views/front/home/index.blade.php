@@ -228,13 +228,14 @@
                     </p>
                 </div>
                 <div class="mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ video: false }">
-                    <div class="w-full h-0 bg-gray-800" style="padding-bottom:56%">
+                    <div class="w-full bg-gray-800">
+                        <img class="w-full" src="/images/example-video.jpg" alt="Video still"/>
                         <button class="absolute inset-0 w-full flex items-center justify-center" @click="video = true">
-                            <div class="font-display text-white uppercase tracking-widest text-xs">
+                            <div class="py-2 px-3 font-display bg-gray-900 text-white uppercase tracking-widest text-xs">
                                 View example <i class="ml-2 fas fa-play"></i>
                             </div>
                         </button>
-                        <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0"></span>
+                        <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0 opacity-25"></span>
                     </div>
 
                     <template x-if="video">
@@ -242,7 +243,7 @@
                             <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl"  @click="video = false">&times;</button>
                             <div class="w-full">
                                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                                    <iframe src="https://player.vimeo.com/video/418813035?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                                    <iframe src="https://player.vimeo.com/video/436401700?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                                 </div>
                             </div>
                         </div>
