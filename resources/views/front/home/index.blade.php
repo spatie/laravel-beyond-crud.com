@@ -205,8 +205,8 @@
                                     /images/cover-500.jpg 500w" sizes="(max-width: 420px) 75vw,
                                     33vw" alt="Ebook cover" src="/images/cover-2000.jpg" class="w-full">
                             <span class="absolute w-4 h-full bg-green-600 top-0 left-0"></span>
-                            <div class="absolute inset-0 w-full flex items-end justify-center cursor-pointer" @click="spread = true">
-                                <button class="-mb-4 py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
+                            <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="spread = true">
+                                <button class="-mb-4 -mr-4 py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
                                     View sample page
                                 </button>
                             </div>
@@ -231,9 +231,9 @@
                     <div class="w-full bg-gray-800">
                         <img class="w-full opacity-50" src="/images/example-video.jpg" alt="Video still"/>
                         <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0 opacity-25"></span>
-                        <div class="absolute inset-0 w-full flex items-end justify-center cursor-pointer" @click="video = true">
-                            <button class="-mb-4 py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
-                                Watch clip <i class="ml-2 fas fa-play"></i>
+                        <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="video = true">
+                            <button class="-mb-4 -mr-4  py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
+                                Watch clip <i class="ml-1 fas fa-play"></i>
                             </button>
                         </div>
                     </div>
