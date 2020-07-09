@@ -290,9 +290,9 @@
                         </p>
 
                         <div class="mt-6 flex items-center text-lg">
-                            <div class="mr-4">
-                                <img src="/images/avatar.jpg" class="z-10 w-16 h-16" alt="Avatar">
-                                <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-blue-500 opacity-25"></div>
+                            <div class="mr-6">
+                                <img src="/images/avatar.jpg" class="z-10 w-16 h-16 md:w-24 md:h-24" alt="Avatar">
+                                <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-yellow-400"></div>
                             </div>
                             <div class="leading-tight">
                                 <div class="font-display font-semibold">Brent Roose</div>
