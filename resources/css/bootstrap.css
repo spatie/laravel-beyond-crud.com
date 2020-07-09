@@ -48,12 +48,12 @@
 
 html {
     box-sizing: border-box;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 @screen sm {
     html {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
