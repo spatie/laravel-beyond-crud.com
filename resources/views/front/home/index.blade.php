@@ -134,7 +134,7 @@
                 </div>
                 <div class="mb-12 xs:mb-0 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ spread: false }">
                     <div class="group h-full xs:-ml-4">
-                        <div class="xs:z-30 xs:fix-z xs:absolute left-0 bottom-0 w-full shadow-2xl">
+                        <div class="bg-gray-900 xs:z-30 xs:fix-z xs:absolute left-0 bottom-0 w-full shadow-2xl">
                             <img srcset="/images/cover-2000.jpg 2000w,
                                     /images/cover-1000.jpg 1000w,
                                     /images/cover-500.jpg 500w" sizes="(max-width: 420px) 75vw,
@@ -164,7 +164,7 @@
                     </p>
                 </div>
                 <div class="group mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ video: false }">
-                    <div class="w-full bg-gray-800">
+                    <div class="w-full bg-gray-900">
                         <img class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" src="/images/example-video.jpg" alt="Video still"/>
                         <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0 opacity-25"></span>
                         <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="video = true">
