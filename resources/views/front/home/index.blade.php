@@ -151,9 +151,9 @@
 
                     <template x-if="spread">
                         <div style="background-color:rgba(0,0,0,0.75)" class="fixed inset-0 p-8 lg:p-16 z-50 fix-z flex items-center justify-center" @keydown.window.escape="spread = false">
-                            <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl" @click="spread = false">&times;</button>
+                            <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl">&times;</button>
                             <div class="w-full flex items-center justify-center">
-                                <img src="/images/book-spread.jpg" class="max-h-full rounded-sm shadow-xl">
+                                <img src="/images/book-spread.jpg" class="max-h-full rounded-sm shadow-xl" @click.away="spread = false">
                             </div>
                         </div>
                     </template>
@@ -176,10 +176,10 @@
 
                     <template x-if="video">
                         <div style="background-color:rgba(0,0,0,0.75)" class="fixed inset-0 p-8 lg:p-16 z-50 fix-z flex items-center justify-center" @keydown.window.escape="video = false">
-                            <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl"  @click="video = false">&times;</button>
+                            <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl">&times;</button>
                             <div class="w-full">
                                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                                    <iframe src="https://player.vimeo.com/video/436401700?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                                    <iframe src="https://player.vimeo.com/video/436401700?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="video = false"></iframe>
                                 </div>
                             </div>
                         </div>
