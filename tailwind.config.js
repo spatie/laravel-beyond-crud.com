@@ -76,8 +76,8 @@ module.exports = {
                 xs: "420px"
             }
         },
-        variants: {
-            opacity: ["responsive", "hover", "focus", "group-hover"]
-        }
+    },
+    variants: {
+        opacity: ["responsive", "hover", "focus", "group-hover"]
     }
 };

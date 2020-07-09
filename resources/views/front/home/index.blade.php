@@ -58,8 +58,8 @@
                 </div>
 
                 <div class="xs:absolute bottom-0 right-0 mx-auto mb-4 w-2/3 sm:-mr-4 md:-mr-8 lg:-mr-12 xl:-mr-16 xs:w-1/2" x-data="{ open: false }">
-                    <div class="w-full bg-gray-800">
-                        <img class="w-full opacity-75" srcset="/images/intro-2400.jpg 2400w,
+                    <div class="w-full bg-gray-800 group">
+                        <img class="w-full opacity-75 group-hover:opacity-100 transition-opacity duration-300" srcset="/images/intro-2400.jpg 2400w,
                         /images/intro-1600.jpg 1600w,
                         /images/intro-800.jpg 800w" sizes="33vw" alt="Video still" src="/images/intro-2400.jpg">
                         <button class="absolute inset-0 w-full flex items-center justify-center" @click="open = true">
@@ -75,7 +75,7 @@
                             <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl">&times;</button>
                             <div class="w-full">
                                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                                    <iframe src="https://player.vimeo.com/video/434969839?autoplay=1&color=#fcc80f" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                                    <iframe src="https://player.vimeo.com/video/434969839?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -133,12 +133,13 @@
                 <div class="w-screen h-full absolute top-0 right-0 -mr-8 bg-gray-200">
                 </div>
                 <div class="mb-12 xs:mb-0 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ spread: false }">
-                    <div class="h-full xs:-ml-4">
+                    <div class="group h-full xs:-ml-4">
                         <div class="xs:z-30 xs:fix-z xs:absolute left-0 bottom-0 w-full shadow-2xl">
                             <img srcset="/images/cover-2000.jpg 2000w,
                                     /images/cover-1000.jpg 1000w,
                                     /images/cover-500.jpg 500w" sizes="(max-width: 420px) 75vw,
-                                    33vw" alt="Ebook cover" src="/images/cover-2000.jpg" class="w-full">
+                                    33vw" alt="Ebook cover" src="/images/cover-2000.jpg" 
+                                    class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300">
                             <span class="absolute w-4 h-full bg-green-600 top-0 left-0"></span>
                             <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="spread = true">
                                 <button class="-mb-4 -mr-4 py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
@@ -164,7 +165,7 @@
                 </div>
                 <div class="group mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ video: false }">
                     <div class="w-full bg-gray-800">
-                        <img class="w-full opacity-50 group-hover:opacity-100" src="/images/example-video.jpg" alt="Video still"/>
+                        <img class="w-full opacity-50 group-hover:opacity-75 transition-opacity duration-300" src="/images/example-video.jpg" alt="Video still"/>
                         <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0 opacity-25"></span>
                         <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="video = true">
                             <button class="-mb-4 -mr-4  py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
@@ -178,7 +179,7 @@
                             <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl"  @click="video = false">&times;</button>
                             <div class="w-full">
                                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                                    <iframe src="https://player.vimeo.com/video/436401700?autoplay=1&color=#fcc80f" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                                    <iframe src="https://player.vimeo.com/video/436401700?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                                 </div>
                             </div>
                         </div>

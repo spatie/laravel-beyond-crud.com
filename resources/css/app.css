@@ -35,3 +35,12 @@
 button:active {
     transform: translateY(1px);
 }
+
+.alert-success {
+    @apply bg-green-500;
+}
+
+.alert-error,
+.alert-danger {
+    @apply bg-red-500;
+}
