@@ -75,9 +75,9 @@ module.exports = {
             screens: {
                 xs: "420px"
             }
-        },
-        variants: {
-            backgroundColor: ["responsive", "hover", "focus", "group-hover"]
         }
+    },
+    variants: {
+        opacity: ["responsive", "hover", "focus", "group-hover"]
     }
 };
