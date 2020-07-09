@@ -256,41 +256,6 @@
                     </p>
                 </div>
                 <div class="mt-12 w-full markup-lists-alt">
-                    {{--
-                    <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">What we'll cover</h3>
-
-                    <h4 class="font-display font-semibold">Domain oriented Laravel</h4>
-                    <p class="text-sm">
-                        Based on paradigms like DDD and hexagonal architecture, we rethink a Laravel application from the ground up. Our goal is to make our codebase maintainable within a team of developers, for years to come.
-                    </p>
-
-                    <h4 class="mt-4 font-display font-semibold">Data and functionality</h4>
-                    <p class="text-sm">
-                        We treat them as the two pillars we'll build the core of our application with: data and functionality are the elementary building blocks to model business functionality. We'll discuss patterns to handle these core concerns.
-                    </p>
-
-                    <h4 class="mt-4 font-display font-semibold">Enriching model functionality</h4>
-                    <p class="text-sm">
-                        We'll embrace Laravel's rich model functionality, and discuss ways to improve on them to keep our code maintainable and concise: query builders, collection classes, event driven models, projected data and the state pattern are solutions we'll look at in depth.
-                    </p>
-
-                    <h4 class="mt-4 font-display font-semibold">Testing domains</h4>
-                    <p class="text-sm">
-                       Tests are a given in these kinds of applications, we'll dedicate a whole topic on them, I'll show you that all the work we've done before will pay off immensely in our test suite.
-                    </p>
-
-                    <h4 class="mt-4 font-display font-semibold">Entering the application layer</h4>
-
-                    <p class="text-sm">
-                       It's worth understanding the difference between application- and domain code, and I'll explain our thinking in depth on this topic. I'll show you common pitfalls of how code can grow out of hand very quickly in large projects, and how to prevent this.
-                    </p>
-
-                    <h4 class="mt-4 font-display font-semibold">View models</h4>
-                    <p class="text-sm">
-                       The missing link between controllers and domain code: we'll discuss the view model pattern in depth, and you'll learn all its benefits.
-                    </p>
-                    --}}
-
                     <div class="mt-12 pb-12 pl-8 xs:pl-16 xs:pr-8">
                         <span class="absolute w-4 h-full bg-blue-300 top-0 left-0"></span>
                         <h4 class="font-display font-semibold text-xl">Domain oriented Laravel</h4>
@@ -408,11 +373,11 @@
                         <h2 class="font-display font-bold text-4xl leading-tight mb-16 mt-2">What others say</h2>
 
                         <p class="text-lg leading-relaxed">
-                            Testimonials on a course that hasn't been launched yet? What an idea. 
+                            Testimonials on a course that hasn't been launched yet? What an idea.
                             <br>This section will be updated soon!
                         </p>
 
-                        
+
                         <div class="mt-4 flex items-center font-display font-semibold text-lg">
                             <div class="mr-4">
                                 <img src="/images/avatar.jpg" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
@@ -423,7 +388,7 @@
                     </div>
                 </div>
 
-                
+
                 <div class="z-10 max-w-2xl mx-auto flex flex-wrap justify-end">
                     <div class="w-2/3 xs:w-3/5 pl-8">
                         <p class="text-sm leading-relaxed">
