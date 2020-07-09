@@ -77,7 +77,7 @@ module.exports = {
             }
         },
         variants: {
-            backgroundColor: ["responsive", "hover", "focus", "group-hover"]
+            opacity: ["responsive", "hover", "focus", "group-hover"]
         }
     }
 };

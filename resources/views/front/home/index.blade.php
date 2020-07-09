@@ -58,13 +58,16 @@
                 </div>
 
                 <div class="xs:absolute bottom-0 right-0 mx-auto mb-4 w-2/3 sm:-mr-4 md:-mr-8 lg:-mr-12 xl:-mr-16 xs:w-1/2" x-data="{ open: false }">
-                    <div class="w-full h-0 bg-gray-800" style="padding-bottom:56%">
-                        <button class="absolute inset-0 w-full flex items-center justify-center hover:opacity-75 " @click="open = true">
-                            <div class="text-white uppercase tracking-widest text-xs font-display">
+                    <div class="w-full bg-gray-800">
+                        <img class="w-full opacity-75" srcset="/images/intro-2400.jpg 2400w,
+                        /images/intro-1600.jpg 1600w,
+                        /images/intro-800.jpg 800w" sizes="33vw" alt="Video still" src="/images/intro-2400.jpg">
+                        <button class="absolute inset-0 w-full flex items-center justify-center" @click="open = true">
+                            <div class="py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
                                 Watch intro <i class="ml-2 fas fa-play"></i>
                             </div>
                         </button>
-                        <span class="absolute w-full h-4 bg-gray-900 bottom-0 right-0"></span>
+                        <span class="absolute w-full h-4 bg-gray-900 bottom-0 right-0 opacity-50"></span>
                     </div>
 
                     <template x-if="open">
@@ -72,7 +75,7 @@
                             <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl">&times;</button>
                             <div class="w-full">
                                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                                    <iframe src="https://player.vimeo.com/video/434969839?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                                    <iframe src="https://player.vimeo.com/video/434969839?autoplay=1&color=#fcc80f" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -159,9 +162,9 @@
                     <p class="text-sm">The ebook is <strong class="font-semibold">your guide for building large maintainable Laravel applications</strong>. Along the way, you'll be introduced to concepts like DDD and hexagonal design, all while still embracing Laravel's focus on elegant code. The book is beautifully designed by Sebastian De Deyne.
                     </p>
                 </div>
-                <div class="mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ video: false }">
+                <div class="group mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ video: false }">
                     <div class="w-full bg-gray-800">
-                        <img class="w-full opacity-50" src="/images/example-video.jpg" alt="Video still"/>
+                        <img class="w-full opacity-50 group-hover:opacity-100" src="/images/example-video.jpg" alt="Video still"/>
                         <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0 opacity-25"></span>
                         <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="video = true">
                             <button class="-mb-4 -mr-4  py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
@@ -175,7 +178,7 @@
                             <button class="absolute top-0 right-0 m-6 leading-none text-yellow-500 text-3xl"  @click="video = false">&times;</button>
                             <div class="w-full">
                                 <div class="bg-white rounded-sm aspect-16x9 shadow-xl">
-                                    <iframe src="https://player.vimeo.com/video/436401700?autoplay=1" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
+                                    <iframe src="https://player.vimeo.com/video/436401700?autoplay=1&color=#fcc80f" class="absolute inset-0 border-2 border-white rounded-sm" frameborder="0" allow="autoplay; fullscreen" allowfullscreen @click.away="open = false"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -190,6 +193,7 @@
                 <div class="mt-12 w-full markup-lists-alt">
                     <div class="mt-12 pb-12 pl-8 xs:pl-16 xs:pr-8">
                         <span class="absolute w-4 h-full bg-blue-300 top-0 left-0"></span>
+                        <h3 class="mb-4 font-display font-semibold uppercase tracking-wider text-xl">We'll cover…</h3>
                         <h4 class="font-display font-semibold text-xl">Domain oriented Laravel</h4>
 
                         <p class="text-sm mb-4">
@@ -287,7 +291,7 @@
                         <div class="mt-6 flex items-center text-lg">
                             <div class="mr-4">
                                 <img src="/images/avatar.jpg" class="z-10 w-16 h-16" alt="Avatar">
-                                <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-red-200"></div>
+                                <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-yellow-500 opacity-25"></div>
                             </div>
                             <div class="leading-tight">
                                 <div class="font-display font-semibold">Brent Roose</div>
