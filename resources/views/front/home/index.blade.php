@@ -87,7 +87,12 @@
                     <div class="bg-yellow-500 h-6"></div>
                     <div class="border-l border-r border-b border-gray-200 bg-white">
                         <div class="text-center py-12 px-12">
-                            <h1 class="mb-8 font-bold font-display text-3xl text-center leading-tight">Sit in the front row when we launch this course in September!</h1>
+                            <h1 class="mb-12 font-bold font-display text-3xl text-center leading-tight">
+                                Sit in the front row when we launch this course!
+                                <div class="text-center">
+                                    <span class="px-3 py-2 bg-red-100 text-gray-900 text-xs uppercase tracking-wider">Coming&nbsp;September</span>
+                                </div>
+                            </h1>
                             @include('partials.newsletter', ['intro' => ''])
                         </div>
                     </div>
