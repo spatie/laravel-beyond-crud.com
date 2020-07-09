@@ -11,8 +11,8 @@
                 Other related courses and videos from Spatie
             </p>
 
-            <div class="mt-16 flex items-center text-lg">
-                <div class="flex-none mr-8 flex items-center justify-center w-20 h-20 rounded-full bg-red-500 overflow-hidden">
+            <div class="mt-16 xs:flex items-center text-lg">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-500 overflow-hidden">
                     <a class="" href="https://laravelpackage.training" target="_blank">
                         <img src="/images/laravel-package-training.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>
@@ -30,8 +30,8 @@
                 </div>
             </div>
 
-            <div class="mt-8 flex items-center text-lg">
-                <div class="flex-none mr-8 flex items-center justify-center w-20 h-20 rounded-full bg-green-500 overflow-hidden">
+            <div class="mt-8 xs:flex items-center text-lg">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-green-500 overflow-hidden">
                     <a href="https://mailcoach.app/videos" target="_blank">
                         <img src="/images/mailcoach.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>
@@ -49,8 +49,8 @@
                 </div>
             </div>
 
-            <div class="mt-8 flex items-center text-lg">
-                <div class="flex-none mr-8 flex items-center justify-center w-20 h-20 rounded-full bg-gray-900 overflow-hidden">
+            <div class="mt-8 xs:flex items-center text-lg">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-gray-900 overflow-hidden">
                     <a href="https://spatie.be/videos" target="_blank">
                         <img src="/images/github.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>

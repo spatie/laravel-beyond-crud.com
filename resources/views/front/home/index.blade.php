@@ -260,7 +260,7 @@
         </section>
 
         <div class="">
-            <div class="overflow-hidden z-10 absolute top-0 bottom-0 left-0 w-full blend-multiply pointer-events-none">
+            <div class="opacity-25 xs:opacity-100 overflow-hidden z-10 absolute top-0 bottom-0 left-0 w-full blend-multiply pointer-events-none">
                 <section class="h-full px-8">
                     <div class="h-full max-w-2xl mx-auto flex justify-start">
                         <div class="w-1/3 pr-8">
@@ -274,7 +274,7 @@
 
             <section class="px-8 pb-24">
                 <div class="max-w-2xl mx-auto flex justify-end">
-                    <div class="w-2/3 pl-8">
+                    <div class="xs:w-2/3 xs:pl-8">
                         <h2 class="font-display font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
 
                         <p class="text-lg leading-relaxed">
