@@ -27,7 +27,7 @@ class SubscribeToEmailListController
             throw new Exception('Could not subscribe');
         }
 
-        flash()->success('Thank you for subscribing');
+        flash()->success('You are now subscribed. We will notify you as soon as the full course is available.');
 
         return back();
     }
