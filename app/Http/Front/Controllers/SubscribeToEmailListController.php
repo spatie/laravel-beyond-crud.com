@@ -14,6 +14,8 @@ class SubscribeToEmailListController
             flash()->error('Subscribing is only possible in production');
         }
 
+        ld("subscribing {$request->email}");
+
         $response = Http::post('https://spatie.be/mailcoach/subscribe/4af46b59-3784-41a5-9272-6da31afa3a02', [
             'email' => $request->email,
             'tags' => 'laravel-beyond-crud-waiting-list',
