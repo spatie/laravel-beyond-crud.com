@@ -165,7 +165,7 @@
                 </div>
                 <div class="group mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ video: false }">
                     <div class="w-full bg-gray-800">
-                        <img class="w-full opacity-50 group-hover:opacity-75 transition-opacity duration-300" src="/images/example-video.jpg" alt="Video still"/>
+                        <img class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" src="/images/example-video.jpg" alt="Video still"/>
                         <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0 opacity-25"></span>
                         <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="video = true">
                             <button class="-mb-4 -mr-4  py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
@@ -292,7 +292,7 @@
                         <div class="mt-6 flex items-center text-lg">
                             <div class="mr-4">
                                 <img src="/images/avatar.jpg" class="z-10 w-16 h-16" alt="Avatar">
-                                <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-yellow-500 opacity-25"></div>
+                                <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-blue-500 opacity-25"></div>
                             </div>
                             <div class="leading-tight">
                                 <div class="font-display font-semibold">Brent Roose</div>
