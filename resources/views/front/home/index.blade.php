@@ -46,7 +46,7 @@
             </div>
 
             <div class="px-8">
-                <div class="z-10 mt-48 md:mt-64 max-w-2xl mx-auto text-red-100 pointer-events-none">
+                <div class="mt-48 md:mt-64 max-w-2xl mx-auto text-red-100 pointer-events-none">
                     <h1 class="text-5xl uppercase font-display font-bold leading-tight tracking-wider">
                         Laravel<br>
                         Beyond CRUD
@@ -81,7 +81,7 @@
             </div>
         </div>
 
-        <section class="z-10 fix-z px-8 flex justify-center">
+        <section class="z-30 fix-z px-8 flex justify-center">
             <div class="max-w-md mx-auto xs:flex xs:w-full">
                 <div class="-mt-6 -mx-4 flex-grow shadow-2xl">
                     <div class="bg-yellow-500 h-6"></div>

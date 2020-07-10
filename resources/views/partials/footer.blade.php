@@ -71,7 +71,7 @@
     </div>
 </aside>
 
-    <section class="z-30 xs:sticky xs:top-0 xs:fix-z overflow-hidden">
+<section class="z-20 overflow-hidden">
     <div class="px-8 bg-red-100 shadow-lg">
         <div class="max-w-2xl mx-auto xs:flex items-center justify-between">
             <ul class="xs:w-1/3 xs:pr-8 py-8 font-display font-semibold text-green-500 text-lg">
