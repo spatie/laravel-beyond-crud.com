@@ -140,7 +140,7 @@
                             <img srcset="/images/cover-2000.jpg 2000w,
                                     /images/cover-1000.jpg 1000w,
                                     /images/cover-500.jpg 500w" sizes="(max-width: 420px) 75vw,
-                                    33vw" alt="Ebook cover" src="/images/cover-2000.jpg" 
+                                    33vw" alt="Ebook cover" src="/images/cover-2000.jpg"
                                     class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300">
                             <span class="absolute w-4 h-full bg-green-600 top-0 left-0"></span>
                             <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="spread = true">
@@ -207,8 +207,8 @@
                             <li>When to use domains, and when to stick to Laravel's default structure</li>
                             <li>Thinking of "data" and "functionality" as two first-class citizens of your codebase</li>
                             <li>The state pattern to model complex, state-specific, flows</li>
-                            <li>The difference between application- and domain code</li>
-                            <li>Writing robust code by using the types and static analysis</li>
+                            <li>The difference between application and domain code</li>
+                            <li>Writing robust code by using types and static analysis</li>
                         </ul>
                     </div>
 
@@ -217,7 +217,7 @@
                         <h4 class="font-display font-semibold text-xl">In practice</h4>
 
                         <p class="sm:text-sm mb-4">
-                            We're nothing with theory if we can't apply it in practice. This course highly focuses on combining the two:
+                            We're nothing with only theory if we can't apply it in practice. This course focuses highly on combining the two:
                             in each episode we'll do live coding, and build a project from the ground up:
                         </p>
 
@@ -242,7 +242,7 @@
 
                         <p class="sm:text-sm mb-4">
                             While the main focus of this course lies on larger projects,
-                            there are many principles in it that you can apply today, in your own projects;
+                            there are many principles in it that you can apply today, in your own projects,
                             even when they aren't large at all.
                             We've used many of these principles ourselves, also in our smaller projects:
                         </p>
@@ -278,10 +278,10 @@
                         <h2 class="font-display font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
 
                         <p class="text-lg leading-relaxed">
-                            Brent has been working almost exclusivly on large web applications for the past years now. He did lots of self education on topics like DDD and event sourcing.
+                            Brent has been working almost exclusively on large web applications for the past few years now. In addition, he has taught himself topics like DDD and event sourcing.
                         </p>
                         <p class="mt-4 text-lg leading-relaxed">
-                            Doing so, he applied many of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
+                            Doing so, he applied much of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
                         </p>
                         <p class="mt-4 text-lg leading-relaxed">
                             Besides his work at Spatie, Brent is also very active in the PHP community, most notably with <a class="text-red-600 hover:text-red-500 underline" href="https://stitcher.io/">his blog</a> where he writes about programming, PHP and the web in general.
