@@ -93,9 +93,9 @@
                             </div>
                             <div class="flex justify-center mt-3">
                                 <div class="font-display">
-                                    <sup class="text-gray-500 text-3xl">$</sup><span class="font-bold text-5xl">149</span>
+                                    <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span class="font-bold text-5xl" data-id="current-price"></span>
                                     <span class="absolute right-full mr-4 top-0 mt-2">
-                                        <sup class="text-gray-500 text-xs">$</sup><span class="text-gray-500 line-through">199</span>
+                                        <span class="text-gray-500">20% discount!</span>
                                     </span>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                 </ul>
 
                                 <p class="text-xs text-gray-600">
-                                    We use purchasing power parity during checkout. 
+                                    We use purchasing power parity during checkout.
                                     <br>
                                     <a class="underline" href="mailto:info@spatie.be?subject=CRUD%20for%20students">Contact us</a> if you are a student.
                                 </p>
@@ -376,4 +376,28 @@
 
 
 </div>
+<script type="text/javascript">
+    function indexOfFirstDigitInString(string) {
+        let firstDigit = string.match(/\d/);
+
+        return string.indexOf(firstDigit);
+    }
+
+    Paddle.Product.Prices(626491, function(prices) {
+        console.log(prices);
+        let priceString = prices.price.net;
+
+        let indexOFirstDigitInString = indexOfFirstDigitInString(priceString);
+
+        let price = priceString.substring(indexOFirstDigitInString);
+        price = price.replace('.00', '');
+
+        let currencySymbol = priceString.substring(0,indexOFirstDigitInString);
+        currencySymbol = currencySymbol.replace('US', '');
+
+        document.querySelector('[data-id="current-currency"]').innerHTML = currencySymbol;
+        document.querySelector('[data-id="current-price"]').innerHTML = price;
+    });
+</script>
+
 @endsection
