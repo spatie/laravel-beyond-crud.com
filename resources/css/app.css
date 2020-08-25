@@ -33,7 +33,7 @@
 }
 
 button {
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
