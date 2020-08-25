@@ -93,16 +93,16 @@
                             </div>
                             <div class="flex justify-center mt-3">
                                 <div class="font-display">
-                                    <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span class="font-bold text-5xl" data-id="current-price"></span>
-                                    <span class="absolute right-full mr-4 top-0 mt-2">
-                                        <span class="text-gray-500">20% discount!</span>
+                                    <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span class="font-bold text-5xl" data-id="current-price">—</span>
+                                     <span class="absolute right-full mr-4 top-0 mt-2">
+                                        <sup class="text-gray-500 text-xs" data-id="original-currency"></sup><span class="text-gray-500 line-through" data-id="original-price">—</span>
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <div class="text-center z-10 -mb-3">
                             <a href="https://spatie.be/products/laravel-beyond-crud">
-                                <button class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-yellow-500 hover:bg-yellow-600 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg">
+                                <button class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-yellow-500 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg hover:shadow-xl hover:bg-yellow-600">
                                     <span style="bottom: -0.05rem">Buy bundle</span>
                                     <span class="ml-3 flex-0 w-6 text-base h-6 text-sm bg-white bg-opacity-50 rounded-full flex items-center justify-center font-sans text-yellow-800">
                                         &rarr;
@@ -112,7 +112,7 @@
                         </div>
                         <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-100">
                             <div>
-                                <ul class="pb-3 leading-relaxed">
+                                <ul class="pb-6 leading-relaxed">
                                     <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
                                     <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 2 hours of video</li>
                                     <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
@@ -399,6 +399,9 @@
 
         document.querySelector('[data-id="current-currency"]').innerHTML = currencySymbol;
         document.querySelector('[data-id="current-price"]').innerHTML = price;
+
+        document.querySelector('[data-id="original-currency"]').innerHTML = currencySymbol;
+        document.querySelector('[data-id="original-price"]').innerHTML = Math.round(price * 1.3355);
     });
 </script>
 
