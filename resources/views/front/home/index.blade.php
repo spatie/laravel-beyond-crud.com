@@ -102,9 +102,11 @@
                         </div>
                         <div class="text-center z-10 -mb-2">
                             <a href="https://spatie.be/products/laravel-beyond-crud">
-                                <button class="mx-auto flex justify-center pl-6 pr-3 h-12 text-xl bg-yellow-500 hover:bg-yellow-600 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg">
-                                    <span style="bottom: -.05rem">Buy bundle</span>
-                                    <span class="ml-3 font-sans text-white">-></span>
+                                <button class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-yellow-500 hover:bg-yellow-600 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg">
+                                    <span style="bottom: -0.05rem">Buy bundle</span>
+                                    <span class="ml-3 flex-0 w-6 text-base h-6 text-sm bg-white bg-opacity-50 rounded-full flex items-center justify-center font-sans text-yellow-800">
+                                        &rarr;
+                                    </span>
                                 </button>
                             </a>
                         </div>
