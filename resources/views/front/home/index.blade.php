@@ -18,11 +18,11 @@
                     <img class="h-auto w-4 mr-3" src="/images/logo.svg" alt="logo">
                     Laravel Beyond CRUD
                 </span>
-                {{--
-                <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
-                    Buy course
-                </button>
-                --}}
+                <a href="https://spatie.be/products/laravel-beyond-crud">
+                    <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
+                        Buy course
+                    </button>
+                </a>
             </div>
         </div>
     </header>
@@ -81,23 +81,51 @@
             </div>
         </div>
 
-        <section class="z-30 fix-z px-8 flex justify-center">
+        <section class="px-8 flex justify-center">
             <div class="max-w-md mx-auto xs:flex xs:w-full">
-                <div class="-mt-6 -mx-4 flex-grow shadow-2xl">
+                <div class="z-10 xs:z-30 xs:fix-z -mt-6 -mx-4 flex-grow shadow-2xl">
                     <div class="bg-yellow-500 h-6"></div>
                     <div class="border-l border-r border-b border-gray-200 bg-white">
-                        <div class="text-center py-12 px-12">
-                            <h1 class="mb-12 font-bold font-display text-3xl text-center leading-tight">
-                                Sit in the front row when we launch this course!
-                                <div class="text-center">
-                                    <span class="px-3 py-2 bg-red-100 text-gray-900 text-xs uppercase tracking-wider">Coming&nbsp;September</span>
+                        <div class="text-center py-12 leading-none">
+                            <div class="font-display font-semibold text-3xl">
+                                Videos & ebook
+                                <span class="absolute bottom-full mb-2 left-0 right-0 text-center text-green-500 uppercase text-xs tracking-widest">Launch promo!</span>
+                            </div>
+                            <div class="flex justify-center mt-3">
+                                <div class="font-display">
+                                    <sup class="text-gray-500 text-3xl">$</sup><span class="font-bold text-5xl">149</span>
+                                    <span class="absolute right-full mr-4 top-0 mt-2">
+                                        <sup class="text-gray-500 text-xs">$</sup><span class="text-gray-500 line-through">199</span>
+                                    </span>
                                 </div>
-                            </h1>
-                            @include('partials.newsletter', ['intro' => ''])
+                            </div>
+                        </div>
+                        <div class="text-center z-10 -mb-2">
+                            <a href="https://spatie.be/products/laravel-beyond-crud">
+                                <button class="mx-auto flex justify-center pl-6 pr-3 h-12 text-xl bg-yellow-500 hover:bg-yellow-600 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg">
+                                    <span style="bottom: -.05rem">Buy bundle</span>
+                                    <span class="ml-3 font-sans text-white">-></span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-100">
+                            <div>
+                                <ul class="pb-3 leading-relaxed">
+                                    <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
+                                    <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 2 hours of video</li>
+                                    <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
+                                    <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
+                                </ul>
+
+                                <p class="text-xs text-gray-600">
+                                    We use purchasing power parity during checkout. 
+                                    <br>
+                                    <a class="underline" href="mailto:info@spatie.be?subject=CRUD%20for%20students">Contact us</a> if you are a student.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="my-16 py-16">
