@@ -100,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center z-10 -mb-2">
+                        <div class="text-center z-10 -mb-3">
                             <a href="https://spatie.be/products/laravel-beyond-crud">
                                 <button class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-yellow-500 hover:bg-yellow-600 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg">
                                     <span style="bottom: -0.05rem">Buy bundle</span>
