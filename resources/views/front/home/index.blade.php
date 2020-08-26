@@ -331,29 +331,31 @@
                 </div>
             </section>
 
-                {{--
             <section class="px-8 pt-16 bg-red-500 text-red-100 overflow-hidden">
                 <div class="max-w-2xl mx-auto flex justify-end">
-                    <div class="w-2/3 pl-8 pb-16">
+                    <div class="w-2/3 pl-8 pb-8">
                         <h2 class="font-display font-bold text-4xl leading-tight mb-16 mt-2">What others say</h2>
 
                         <p class="text-lg leading-relaxed">
-                            Testimonials on a course that hasn't been launched yet? What an idea.
-                            <br>This section will be updated soon!
+                            <span style="font-size:6rem" class="absolute leading-none font-display font-semibold top-0 left-0 -mt-6 -ml-12 opacity-25">“</span>
+                            I wish I had this book a few years ago as a foundation for my large web applications. Very concise, still in-depth. It’s an invaluable asset for any Laravel developer.
                         </p>
 
 
-                        <div class="mt-4 flex items-center font-display font-semibold text-lg">
+                        <a href="https://twitter.com/enunomaduro" target="_blank" class="mt-4 flex items-center font-display text-lg">
                             <div class="mr-4">
-                                <img src="/images/avatar.jpg" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
+                                <img src="https://pbs.twimg.com/profile_images/954141790038298625/r2o4siIW_400x400.jpg" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
                                 <div class="absolute w-full h-full top-0 left-0 mt-1 ml-1 bg-gray-800 opacity-25"></div>
                             </div>
-                            Client x
-                        </div>
+                            <div>
+                                <div class="font-semibold">Nuno Maduro</div>
+                                <div class="-mt-1 text-xs opacity-50">Software engineer at @laravelphp</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-
+                {{--
                 <div class="z-10 max-w-2xl mx-auto flex flex-wrap justify-end">
                     <div class="w-2/3 xs:w-3/5 pl-8">
                         <p class="text-sm leading-relaxed">
@@ -369,8 +371,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
                 --}}
+            </section>
 
             @include('partials.footer')
         </div>
