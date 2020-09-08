@@ -1,0 +1,70 @@
+.docs-sidebar {
+    @apply hidden;
+}
+
+@screen sm {
+    .docs-sidebar {
+        @apply block;
+    }
+}
+
+.docs-sidebar-toggle:checked ~ .docs-sidebar {
+    @apply block;
+}
+
+.docs-sidebar-button-hide {
+    @apply hidden;
+}
+
+.docs-sidebar-toggle:checked + .docs-sidebar-button .docs-sidebar-button-hide {
+    @apply block;
+}
+
+.docs-sidebar-toggle:checked + .docs-sidebar-button .docs-sidebar-button-show {
+    @apply hidden;
+}
+
+.docs-menu {
+    display: grid;
+    @apply text-sm;
+    @apply p-12;
+    @apply bg-gray-100;
+}
+
+.docs-menu ul {
+    display: grid;
+    grid-gap: 1rem;
+    @apply mb-12;
+    @apply pb-12;
+    @apply border-b-2;
+    @apply border-gray-200;
+}
+
+.docs-menu > li:last-child > ul {
+    @apply mb-0;
+    @apply pb-0;
+    @apply border-b-0;
+}
+
+.docs-menu li.active ul {
+    @apply border-blue-500;
+}
+
+.docs-menu a:hover {
+    @apply text-blue-500;
+}
+
+.docs-menu li h2 {
+    @apply font-semibold;
+    @apply text-base;
+    @apply leading-tight;
+    @apply mb-6;
+}
+
+.docs-menu ul li {
+    @apply leading-snug;
+}
+
+.docs-menu ul li.active {
+    @apply font-semibold;
+}

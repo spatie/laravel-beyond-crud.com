@@ -1,0 +1,41 @@
+.form-grid {
+    display: grid;
+    grid-gap: 1.5rem;
+    @apply max-w-full;
+}
+
+.form-row {
+    display: grid;
+    @apply items-start;
+    grid-gap: 0.5rem;
+    @apply max-w-lg;
+    grid-template-columns: 100%;
+}
+
+.form-buttons {
+    display: grid;
+    @apply justify-start;
+    justify-items: start;
+    @apply items-center;
+    grid-gap: 1rem;
+    @apply mt-4;
+}
+
+@screen sm {
+    .form-buttons {
+        grid-template-columns: auto;
+        grid-auto-flow: column;
+    }
+}
+
+.form-error {
+    @apply text-xs;
+    @apply text-red-400;
+    @apply flex;
+}
+
+.form-note {
+    @apply mt-2;
+    @apply text-gray-400;
+    @apply text-sm;
+}

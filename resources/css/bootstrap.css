@@ -1,0 +1,76 @@
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --blue-300: #b6d9e9;
+    --blue-400: #599bcc;
+    --blue-500: #005ba6;
+
+    --spatie-500: #197593;
+    --spatie-600: #004e6e;
+
+    --green-300: #8ce6dc;
+    --green-400: #4cc3bd;
+    --green-500: #009183;
+    --green-600: #00625f;
+    --green-700: #004740;
+
+    --orange-400: #ec9370;
+    --orange-500: #ee5e24;
+
+    --yellow-400: #e5d292;
+    --yellow-500: #fcc80f;
+    --yellow-600: #e8b912;
+
+    --red-100: #faf9f8;
+    --red-150: #f7f2f0;
+    --red-200: #f7e3dc;
+    --red-300: #efbdb9;
+    --red-400: #e1897b;
+    --red-500: #e92128;
+    --red-600: #941b23;
+    --red-700: #321414;
+
+    --gray-100: #e8f4f7;
+    --gray-200: #deecef;
+    --gray-300: #c2d7db;
+    --gray-400: #a5b6ba;
+    --gray-500: #93a4a8;
+    --gray-600: #798689;
+    --gray-700: #586264;
+    --gray-800: #2b2f30;
+    --gray-900: #121313;
+}
+
+* {
+    position: relative;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+@screen sm {
+    html {
+        font-size: 13px;
+    }
+}
+
+@screen md {
+    html {
+        font-size: 14px;
+    }
+}
+
+@screen lg {
+    html {
+        font-size: 16px;
+    }
+}
+
+@screen xl {
+    html {
+        font-size: 18px;
+    }
+}

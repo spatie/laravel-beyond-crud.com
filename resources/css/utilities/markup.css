@@ -1,0 +1,308 @@
+/* Margins */
+
+.markup h1 {
+    @apply mb-12;
+}
+
+.markup h2 {
+    @apply mt-8;
+    @apply mb-4;
+}
+
+.markup h3 {
+    @apply mt-8;
+    @apply mb-4;
+    @apply font-semibold;
+}
+
+.markup p,
+.markup ol,
+.markup ul {
+    @apply mb-4;
+}
+
+.markup blockquote {
+    @apply mx-0;
+    @apply my-4;
+    @apply px-6;
+    @apply py-4;
+    @apply border-l-4;
+    @apply border-blue-500;
+    @apply bg-gray-100;
+}
+
+/* Header styles */
+
+.markup h1,
+.markup-h1 {
+    @apply font-display;
+    @apply font-bold;
+    @apply text-4xl;
+    @apply leading-tight;
+}
+
+.markup h2,
+.markup-h2 {
+    @apply font-display;
+    @apply font-semibold;
+    @apply text-xl;
+}
+
+.markup h3,
+.markup-h3 {
+    @apply font-display;
+    @apply uppercase;
+    @apply font-semibold;
+    @apply text-sm;
+    @apply tracking-widest;
+}
+
+.markup-baseline {
+    opacity: 0.7;
+    @apply text-xl;
+    @apply font-semibold;
+    @apply mt-1;
+}
+
+.markup strong {
+    @apply font-semibold;
+}
+
+/* List styles */
+
+.markup-lists ul > li,
+.markup-lists-alt ul > li,
+.markup-ul > li,
+.markup-ul-alt > li {
+    padding-left: 1.15em;
+}
+
+.markup-lists ul > li:before,
+.markup-lists-alt .markup-lists ul > li:before,
+.markup-ul > li:before {
+    content: "✓";
+    @apply text-green-500;
+    @apply absolute;
+    @apply left-0;
+}
+
+.markup-lists-alt ul > li:before,
+.markup-ul-alt > li:before {
+    content: "•";
+    @apply text-gray-500;
+    @apply absolute;
+    @apply left-0;
+}
+
+.markup-li-blue:before {
+    @apply text-blue-500 !important;
+}
+
+.markup-ol {
+    counter-reset: customOl;
+}
+
+.markup-lists ol > li,
+.markup-lists-alt ol > li,
+.markup-ol > li {
+    counter-increment: customOl;
+    padding-left: 1.5em;
+}
+
+.markup-lists ol > li:before,
+.markup-ol > li:before {
+    @apply absolute;
+    @apply left-0;
+    content: counter(customOl);
+    @apply bg-red-500;
+    @apply rounded-full;
+    @apply flex-none;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply font-semibold;
+    @apply text-white;
+    font-size: 0.65em;
+    width: 1.5em;
+    height: 1.5em;
+    transform: translateY(0.35em);
+}
+
+.markup-lists-alt ol > li:before {
+    @apply absolute;
+    @apply left-0;
+    content: counter(customOl) ".";
+}
+
+.markup-lists-spaced ol,
+.markup-lists-spaced ul {
+    @apply grid;
+    @apply gap-1;
+}
+
+/* Link styles */
+
+.markup-links a,
+.markup-link {
+    @apply text-red-500;
+    @apply underline;
+    text-decoration-color: var(--red-400);
+}
+
+.markup-links a:hover,
+.markup-link:hover {
+    text-decoration-color: var(--red-500);
+}
+
+.markup-links-invers a,
+.markup-link-invers {
+    @apply text-white;
+    @apply underline;
+    text-decoration-color: var(--gray-100);
+}
+
+.markup-links-invers a:hover,
+.markup-link-invers:hover {
+    text-decoration-color: var(--gray-200);
+}
+
+.markup-links-gray a,
+.markup-link-gray {
+    @apply text-gray-500;
+    @apply underline;
+    text-decoration-color: var(--gray-400);
+}
+
+.markup-links-gray a:hover,
+.markup-link-gray:hover {
+    text-decoration-color: var(--gray-500);
+}
+
+.markup-links-dark a,
+.markup-link-dark {
+    @apply text-gray-600;
+    @apply underline;
+    text-decoration-color: var(--gray-500);
+}
+
+.markup-links-dark a:hover,
+.markup-link-dark:hover {
+    text-decoration-color: var(--gray-600);
+}
+
+/* Code styles */
+
+.markup-code pre {
+    @apply p-6;
+    @apply rounded;
+    @apply overflow-x-auto;
+    @apply bg-white;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.markup-code pre::-webkit-scrollbar,
+.markup-code pre::-webkit-scrollbar-corner {
+    width: 4px;
+    height: 4px;
+}
+
+.markup-code pre::-webkit-scrollbar-track {
+    @apply bg-white;
+}
+
+.markup-code pre::-webkit-scrollbar-thumb {
+    @apply bg-gray-300;
+    border-radius: 2px;
+}
+
+.markup-code pre {
+    @apply border-gray-100;
+    @apply my-6;
+    @apply shadow;
+}
+
+.markup img {
+    @apply border-4;
+    @apply border-white;
+    @apply my-6;
+    @apply shadow;
+}
+
+.markup-code :not(pre) > code {
+    @apply rounded-sm;
+    @apply bg-gray-100;
+    @apply text-gray-700;
+    font-size: 0.85em;
+    @apply p-1;
+}
+
+.markup-code .hljs {
+    overflow-x: initial;
+}
+
+/* Table styles */
+
+.markup-table table {
+    @apply border-collapse;
+    @apply border-t;
+    @apply border-b;
+    @apply border-gray-300;
+    @apply w-full;
+    @apply text-sm;
+    @apply my-6;
+}
+
+.markup-table table thead tr {
+    @apply bg-gray-100;
+    @apply text-gray-500;
+    @apply border-b;
+    @apply border-gray-200;
+    font-size: 0.875em;
+}
+
+.markup-table table th,
+.markup-table table td {
+    @apply py-2;
+    @apply px-1;
+}
+
+@screen sm {
+    .markup-table table th,
+    .markup-table table td {
+        @apply px-2;
+    }
+}
+
+.markup-table table th {
+    @apply text-left;
+    @apply font-normal;
+    @apply whitespace-no-wrap;
+    @apply tracking-wider;
+    @apply uppercase;
+    @apply text-xs;
+}
+
+.markup-table table tbody tr {
+    @apply border-t;
+    @apply border-gray-100;
+}
+
+.markup-table table thead .th-numeric,
+.markup-table table tbody .td-numeric {
+    @apply text-right;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Columns */
+
+@responsive {
+    .markup-cols-2 {
+        column-count: 2;
+        column-gap: 4rem;
+    }
+
+    .markup-cols-2 li {
+        break-inside: avoid;
+    }
+}

@@ -1,0 +1,33 @@
+.nav {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    grid-gap: theme("padding.8");
+    @apply items-center;
+    @apply justify-start;
+}
+
+@screen md {
+    .nav {
+        @apply justify-start;
+    }
+}
+
+@screen lg {
+    .nav {
+        grid-gap: theme("padding.12");
+    }
+}
+
+.nav a:not(.button) {
+    @apply opacity-80;
+}
+
+.nav a:not(.button):hover {
+    @apply opacity-100;
+}
+
+.nav .active {
+    @apply font-semibold;
+    @apply opacity-100;
+}

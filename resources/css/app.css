@@ -1,0 +1,54 @@
+@import "tailwindcss/base";
+
+@import "./bootstrap.css";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import "./utilities/markup.css";
+
+@responsive {
+    .fix-z {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.blend-multiply {
+    mix-blend-mode: multiply;
+}
+
+.aspect-16x9 {
+    padding-bottom: 56.25%;
+}
+
+.aspect-16x9 iframe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.alert-success {
+    @apply bg-green-500;
+}
+
+.alert-error,
+.alert-danger {
+    @apply bg-red-500;
+}

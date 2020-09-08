@@ -1,0 +1,78 @@
+.alert {
+    @apply px-6;
+    @apply py-4;
+    @apply text-lg;
+    @apply shadow-lg;
+    @apply border-l-4;
+    @apply bg-dark-50;
+}
+
+.alert a {
+    @apply underline;
+    color: inherit !important;
+}
+
+.alert-flash {
+    @apply cursor-pointer;
+    @apply fixed;
+    @apply right-0;
+    display: grid;
+    @apply justify-start;
+    @apply ml-6;
+    @apply bg-white;
+    @apply shadow-2xl;
+    @apply max-w-4xl;
+    top: 1rem;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: opacity ease 0.8s, transform ease 0.6s;
+    z-index: 100000;
+}
+
+.alert-flash-visible {
+    transform: translateX(0);
+    transition-duration: 0.3s;
+    opacity: 100;
+}
+
+.alert-success {
+    @apply bg-green-100;
+    @apply border-green-500;
+}
+
+.alert-success a {
+    text-decoration-color: var(--green-600);
+}
+
+.alert-info {
+    @apply border-blue-500;
+}
+
+.alert-info a {
+    text-decoration-color: var(--gray-500);
+}
+
+.alert-warning {
+    @apply bg-orange-100;
+    @apply border-orange-500;
+}
+
+.alert-warning a {
+    text-decoration-color: var(--orange-500);
+}
+
+.alert-danger,
+.alert-error {
+    @apply bg-red-100;
+    @apply border-red-500;
+}
+
+.alert-danger a,
+.alert-error a {
+    text-decoration-color: var(--red-700);
+}
+
+.alert-empty {
+    @apply py-8;
+    @apply text-center;
+}

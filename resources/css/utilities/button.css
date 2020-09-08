@@ -1,0 +1,51 @@
+.button {
+    @apply inline-block;
+    @apply bg-blue-500;
+    @apply text-white !important;
+    @apply no-underline !important;
+    @apply rounded-sm;
+    @apply font-semibold;
+    @apply whitespace-no-wrap;
+    @apply overflow-hidden;
+    padding: 0.4em 1em; /* em to follow font-size */
+    transition: transform 0.1s ease, box-shadow 0.1s ease,
+        background-color 0.1s ease;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
+    transform: translateY(1px);
+}
+
+.button:not(:disabled):active {
+    @apply shadow-inner;
+    @apply bg-blue-600;
+    transform: translateY(2px);
+}
+
+.button-white {
+    @apply inline-block;
+    @apply bg-white;
+    @apply text-black;
+    @apply rounded-sm;
+    @apply font-medium;
+    @apply whitespace-no-wrap;
+    @apply overflow-hidden;
+    padding: 0.4em 1em; /* em to follow font-size */
+    transition: transform 0.1s ease, box-shadow 0.1s ease,
+        background-color 0.1s ease;
+}
+
+.button-white:hover {
+    transform: translateY(1px);
+}
+
+.button-white:active {
+    @apply shadow-inner;
+    @apply bg-dark-50;
+    transform: translateY(2px);
+}

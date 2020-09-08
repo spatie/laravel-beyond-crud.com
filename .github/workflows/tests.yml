@@ -1,0 +1,76 @@
+name: Tests (PHP)
+
+on: [push, pull_request]
+
+jobs:
+    tests:
+        name: Tests
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Setup cache environment
+              id: cache-env
+              uses: shivammathur/cache-extensions@v1
+              with:
+                php-version: 7.4
+                extensions: mbstring,dom,fileinfo,mysql,imagick,bcmath,pcntl,zip,soap,intl,gd,exif,iconv
+                key: extensions
+
+            - name: Cache extensions
+              uses: actions/cache@v1
+              with:
+                path: ${{ steps.cache-env.outputs.dir }}
+                key: ${{ steps.cache-env.outputs.key }}
+                restore-keys: ${{ steps.cache-env.outputs.key }}
+
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '7.4'
+                  extensions: mbstring,dom,fileinfo,mysql,imagick,bcmath,pcntl,zip,soap,intl,gd,exif,iconv
+
+            - name: Get composer cache directory
+              id: composer-cache
+              run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+            - name: Cache composer dependencies
+              uses: actions/cache@v1
+              with:
+                path: ${{ steps.composer-cache.outputs.dir }}
+                key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+                restore-keys: ${{ runner.os }}-composer-
+
+            - name: Install Composer dependencies
+              run: composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+              env:
+                COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
+
+            - name: Prepare the application
+              run: |
+                php -r "file_exists('.env') || copy('.env.example', '.env');"
+                php artisan key:generate
+                mkdir -p storage/app/paddle
+                echo "${{ secrets.PADDLE_PUBLICKEY }}" >> storage/app/paddle/publicKey
+
+            - name: Run tests
+              run: ./vendor/bin/phpunit --stop-on-error
+              env:
+                  APP_ENV: testing
+
+            - name: Upload artifacts
+              uses: actions/upload-artifact@master
+              if: failure()
+              with:
+                  name: Logs
+                  path: ./storage/logs
+
+            - name: Send Slack notification
+              uses: 8398a7/action-slack@v2
+              if: failure()
+              with:
+                  status: ${{ job.status }}
+                  author_name: ${{ github.actor }}
+              env:
+                SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

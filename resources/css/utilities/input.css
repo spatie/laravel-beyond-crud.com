@@ -1,0 +1,57 @@
+.input-group {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.input {
+    @apply w-full;
+    @apply max-w-full;
+    @apply min-h-10;
+    @apply px-2;
+    @apply rounded-sm;
+    @apply text-gray-800;
+    @apply bg-blue-50;
+    @apply border;
+    @apply border-transparent;
+}
+
+.input-textarea {
+    min-height: 8rem;
+    max-width: none;
+    @apply py-2;
+}
+
+.input-html {
+    min-height: 8rem;
+    max-width: none;
+    @apply w-full;
+    @apply py-2;
+}
+
+input:disabled {
+    @apply opacity-50;
+    @apply cursor-not-allowed;
+}
+
+input:read-only {
+}
+
+.input-focus,
+.input:focus {
+    @apply border-blue-500;
+    @apply outline-none;
+    @apply bg-white;
+}
+
+@screen lg {
+    .input-group {
+        @apply flex;
+        @apply items-start;
+        @apply justify-start;
+        order: 2;
+    }
+
+    .input-group > *:not(:last-child) {
+        @apply mr-4;
+    }
+}
