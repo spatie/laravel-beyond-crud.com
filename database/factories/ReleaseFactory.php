@@ -4,8 +4,8 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Release;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ReleaseFactory extends Factory
 {

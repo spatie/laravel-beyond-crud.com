@@ -4,9 +4,9 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Chapter;
 use App\Models\Video;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class VideoFactory extends Factory
 {
