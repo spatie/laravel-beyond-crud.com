@@ -1,20 +1,38 @@
 <?php
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
 
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Chapter;
 use App\Models\Video;
-use Faker\Generator as Faker;
 
-$factory->define(Video::class, function (Faker $faker) {
-    return [
-        'chapter_id' => factory(Chapter::class),
-        'vimeo_id' => $faker->unique()->randomNumber(),
-        'title' => $faker->word,
-        'slug' => $faker->slug,
-        'description' => $faker->paragraph,
-        'sort' => $faker->numberBetween(0, 10),
-        'runtime' => $faker->numberBetween(100, 500),
-        'thumbnail' => $faker->imageUrl(),
+class VideoFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Video::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+        'chapter_id' => Chapter::factory(),
+        'vimeo_id' => $this->faker->unique()->randomNumber(),
+        'title' => $this->faker->word,
+        'slug' => $this->faker->slug,
+        'description' => $this->faker->paragraph,
+        'sort' => $this->faker->numberBetween(0, 10),
+        'runtime' => $this->faker->numberBetween(100, 500),
+        'thumbnail' => $this->faker->imageUrl(),
     ];
-});
+    }
+}

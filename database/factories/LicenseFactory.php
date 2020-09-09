@@ -1,17 +1,34 @@
 <?php
 
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\License;
 use App\Models\Product;
 use App\Models\User;
-use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(License::class, function (Faker $faker) {
-    return [
-        'user_id' => factory(User::class),
-        'product_id' => factory(Product::class),
+class LicenseFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = License::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+        'user_id' => User::factory(),
+        'product_id' => Product::factory(),
         'key' => Str::random(64),
-        'expires_at' => $faker->dateTimeBetween('now', '+1 year'),
+        'expires_at' => $this->faker->dateTimeBetween('now', '+1 year'),
     ];
-});
+    }
+}

@@ -1,13 +1,31 @@
 <?php
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
 
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Release;
-use Faker\Generator as Faker;
 
-$factory->define(Release::class, function (Faker $faker) {
-    return [
-        'name' => $faker->name,
-        'description' => $faker->paragraph,
+class ReleaseFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Release::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+        'name' => $this->faker->name,
+        'description' => $this->faker->paragraph,
     ];
-});
+    }
+}

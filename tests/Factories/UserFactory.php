@@ -20,11 +20,11 @@ class UserFactory
 
     public function create(): User
     {
-        $user = factory(User::class)->create();
+        $user = User::factory()->create();
 
-        $purchase = factory(Purchase::class)
+        $purchase = Purchase::factory()
             ->make(['product_id' =>
-                factory(Product::class)->create(['type' => $this->productType])
+                Product::factory()->create(['type' => $this->productType])
             ]);
 
         $user->purchases()->save($purchase);
