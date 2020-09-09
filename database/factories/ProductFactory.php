@@ -1,16 +1,33 @@
 <?php
 
-use App\Models\Product;
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(Product::class, function (Faker $faker) {
-    return [
-        'name' => $faker->word,
-        'type' => $faker->randomElement([
+use App\Models\Product;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class ProductFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Product::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+        'name' => $this->faker->word,
+        'type' => $this->faker->randomElement([
             Product::TYPE_VIDEOS,
         ]),
-        'price' => $faker->numberBetween(50, 150),
-        'paddle_product_id' => $faker->word,
+        'price' => $this->faker->numberBetween(50, 150),
+        'paddle_product_id' => $this->faker->word,
     ];
-});
+    }
+}
