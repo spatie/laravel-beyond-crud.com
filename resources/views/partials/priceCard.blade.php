@@ -26,7 +26,7 @@
                     <div class="flex justify-center mt-3">
                         <div class="font-display">
                             <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span class="font-bold text-5xl" data-id="current-price">—</span>
-                            <span class="absolute right-full mr-4 top-0 mt-2">
+                            <span class="hidden absolute right-full mr-4 top-0 mt-2">
                                 <sup class="text-gray-500 text-xs" data-id="original-currency"></sup><span class="text-gray-500 line-through" data-id="original-price">—</span>
                             </span>
                         </div>
