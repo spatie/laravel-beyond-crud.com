@@ -20,8 +20,6 @@ class SubscribeToEmailListController
         ]);
 
         if (! $response->successful()) {
-            ld()->error('Something went wrong', $response, $response);
-
             throw new Exception('Could not subscribe');
         }
 
