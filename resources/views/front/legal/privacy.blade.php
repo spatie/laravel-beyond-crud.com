@@ -2,16 +2,14 @@
 
 @section('title', 'Privacy and cookie policy')
 
-@section('description', 'Privacy & cookie policy for Laravel Beyond CRUD — learn how to create your own Laravel packages')
+@section('description', 'Privacy & cookie policy for Laravel Beyond CRUD — Building larger-than-average web applications')
 
 @section('article')
 
 @markdown
-# Laravel Beyond CRUD privacy & cookie policy
+This the Laravel Beyond CRUD privacy and cookie policy. Laravel Beyond CRUD is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596, hereafter referred to as Spatie.
 
-This the Laravel Beyond CRUD privacy and cookie policy. Laravel Beyond CRUD is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596, here hereafter referred to as Spatie.
-
-Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://laravel-beyond-crud.com](https://laravel-beyond-crud.com/); by creating an account, by contacting us by email/phone, by subscribing for our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
+Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://laravel-beyond-crud.com/](https://laravel-beyond-crud.com/); by creating a Spatie account on URL [https://spatie.be/register](https://spatie.be/register), by contacting us by email/phone, by subscribing to our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
 
 ## 1. General terms
 
@@ -24,7 +22,7 @@ Please read this privacy policy carefully, because it contains essential informa
 2.1. Personal data communicated to us:
 
 - Type 1: without any registration: your IP-address
-- Type 2: when creating a user account: your name, your email address, and password
+- Type 2: when creating a Spatie account: your name, your email address, and password
 - Type 3: when registering to the newsletter: your email address
 - Type 4: data obtained by cookies placed on the website
 
@@ -41,18 +39,18 @@ Please read this privacy policy carefully, because it contains essential informa
 Spatie will use the obtained personal data solely for the purposes mentioned below:
 
 - Category 1 and 4: maintaining and improving the website and the creation of anonymous statistics (the identity of particular persons or companies will not be traceable) based on the “legitimate interest” of Laravel Beyond CRUD to improve the service and website.
-- Category 2: managing your account on the website to purchase the Laravel Beyond CRUD Video Course.
-- Category 3: sending direct marketing mailings, newsletters, promotions, based on your prior explicit consent. Spatie will not send any emails without permission. We always offer the option to unsubscribe to our mailing list.
+- Category 2: managing your Spatie account on the website to purchase the Laravel Beyond CRUD Course.
+- Category 3: sending direct marketing mailings, newsletters, promotions, based on your prior explicit consent. Spatie will not send any emails without permission. We always offer the option to unsubscribe from our mailing list.
 
 You are not obliged to provide us with your data; however, in case you refuse to provide us with specific personal data, the delivery of some services will not be possible.
 
 3.2. Direct marketing:
 We only use our data for direct marketing purposes, in case you have given your explicit and prior consent (“opt-in”).
 
-Spatie may use your email address to send marketing as well as other news relating to the Laravel Beyond CRUD if you subscribed the direct mailing list with consent. You can withdraw your consent at any time, without any reasoning and free of charge by, for example, clicking on the unsubscribe button provided at the bottom of each promotional email message.
+Spatie may use your email address to send marketing as well as other news relating to Laravel Beyond CRUD or some of the other Spatie products if you subscribed the direct mailing list with consent. You can withdraw your consent at any time, without any reasoning and free of charge by, for example, clicking on the unsubscribe button provided at the bottom of each promotional email message.
 
 3.3. Transfer to third parties:
-In case of whole or partial reorganization or transfer of Spatie’s activities, whereby the Laraval Training Package reorganizes, transfers, ceases her business activity or in case of bankruptcy of Spatie, your data may be transferred to new entities or third parties.
+In case of whole or partial reorganization or transfer of Spatie’s activities, whereby the Laravel Beyond CRUD Course reorganizes, transfers, ceases her business activity or in case of bankruptcy of Spatie, your data may be transferred to new entities or third parties.
 
 Spatie will use reasonable endeavors to inform you in advance of the fact that Spatie transfers your data to a third party. However, you are aware that this is not always technically or commercially possible under all circumstances.
 
@@ -63,7 +61,7 @@ In extraordinary circumstances, Spatie may be obliged to disclose your data foll
 
 ## 4. Duration of the processing
 
-4.1. Spatie will store your data only for a period that is necessary for the processing purpose. Your account data will be stored as long as your Laravel Beyond CRUD account is activated. In case you have subscribed to our newsletter, we will store your data as long as you have not unsubscribed without exceeding five years.
+4.1. Spatie will store your data only for a period that is necessary for the processing purpose. Your Spatie account data will be stored as long as your Spatie account is activated. In case you have subscribed to our newsletter, we will store your data as long as you have not unsubscribed without exceeding five years.
 
 4.2. We will delete your data at the end of the retention period or at your explicit request to remove data following the procedure described in article 5.5 of this privacy policy.
 
@@ -73,7 +71,7 @@ In extraordinary circumstances, Spatie may be obliged to disclose your data foll
 You have the right to get at any moment access to your data without further costs, as well as to be informed about the purpose of the data processing by Spatie.
 
 5.2. Right to rectification, erasure, and restriction:
-You have the choice to share your data with Spatie. You also have the right to request Spatie to rectify, delete or complement your data. You acknowledge that in the event of a refusal to share data or a request to remove these data, the download of the Laravel Training Package Video Course may not be possible. You can also request to restrict the processing of your data.
+You have the choice to share your data with Spatie. You also have the right to request Spatie to rectify, delete or complement your data. You acknowledge that in the event of a refusal to share data or a request to remove these data, the download of the Laravel Beyond CRUD Course may not be possible. You can also request to restrict the processing of your data.
 
 5.3. Right to object:
 You have the right to object to the processing of your data in case you have serious and legitimate reasons to do so. Besides, you have the right to object to the use of your data for purposes of direct marketing without giving any specific reasoning.
@@ -101,9 +99,9 @@ This is without prejudice to a provision before the Civil Court. If you have suf
 
 6.1. We have adopted safety measures on both technical and organizational level to avoid the destruction, the loss, the forgery, the adjustment, the non-authorized access, or the notification of the personal data by accident to a third party, as well as the non-authorized processing of these data.
 
-6.2. Spatie shall not be liable in any way for direct or indirect damages caused by a wrongful or improper use of the Laravel Beyond CRUD Video Course by a third party.
+6.2. Spatie shall not be liable in any way for direct or indirect damages caused by a wrongful or improper use of the Laravel Beyond CRUD Course by a third party.
 
-6.3. At any time, you must comply with the safety standards, for instance, by avoiding all non-authorized access you Laravel Beyond CRUD account that is required to buy the Video Course on the website. You are solely responsible for the use of your own account.
+6.3. At any time, you must comply with the safety standards, for instance, by avoiding all non-authorized access to your Spatie account that is required to buy the Laravel Beyond CRUD Course. You are solely responsible for the use of your own Spatie account.
 
 ## 7. Cookies
 
@@ -117,10 +115,10 @@ As a result of recent amendments to the law, all websites focusing on certain pa
 
 7.3: Different kinds of cookies used on our website.
 
-- Essential website cookies: these cookies are necessary to give you as a visitor an optimal experience on our website. Spatie needs these cookies for some critical features like the payment of the Video Course.
+- Essential website cookies: these cookies are necessary to give you as a visitor an optimal experience on our website. Spatie needs these cookies for some critical features like the payment of the Laravel Beyond CRUD Course.
 - XSRF-token: this cookie validates the user session and is necessary to guarantee safety during the website visit to avoid a cross-site request forgery. The cookie expires after 2 hours.
 - Session cookie: this is a unique cookie to identify a specific website visitor for the duration of his visit (session). The cookie expires after 2 hours.
-- Paddle_js cookies: cookies that are necessary for our payment integration with Paddle. These cookies are used during the checkout process when you buy the Video Course. More information on Paddle can be found on their website: [paddle.com](http://paddle.com/).
+- Paddle_js cookies: cookies that are necessary for our payment integration with Paddle. These cookies are used during the checkout process when you buy the Laravel Beyond Crud Course. More information on Paddle can be found on their website: [paddle.com](http://paddle.com/).
 - Analytics cookies: we use analytics cookies to collect information about the use of our website. These analytics cookies provide us useful information to enhance your experience and website visit. All of the analytics cookies are provided by a third-party because we have integrated their services into our website.
 - _ga cookie: this is a Google Analytics cookie. We use it to measure and distinguish different users on our website. That way, we can calculate the different visitors on our website. The cookie expires after one week.
 - _gid cookie: this is a Google Analytics cookie. We use this cookie to measure and distinguish different users on our website. That way, we can calculate the different visitors on our website. The cookie expires after 24 hours.
