@@ -7,7 +7,7 @@
 @section('article')
 
 @markdown
-These Laravel Beyond CRUD terms of use (the “Terms of Use”) apply to all services provided through <https://laravel-beyond-crud.com/terms-of-use> by Spatie BV, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Beyond CRUD” “we”, “us” or “our”.
+These Laravel Beyond CRUD terms of use (the “Terms of Use”) apply to all services provided through <https://laravel-beyond-crud.com/terms-of-use> by Spatie BVBA, with registered offices at Kruikstraat 22/12, 2060 Antwerp, Belgium and registered at the CBE under number BE 0809.387.596 hereafter referred to as “Laravel Beyond CRUD” “we”, “us” or “our”.
 
 By buying and downloading our Course, You explicitly agree to these Terms of Use.
 
@@ -15,7 +15,7 @@ We reserve however the right, in our sole discretion, to change, modify, add or 
 
 We shall make sure that the latest version of these Terms of Use shall always be available on <https://laravel-beyond-crud.com/terms-of-use>.
 
-If you have any questions or concerns, you may contact us by at [info@spatie.be](mailto:info@spatie.be).
+If you have any questions or concerns, you may contact us by at [support@spatie.be](mailto:support@spatie.be).
 
 ## 1. Definitions
 
