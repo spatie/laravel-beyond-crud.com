@@ -7,7 +7,7 @@
 @section('article')
 
 @markdown
-This the Laravel Beyond CRUD privacy and cookie policy. Laravel Beyond CRUD is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596, hereafter referred to as Spatie.
+This the Laravel Beyond CRUD privacy and cookie policy. Laravel Beyond CRUD is a product of Spatie BVBA, with a registered office at Kruikstraat 22/12, 2018 Antwerp, Belgium, and registered at the CBE under number BE 0809.387.596.
 
 Please read this privacy policy carefully, because it contains essential information about the processing of your data and the use of cookies by Spatie. By using the website, provided through URL [https://laravel-beyond-crud.com/](https://laravel-beyond-crud.com/); by creating a Spatie account on URL [https://spatie.be/register](https://spatie.be/register), by contacting us by email/phone, by subscribing to our newsletter, you declare that you have read this privacy policy and that you explicitly agree to its content as well as to the processing itself.
 
