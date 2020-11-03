@@ -49,7 +49,7 @@ class Coupon
             return now()->subDay();
         }
 
-        return Carbon::createFromFormat('Y-m-d H:i', $this->couponConfig['valid_from']);
+        return Carbon::createFromFormat('Y-m-d H:i', $this->couponConfig['valid_from'])->startOfMinute();
     }
 
     public function expiresAt(): Carbon
@@ -58,6 +58,6 @@ class Coupon
             return now()->subDay();
         }
 
-        return Carbon::createFromFormat('Y-m-d H:i', $this->couponConfig['expires_at']);
+        return Carbon::createFromFormat('Y-m-d H:i', $this->couponConfig['expires_at'])->startOfMinute();
     }
 }
