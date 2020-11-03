@@ -1,5 +1,5 @@
 @php
-    $expiresAt = \Carbon\Carbon::createFromFormat('Y-m-d H', '2020-09-11 18', 'Europe/Brussels')
+    $coupon = \App\Support\Coupon::forCouponName('default')
 @endphp
 
 <section class="px-8 flex justify-center">
@@ -9,23 +9,50 @@
             <div class="border-l border-r border-b border-gray-200 bg-white">
                 <div class="text-center pt-4 pb-12 leading-none">
                     <div class="font-display font-semibold text-3xl">
-                        <x-coupon :config="config('services.paddle.coupon')" />
+                        @if($coupon->active())
+                            <div
+                                class="flex flex-col items-center mb-2 text-center text-green-500 uppercase text-xs tracking-widest leading-snug">
+                                <div>Launch promo ending in</div>
+                                <div
+                                    class="z-10 transform rotate-0 bg-green-400 font-normal text-white px-1 py-1 shadow-md"
+                                    style="--transform-rotate: -1.5deg !important">
+                                    <x-countdown :expires="$coupon->expiresAt()">
+                                        <span class="bg-green-500 px-1"><span
+                                                x-text="timer.days">{{ $component->days() }}</span> days</span>
+                                        <span class="bg-green-500 px-1"><span
+                                                x-text="timer.hours">{{ $component->hours() }}</span> hours</span>
+                                        <span class="bg-green-500 px-1"><span
+                                                x-text="timer.minutes">{{ $component->minutes() }}</span> minutes</span>
+                                    </x-countdown>
+                                </div>
+                            </div>
+                        @endif
                         Videos & ebook
                     </div>
+
+                    @if ($coupon->active())
+                        <div>
+                            {{ $coupon->percentage() }}% by using {{ $coupon->code() }}
+                        </div>
+                    @endif
                     <div class="flex justify-center mt-3">
                         <div class="font-display">
-                            <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span class="font-bold text-5xl" data-id="current-price">—</span>
+                            <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span
+                                class="font-bold text-5xl" data-id="current-price">—</span>
                             <span class="hidden absolute right-full mr-4 top-0 mt-2">
-                                <sup class="text-gray-500 text-xs" data-id="original-currency"></sup><span class="text-gray-500 line-through" data-id="original-price">—</span>
+                                <sup class="text-gray-500 text-xs" data-id="original-currency"></sup><span
+                                    class="text-gray-500 line-through" data-id="original-price">—</span>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="text-center z-10 -mb-3">
                     <a href="https://spatie.be/products/laravel-beyond-crud">
-                        <button class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-yellow-500 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg hover:shadow-xl hover:bg-yellow-600">
+                        <button
+                            class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-yellow-500 text-gray-800 uppercase text-base font-display font-bold tracking-wider leading-none shadow-lg hover:shadow-xl hover:bg-yellow-600">
                             <span style="bottom: -0.05rem">Buy bundle</span>
-                            <span class="ml-3 flex-0 w-6 text-base h-6 text-sm bg-white bg-opacity-50 rounded-full flex items-center justify-center font-sans text-yellow-800">
+                            <span
+                                class="ml-3 flex-0 w-6 text-base h-6 text-sm bg-white bg-opacity-50 rounded-full flex items-center justify-center font-sans text-yellow-800">
                                 &rarr;
                             </span>
                         </button>
@@ -34,8 +61,12 @@
                 <div class="pt-12 pb-10 px-12 flex justify-center bg-gray-100">
                     <div>
                         <ul class="pb-6 leading-relaxed">
-                            <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of premium content</li>
-                            <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 2 hours of video</li>
+                            <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 100+ pages of
+                                premium content
+                            </li>
+                            <li class="font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 2 hours of
+                                video
+                            </li>
                             <li><i class="fas fa-check text-xs text-green-500"></i> Example source code download</li>
                             <li><i class="fas fa-check text-xs text-green-500"></i> All beautifully designed</li>
                         </ul>
@@ -46,7 +77,10 @@
                             <br>
                             We use purchasing power parity provided by Paddle.
                             <br>
-                            <a class="underline" href="mailto:info@spatie.be?subject=CRUD%20for%20students">Contact us</a> if your currency is <a class="underline" target="_blank" href="https://paddle.com/support/what-currencies-do-you-support/">not supported</a> or if you are a student.
+                            <a class="underline" href="mailto:info@spatie.be?subject=CRUD%20for%20students">Contact
+                                us</a> if your currency is <a class="underline" target="_blank"
+                                                              href="https://paddle.com/support/what-currencies-do-you-support/">not
+                                supported</a> or if you are a student.
                         </p>
                     </div>
                 </div>
@@ -61,7 +95,7 @@
         return string.indexOf(firstDigit);
     }
 
-    Paddle.Product.Prices(626491, function(prices) {
+    Paddle.Product.Prices(626491, function (prices) {
         let priceString = prices.price.net;
 
         let indexOFirstDigitInString = indexOfFirstDigitInString(priceString);

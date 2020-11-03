@@ -1,21 +1,26 @@
 <?php
 
-namespace App\View\Components;
+namespace App\Support;
 
 use Carbon\Carbon;
-use Illuminate\View\Component;
 
-class Coupon extends Component
+class Coupon
 {
-    protected array $couponConfig;
+    private array $couponConfig;
 
-    public function __construct(array $config)
+    public static function forCouponName(string $name): self
     {
-        $this->couponConfig = $config;
+        $couponConfig = config("services.paddle.coupon.{$name}");
+
+        return new static($couponConfig);
     }
 
+    protected function __construct(array $couponConfig)
+    {
+        $this->couponConfig = $couponConfig;
+    }
 
-    public function couponActive(): bool
+    public function active(): bool
     {
         if (empty($this->couponConfig['code'])) {
             return false;
@@ -25,20 +30,20 @@ class Coupon extends Component
             return false;
         }
 
-        return now()->isBetween($this->couponValidFrom(), $this->couponExpiresAt());
+        return now()->isBetween($this->validFrom(), $this->expiresAt());
     }
 
-    public function couponCode(): string
+    public function code(): string
     {
         return $this->couponConfig['code'] ?? '';
     }
 
-    public function couponPercentage(): int
+    public function percentage(): int
     {
         return $this->couponConfig['percentage'] ?? 0;
     }
 
-    public function couponValidFrom(): Carbon
+    public function validFrom(): Carbon
     {
         if (empty($this->couponConfig['valid_from'])) {
             return now()->subDay();
@@ -47,17 +52,12 @@ class Coupon extends Component
         return Carbon::createFromFormat('Y-m-d H:i', $this->couponConfig['valid_from']);
     }
 
-    public function couponExpiresAt(): Carbon
+    public function expiresAt(): Carbon
     {
         if (empty($this->couponConfig['expires_at'])) {
             return now()->subDay();
         }
 
         return Carbon::createFromFormat('Y-m-d H:i', $this->couponConfig['expires_at']);
-    }
-
-    public function render()
-    {
-        return view('components.coupon');
     }
 }
