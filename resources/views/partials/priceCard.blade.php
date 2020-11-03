@@ -9,18 +9,7 @@
             <div class="border-l border-r border-b border-gray-200 bg-white">
                 <div class="text-center pt-4 pb-12 leading-none">
                     <div class="font-display font-semibold text-3xl">
-                        @if($expiresAt->isFuture())
-                        <div class="flex flex-col items-center mb-2 text-center text-green-500 uppercase text-xs tracking-widest leading-snug">
-                            <div>Launch promo ending in</div>
-                            <div class="z-10 transform rotate-0 bg-green-400 font-normal text-white px-1 py-1 shadow-md" style="--transform-rotate: -1.5deg !important">
-                                <x-countdown :expires="$expiresAt">
-                                    <span class="bg-green-500 px-1"><span x-text="timer.days">{{ $component->days() }}</span> days</span>
-                                    <span class="bg-green-500 px-1"><span x-text="timer.hours">{{ $component->hours() }}</span> hours</span>
-                                    <span class="bg-green-500 px-1"><span x-text="timer.minutes">{{ $component->minutes() }}</span> minutes</span>
-                                </x-countdown>
-                            </div>
-                        </div>
-                        @endif
+                        <x-coupon :config="config('services.paddle.coupon')" />
                         Videos & ebook
                     </div>
                     <div class="flex justify-center mt-3">

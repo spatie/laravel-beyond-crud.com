@@ -17,6 +17,12 @@ return [
     'paddle' => [
         'vendor_id' => env('PADDLE_VENDOR_ID'),
         'vendor_auth_code' => env('PADDLE_VENDOR_AUTH_CODE'),
+        'coupon' => [
+            'code' => env('PADDLE_COUPON_CODE'),
+            'percentage' => 20,
+            'valid_from' => '2020-10-01 00:00', // format Y-m-d H:i
+            'expires_at' => '2020-12-01 00:00', // format Y-m-d H:i
+        ]
     ],
 
     'mailgun' => [
