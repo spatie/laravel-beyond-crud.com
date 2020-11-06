@@ -25,7 +25,7 @@
                         Learn how to create a Laravel package in this 4 hour video course.
                     </p>
                     <p class="text-xs">
-                        <a class="underline text-red-300" href="https://laravelpackage.training" target="_blank">laravelpackge.training</a>
+                        <a class="underline text-red-300" href="https://laravelpackage.training" target="_blank">laravelpackage.training</a>
                     </p>
                 </div>
             </div>
