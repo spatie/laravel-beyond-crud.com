@@ -17,6 +17,7 @@ return [
     'paddle' => [
         'vendor_id' => env('PADDLE_VENDOR_ID'),
         'vendor_auth_code' => env('PADDLE_VENDOR_AUTH_CODE'),
+        'product_id' => 626491,
         'coupon' => [
             'default' => [
                 'code' => env('PADDLE_COUPON_CODE'),

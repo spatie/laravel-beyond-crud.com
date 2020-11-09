@@ -32,11 +32,11 @@
 
                     <div class="flex justify-center mt-6">
                         <div class="font-display">
-                            <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span
-                                class="font-bold text-5xl" data-id="current-price">—</span>
-                            <span class="absolute right-full mr-4 top-0 mt-2">
-                                <sup class="text-gray-500 text-xs" data-id="original-currency"></sup><span
-                                    class="text-gray-500 line-through" data-id="original-price">—</span>
+                            <sup class="text-gray-500 text-3xl" data-id="current-currency-{{ config('services.paddle.product_id') }}"></sup><span
+                                class="font-bold text-5xl" data-id="current-price-{{ config('services.paddle.product_id') }}">—</span>
+                            <span data-id="original-display-{{ config('services.paddle.product_id') }}" class="hidden absolute right-full mr-4 top-0 mt-2">
+                                <sup class="text-gray-500 text-xs" data-id="original-currency-{{ config('services.paddle.product_id') }}"></sup><span
+                                    class="text-gray-500 line-through" data-id="original-price-{{ config('services.paddle.product_id') }}">—</span>
                             </span>
                         </div>
                     </div>
@@ -96,22 +96,32 @@
         return string.indexOf(firstDigit);
     }
 
-    Paddle.Product.Prices(626491, function (prices) {
-        let priceString = prices.price.net;
+    function displayPaddleProductPrice(productId) {
+        Paddle.Product.Prices(productId, function(prices) {
+            let priceString = prices.price.net;
 
-        let indexOFirstDigitInString = indexOfFirstDigitInString(priceString);
+            let factor = {{ $coupon->active() ? (100 - $coupon->percentage())/100 : 1 }};
 
-        let price = priceString.substring(indexOFirstDigitInString);
-        price = price.replace('.00', '').replace(/,/g, '');
+            let indexOFirstDigitInString = indexOfFirstDigitInString(priceString);
 
-        let currencySymbol = priceString.substring(0, indexOFirstDigitInString);
-        currencySymbol = currencySymbol.replace('US', '');
+            let price = priceString.substring(indexOFirstDigitInString);
+            price = price.replace('.00', '').replace(/,/g, '');
 
-        document.querySelector('[data-id="original-currency"]').innerHTML = currencySymbol;
-        document.querySelector('[data-id="original-price"]').innerHTML = price;
+            let currencySymbol = priceString.substring(0, indexOFirstDigitInString);
+            currencySymbol = currencySymbol.replace('US', '');
 
-        document.querySelector('[data-id="current-currency"]').innerHTML = currencySymbol;
-        document.querySelector('[data-id="current-price"]').innerHTML = Math.ceil(price * (100 - {{ $coupon->percentage() }})/100);
-    });
+            document.querySelector(`[data-id="original-currency-${productId}"]`).innerHTML = currencySymbol;
+            document.querySelector(`[data-id="original-price-${productId}"]`).innerHTML = price;
+
+            document.querySelector(`[data-id="current-currency-${productId}"]`).innerHTML = currencySymbol;
+            document.querySelector(`[data-id="current-price-${productId}"]`).innerHTML = Math.ceil(price * factor);
+            
+            if(factor < 1) {
+                document.querySelector(`[data-id="original-display-${productId}"]`).classList.remove('hidden');
+            }
+        });
+    }
+
+    displayPaddleProductPrice({{ config('services.paddle.product_id') }});
 
 </script>
