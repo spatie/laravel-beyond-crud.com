@@ -38,6 +38,11 @@ class Coupon
         return $this->couponConfig['code'] ?? '';
     }
 
+    public function label(): string
+    {
+        return $this->couponConfig['label'] ?? '';
+    }
+
     public function percentage(): int
     {
         return $this->couponConfig['percentage'] ?? 0;

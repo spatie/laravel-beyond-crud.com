@@ -7,12 +7,12 @@
         <div class="z-10 xs:z-30 xs:fix-z -mt-6 -mx-4 flex-grow shadow-2xl">
             <div class="bg-yellow-500 h-6"></div>
             <div class="border-l border-r border-b border-gray-200 bg-white">
-                <div class="text-center pt-4 pb-12 leading-none">
+                <div class="text-center py-4 leading-none">
                     <div class="font-display font-semibold text-3xl">
                         @if($coupon->active())
                             <div
                                 class="flex flex-col items-center mb-2 text-center text-green-500 uppercase text-xs tracking-widest leading-snug">
-                                <div>Launch promo ending in</div>
+                                <div>{{ $coupon->label() }} ending in</div>
                                 <div
                                     class="z-10 transform rotate-0 bg-green-400 font-normal text-white px-1 py-1 shadow-md"
                                     style="--transform-rotate: -1.5deg !important">
@@ -30,21 +30,22 @@
                         Videos & ebook
                     </div>
 
-                    @if ($coupon->active())
-                        <div>
-                            {{ $coupon->percentage() }}% by using {{ $coupon->code() }}
-                        </div>
-                    @endif
-                    <div class="flex justify-center mt-3">
+                    <div class="flex justify-center mt-6">
                         <div class="font-display">
                             <sup class="text-gray-500 text-3xl" data-id="current-currency"></sup><span
                                 class="font-bold text-5xl" data-id="current-price">—</span>
-                            <span class="hidden absolute right-full mr-4 top-0 mt-2">
+                            <span class="absolute right-full mr-4 top-0 mt-2">
                                 <sup class="text-gray-500 text-xs" data-id="original-currency"></sup><span
                                     class="text-gray-500 line-through" data-id="original-price">—</span>
                             </span>
                         </div>
                     </div>
+
+                    @if ($coupon->active())
+                        <div class="mt-6 text-gray-500 text-xs">
+                            {{ $coupon->percentage() }}% off with coupon <code class="px-2 py-1 text-gray-700 bg-gray-100 bg-opacity-25">{{ $coupon->code() }}</code>
+                        </div>
+                    @endif
                 </div>
                 <div class="text-center z-10 -mb-3">
                     <a href="https://spatie.be/products/laravel-beyond-crud">
@@ -106,11 +107,11 @@
         let currencySymbol = priceString.substring(0, indexOFirstDigitInString);
         currencySymbol = currencySymbol.replace('US', '');
 
-        document.querySelector('[data-id="current-currency"]').innerHTML = currencySymbol;
-        document.querySelector('[data-id="current-price"]').innerHTML = price;
-
         document.querySelector('[data-id="original-currency"]').innerHTML = currencySymbol;
-        document.querySelector('[data-id="original-price"]').innerHTML = Math.round(price * 1.3355);
+        document.querySelector('[data-id="original-price"]').innerHTML = price;
+
+        document.querySelector('[data-id="current-currency"]').innerHTML = currencySymbol;
+        document.querySelector('[data-id="current-price"]').innerHTML = Math.ceil(price * (100 - {{ $coupon->percentage() }})/100);
     });
 
 </script>
