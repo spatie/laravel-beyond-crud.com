@@ -17,6 +17,16 @@ return [
     'paddle' => [
         'vendor_id' => env('PADDLE_VENDOR_ID'),
         'vendor_auth_code' => env('PADDLE_VENDOR_AUTH_CODE'),
+        'product_id' => 626491,
+        'coupon' => [
+            'default' => [
+                'code' => env('PADDLE_COUPON_CODE'),
+                'percentage' => env('PADDLE_COUPON_PERCENTAGE'),
+                'valid_from' => env('PADDLE_COUPON_VALID_FROM'), // format Y-m-d H:i
+                'expires_at' => env('PADDLE_COUPON_EXPIRES_AT'), // format Y-m-d H:i
+                'label' => env('PADDLE_COUPON_LABEL'),
+            ],
+        ]
     ],
 
     'mailgun' => [
