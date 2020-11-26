@@ -13,4 +13,3 @@ Route::get('sample-chapter', SampleChapterController::class)->name('sample-chapt
 
 Route::view('terms-of-use', 'front.legal.terms-of-use')->name('termsOfUse');
 Route::view('privacy', 'front.legal.privacy')->name('privacy');
-
