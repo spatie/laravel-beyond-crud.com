@@ -18,7 +18,7 @@
                     <img class="h-auto w-4 mr-3" src="/images/logo.svg" alt="logo">
                     Laravel Beyond CRUD
                 </span>
-                <a href="https://spatie.be/products/laravel-beyond-crud">
+                <a href="{{spatieUrl('https://spatie.be/products/laravel-beyond-crud')}}">
                     <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
                         Buy course
                     </button>

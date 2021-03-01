@@ -51,7 +51,7 @@
 
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-gray-900 overflow-hidden">
-                    <a href="https://spatie.be/videos" target="_blank">
+                    <a href="{{spatieUrl('https://spatie.be/videos')}}" target="_blank">
                         <img src="/images/github.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>
                 </div>
@@ -63,7 +63,7 @@
                         Get early access to our video insights to improve your web development skills.
                     </p>
                     <p class="text-xs">
-                        <a class="underline text-red-300" href="https://spatie.be/videos" target="_blank">spatie.be/videos</a>
+                        <a class="underline text-red-300" href="{{spatieUrl('https://spatie.be/videos')}}" target="_blank">spatie.be/videos</a>
                     </p>
                 </div>
             </div>
@@ -87,7 +87,7 @@
 
 <small class="block px-8 pt-8 pb-8 bg-red-500 text-red-100 overflow-hidden">
     <div class="max-w-2xl mx-auto flex items-center">
-        <a href="http://spatie.be" class="z-10 h-6 xs:h-8 text-red-600 hover:opacity-75">
+        <a href="{{ spatieUrl() }}" class="z-10 h-6 xs:h-8 text-red-600 hover:opacity-75">
             @include('partials.logo')
         </a>
         <a href="{{route('termsOfUse')}}" class="underline ml-auto hover:opacity-75">Terms of Use</a>

@@ -11,5 +11,14 @@ function formatBytes($size, $precision = 2)
 
 function registerUrl(): string
 {
-    return 'https://spatie.be';
+    return spatieUrl();
+}
+
+function spatieUrl(string $url = 'https://spatie.be'): string
+{
+    if ($referrer = session()->get('referrer')) {
+        return $url . "?referrer={$referrer}";
+    }
+
+    return $url;
 }
