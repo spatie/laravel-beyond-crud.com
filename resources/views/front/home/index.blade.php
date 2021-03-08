@@ -301,7 +301,7 @@
 
                         <a href="https://twitter.com/enunomaduro" target="_blank" class="mt-4 flex items-center font-display text-lg">
                             <div class="mr-4">
-                                <img src="https://pbs.twimg.com/profile_images/954141790038298625/r2o4siIW_400x400.jpg" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
+                                <img src="/images/nuno.jpg" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
                                 <div class="absolute w-full h-full top-0 left-0 mt-1 ml-1 bg-gray-800 opacity-25"></div>
                             </div>
                             <div>
@@ -321,7 +321,7 @@
 
                         <a href="https://twitter.com/themsaid" class="mt-4 flex items-center font-display text-lg">
                             <div class="mr-4">
-                                <img src="https://pbs.twimg.com/profile_images/1239081994472087552/J4V8uSNN_400x400.jpg" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
+                                <img src="/images/mohamed.jpg" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
                                 <div class="absolute w-full h-full top-0 left-0 mt-1 ml-1 bg-gray-800 opacity-25"></div>
                             </div>
                             <div>
