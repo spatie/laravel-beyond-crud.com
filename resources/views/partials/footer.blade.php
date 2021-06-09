@@ -13,6 +13,25 @@
 
             <div class="mt-16 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-500 overflow-hidden">
+                    <a class="" href="https://event-sourcing-laravel.com" target="_blank">
+                        <img src="/images/event-sourcing.svg" class="z-10 w-10 h-10" alt="Event Sourcing in Laravel">
+                    </a>
+                </div>
+                <div>
+                    <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
+                        Event Sourcing in Laravel
+                    </h3>
+                    <p class="text-sm">
+                        Learn how to implement Event Sourcing in large Laravel applications in this extended course by Brent.
+                    </p>
+                    <p class="text-xs">
+                        <a class="underline text-red-300" href="https://event-sourcing-laravel.com" target="_blank">event-sourcing-laravel.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 xs:flex items-center text-lg">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-500 overflow-hidden">
                     <a class="" href="https://laravelpackage.training" target="_blank">
                         <img src="/images/laravel-package-training.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>
