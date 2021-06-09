@@ -12,7 +12,7 @@
             </p>
 
             <div class="mt-16 xs:flex items-center text-lg">
-                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-500 overflow-hidden">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-200 overflow-hidden">
                     <a class="" href="https://event-sourcing-laravel.com" target="_blank">
                         <img src="/images/event-sourcing.svg" class="z-10 w-10 h-10" alt="Event Sourcing in Laravel">
                     </a>
