@@ -20,6 +20,7 @@
                 <div>
                     <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
                         Event Sourcing in Laravel
+                        <span class="ml-3 py-1 px-3 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest text-xs font-bold">NEW</span>
                     </h3>
                     <p class="text-sm">
                         Learn how to implement Event Sourcing in large Laravel applications in this extended course by Brent.
