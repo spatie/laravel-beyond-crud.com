@@ -17,6 +17,15 @@ module.exports = {
                 500: "var(--blue-500)"
             },
 
+            testinglaravel: {
+                100: "#F2C2C2",
+            },
+
+            frontline: {
+                100: "#0756B0",
+                300: "#4431A8"
+            },
+
             spatie: {
                 500: "var(--spatie-500)",
                 600: "var(--spatie-600)"

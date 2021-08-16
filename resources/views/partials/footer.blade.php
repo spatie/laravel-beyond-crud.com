@@ -11,6 +11,27 @@
                 Other related courses and videos from Spatie
             </p>
 
+            <div class="mt-8 xs:flex items-center text-lg">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-testinglaravel-100 overflow-hidden">
+                    <a href="https://testing-laravel.com/" target="_blank">
+                        <img src="/images/testing-laravel.png" class="z-10 w-10 h-10" alt="Laravel Package Training">
+                    </a>
+                </div>
+                <div>
+                    <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
+                        Testing Laravel
+                        <span class="ml-1 py-1 px-3 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest text-xs font-bold">NEW</span>
+
+                    </h3>
+                    <p class="text-sm">
+                    A new video course to get started with Pest and PHPUnit <br>by Brent Roose & Freek Van der Herten
+                    </p>
+                    <p class="text-xs">
+                        <a class="underline text-red-300" href="https://testing-laravel.com/" target="_blank">testing-laravel.com/</a>
+                    </p>
+                </div>
+            </div>
+
             <div class="mt-16 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-200 overflow-hidden">
                     <a class="" href="https://event-sourcing-laravel.com" target="_blank">
@@ -20,7 +41,6 @@
                 <div>
                     <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
                         Event Sourcing in Laravel
-                        <span class="ml-1 py-1 px-3 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest text-xs font-bold">NEW</span>
                     </h3>
                     <p class="text-sm">
                         Learn how to implement Event Sourcing in large Laravel applications in this extended course by Brent.
@@ -51,42 +71,25 @@
             </div>
 
             <div class="mt-8 xs:flex items-center text-lg">
-                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-green-500 overflow-hidden">
-                    <a href="https://mailcoach.app/videos" target="_blank">
-                        <img src="/images/mailcoach.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-frontline-100 to-frontline-300 overflow-hidden">
+                    <a class="" href="https://laravelpackage.training" target="_blank">
+                        <img src="/images/front-line.svg" class="z-10 w-10 h-10" alt="Front line PHP"> 
                     </a>
                 </div>
                 <div>
                     <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
-                        Mailcoach
+                        Front Line PHP
                     </h3>
                     <p class="text-sm">
-                        Mailcoach is –besides a great email marketing tool– also a video course with Laravel insights.
+                        An ebook on cutting edge tactics in PHP 8, accompanied by videos and practical examples.
                     </p>
                     <p class="text-xs">
-                        <a class="underline text-red-300" href="https://mailcoach.app/videos" target="_blank">mailcoach.app/videos</a>
+                        <a class="underline text-red-300" href="https://front-line-php.com/" target="_blank">front-line-php.com</a>
                     </p>
                 </div>
             </div>
 
-            <div class="mt-8 xs:flex items-center text-lg">
-                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-gray-900 overflow-hidden">
-                    <a href="{{spatieUrl('https://spatie.be/videos')}}" target="_blank">
-                        <img src="/images/github.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
-                    </a>
-                </div>
-                <div>
-                    <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
-                        Sponsor us on GitHub
-                    </h3>
-                    <p class="text-sm">
-                        Get early access to our video insights to improve your web development skills.
-                    </p>
-                    <p class="text-xs">
-                        <a class="underline text-red-300" href="{{spatieUrl('https://spatie.be/videos')}}" target="_blank">spatie.be/videos</a>
-                    </p>
-                </div>
-            </div>
+            
         </div>
     </div>
 </aside>
