@@ -18,7 +18,7 @@ module.exports = {
             },
 
             testinglaravel: {
-                100: "#F2C2C2",
+                100: "#F2C2C2"
             },
 
             frontline: {
