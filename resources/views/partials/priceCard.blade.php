@@ -61,10 +61,10 @@
                 <div class="flex-grow flex items-center pt-12 pb-10 px-12  justify-center bg-gray-100">
                     <div>
                         <ul class="pb-6 leading-relaxed">
-                            <li class="flex items-baseline font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 
+                            <li class="flex items-baseline font-semibold"><i class="fas fa-check text-xs text-green-500"></i>
                             <span class="ml-2">100+ pages of premium content</span>
                             </li>
-                            <li class="flex items-baseline font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 
+                            <li class="flex items-baseline font-semibold"><i class="fas fa-check text-xs text-green-500"></i>
                             <span class="ml-2">2 hours of video</span>
                             </li>
                             <li class="flex items-baseline"><i class="fas fa-check text-xs text-green-500"></i> <span class="ml-2">Example source code download</span></li>
@@ -90,16 +90,16 @@
                             <span class="font-bold text-5xl">
                                 @if($couldFetchBundlePrice)
                                     {{ $bundlePrice->formattedPrice() }}
-                                @else   
+                                @else
                                 –
                                 @endif
                             </span>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="text-center z-10 -mb-3">
-                    <a href="{{spatieUrl('https://spatie.be/bundles/laravel-beyond-crud')}}">
+                    <a href="{{spatieUrl('https://spatie.be/bundles/solid-applications-bundle')}}">
                         <button
                             class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-red-500 text-white uppercase  font-display font-bold tracking-wider leading-none shadow-lg hover:shadow-xl hover:bg-red-600">
                             <span style="bottom: -0.05rem">Buy bundle</span>
@@ -113,7 +113,7 @@
                 <div class="flex-grow pt-12 pb-6 px-12  justify-center bg-gray-100">
 
                     <ul class="pb-4 leading-relaxed">
-                            <li class="flex items-baseline"><i class="fas fa-check text-xs text-green-500"></i> 
+                            <li class="flex items-baseline"><i class="fas fa-check text-xs text-green-500"></i>
                             <span class="ml-2">Get Laravel Beyond CRUD &amp; <a class="markup-link" href="https://testing-laravel.com">Testing Laravel</a> with a <strong class="font-semibold">20% discount</strong>!</span>
                             </li>
                     </ul>
