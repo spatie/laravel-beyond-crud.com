@@ -126,9 +126,7 @@
 <p class="text-xs text-gray-600 text-center mt-10">
     Prices exclusive of VAT for buyers without a valid VAT number.
     <br>
-    <br>
         We use purchasing power parity.
-    <br>
     <a class="underline" href="mailto:info@spatie.be?subject=CRUD%20for%20students">Contact
         us</a> if you are a student.
 </p>
