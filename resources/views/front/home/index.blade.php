@@ -119,7 +119,7 @@
                 </div>
                 <div class="mb-12 xs:mb-0 w-2/3 xs:w-1/2 xs:pr-8">
                     <div class="h-full xs:-ml-4">
-                        <div class="bg-gray-900 xs:z-30 xs:fix-z xs:absolute left-0 bottom-0 w-full shadow-2xl">
+                        <div class="bg-gray-900 xs:absolute left-0 bottom-0 w-full shadow-2xl">
                             <img srcset="/images/cover-2000.jpg 2000w,
                                     /images/cover-1000.jpg 1000w,
                                     /images/cover-500.jpg 500w" sizes="(max-width: 420px) 75vw,

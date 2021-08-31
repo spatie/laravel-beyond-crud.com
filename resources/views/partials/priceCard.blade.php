@@ -58,7 +58,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="flex-grow pt-12 pb-10 px-12  justify-center bg-gray-100">
+                <div class="flex-grow flex items-center pt-12 pb-10 px-12  justify-center bg-gray-100">
                     <div>
                         <ul class="pb-6 leading-relaxed">
                             <li class="flex items-baseline font-semibold"><i class="fas fa-check text-xs text-green-500"></i> 
@@ -82,32 +82,18 @@
             <div class="border-l border-r border-b border-gray-200 bg-white">
                 <div class="text-center py-4 leading-none">
                     <div class="font-display font-semibold text-3xl">
-                        @if($couldFetchPrice)
-                            @if($discount->active)
-                                <div
-                                    class="flex flex-col items-center mb-2 text-center text-green-500 uppercase text-xs tracking-widest leading-snug">
-                                    <div>{{ $discount->name }} ending in</div>
-                                    <div
-                                        class="z-10 transform rotate-0 bg-green-400 font-normal text-white px-1 py-1 shadow-md"
-                                        style="--transform-rotate: -1.5deg !important">
-                                        <x-countdown :expires="$discount->expiresAt()">
-                                        <span class="bg-green-500 px-1"><span
-                                                x-text="timer.days">{{ $component->days() }}</span> days</span>
-                                            <span class="bg-green-500 px-1"><span
-                                                    x-text="timer.hours">{{ $component->hours() }}</span> hours</span>
-                                            <span class="bg-green-500 px-1"><span
-                                                    x-text="timer.minutes">{{ $component->minutes() }}</span> minutes</span>
-                                        </x-countdown>
-                                    </div>
-                                </div>
-                            @endif
-                        @endif
                         Course bundle
                     </div>
 
                     <div class='flex justify-center mt-6 '>
                         <div class="font-display">
-                            <span class="font-bold text-5xl">279 USD</span>
+                            <span class="font-bold text-5xl">
+                                @if($couldFetchBundlePrice)
+                                    {{ $bundlePrice->formattedPrice() }}
+                                @else   
+                                –
+                                @endif
+                            </span>
                         </div>
                     </div>
                     
@@ -124,11 +110,11 @@
                         </button>
                     </a>
                 </div>
-                <div class="flex-grow pt-12 pb-4 px-12  justify-center bg-gray-100">
+                <div class="flex-grow pt-12 pb-6 px-12  justify-center bg-gray-100">
 
                     <ul class="pb-4 leading-relaxed">
                             <li class="flex items-baseline"><i class="fas fa-check text-xs text-green-500"></i> 
-                            <span class="ml-2">Get both Testing Laravel and <a class="markup-link" href="https://laravel-beyond-crud.com">Laravel Beyond CRUD</a> with a <strong class="font-semibold">20% discount</strong>!</span>
+                            <span class="ml-2">Get both <a class="markup-link" href="https://testing-laravel.com">Testing Laravel</a> and Laravel Beyond CRUD with a <strong class="font-semibold">20% discount</strong>!</span>
                             </li>
                     </ul>
                     <img src="/images/bundle_trans.png" alt="cover image bundle Testing Laravel & Laravel Beyond Crud">
