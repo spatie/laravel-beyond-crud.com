@@ -13,7 +13,7 @@
 
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-testinglaravel-100 overflow-hidden">
-                    <a href="https://testing-laravel.com/" target="_blank">
+                    <a href="https://testing-laravel.com" target="_blank">
                         <img src="/images/testing-laravel.png" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>
                 </div>
@@ -73,7 +73,7 @@
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-frontline-100 to-frontline-300 overflow-hidden">
                     <a class="" href="https://laravelpackage.training" target="_blank">
-                        <img src="/images/front-line.svg" class="z-10 w-10 h-10" alt="Front line PHP"> 
+                        <img src="/images/front-line.svg" class="z-10 w-10 h-10" alt="Front line PHP">
                     </a>
                 </div>
                 <div>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 </aside>
