@@ -114,7 +114,7 @@
 
                     <ul class="pb-4 leading-relaxed">
                             <li class="flex items-baseline"><i class="fas fa-check text-xs text-green-500"></i> 
-                            <span class="ml-2">Get both <a class="markup-link" href="https://testing-laravel.com">Testing Laravel</a> and Laravel Beyond CRUD with a <strong class="font-semibold">20% discount</strong>!</span>
+                            <span class="ml-2">Get Laravel Beyond CRUD &amp; <a class="markup-link" href="https://testing-laravel.com">Testing Laravel</a> with a <strong class="font-semibold">20% discount</strong>!</span>
                             </li>
                     </ul>
                     <img src="/images/bundle_trans.png" alt="cover image bundle Testing Laravel & Laravel Beyond Crud">
