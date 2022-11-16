@@ -222,7 +222,7 @@
                             <li>Improving code clarity by using meaningful names</li>
                             <li>Keep controllers light by using view models</li>
                             <li>Adding behaviour to collections</li>
-                            <li>Testing actions, DTOs and model-related classes</li>
+                            <li>Testing actions, Data Objects and model-related classes</li>
                             <li>Using enhanced test factories to seed data for every scenario</li>
                             <li>Using PhpStorm's refactoring tools to manage classes and namespaces</li>
                             <li>Scaffold different types of classes using PhpStorm templates</li>
@@ -241,7 +241,7 @@
                         </p>
 
                         <ul class="sm:text-sm">
-                            <li>Data transfer objects always have a significant impact, regardless of project size</li>
+                            <li>Data objects always have a significant impact, regardless of project size</li>
                             <li>Whatever type of project, you will be dealing with controllers, so view models will improve your workflow</li>
                             <li>Actions are a structured solution for code that would otherwise end up spread across the project</li>
                             <li>Even the smallest MVC app also deals with querying models, understanding Laravel's query builders will be an asset</li>
@@ -272,13 +272,10 @@
                             <h2 class="font-display font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
 
                             <p class="text-lg leading-relaxed">
-                                Brent has been working almost exclusively on large web applications for the past few years now. In addition, he has taught himself topics like DDD and event sourcing.
+                                Brent has years of experience working on large web applications. In addition, he has taught himself topics like DDD and event sourcing.
                             </p>
                             <p class="mt-4 text-lg leading-relaxed">
                                 Doing so, he applied much of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
-                            </p>
-                            <p class="mt-4 text-lg leading-relaxed">
-                                Besides his work at Spatie, Brent is also very active in the PHP community, most notably with <a class="text-red-600 hover:text-red-500 underline" href="https://stitcher.io/">his blog</a> where he writes about programming, PHP and the web in general.
                             </p>
 
                             <div class="mt-6 flex items-center text-lg">
