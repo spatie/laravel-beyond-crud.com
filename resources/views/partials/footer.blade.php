@@ -30,6 +30,25 @@
                 </div>
             </div>
 
+            <div class="mt-8 xs:flex items-center text-lg">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-white overflow-hidden">
+                    <a href="https://writing-readable-php.com" target="_blank">
+                        <img src="/images/php.jpg" class="z-10" alt="Writing Readable PHP">
+                    </a>
+                </div>
+                <div>
+                    <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
+                        Writing Readable PHP
+                    </h3>
+                    <p class="text-sm">
+                        A large collection of tips on trick on how to write PHP code <br>to is a joy to read for years to come
+                    </p>
+                    <p class="text-xs">
+                        <a class="underline text-red-300" href="https://writing-readable-php.com/" target="_blank">writing-readable-php.com/</a>
+                    </p>
+                </div>
+            </div>
+
             <div class="mt-16 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-200 overflow-hidden">
                     <a class="" href="https://event-sourcing-laravel.com" target="_blank">
