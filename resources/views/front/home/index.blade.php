@@ -298,7 +298,7 @@
 
 
                             <p class="mt-4 text-lg leading-relaxed">
-                                This book was revised by Freek Van der Herten in October 2022. The code samples were updated to PHP 8.2 / Laravel 9, and various chapters were updated to have we currently build projects at Spatie.
+                                This book was revised by Freek Van der Herten in October 2022. The code samples were updated to PHP 8.2 / Laravel 9, and various chapters were updated to how we currently build projects at Spatie.
                             </p>
 
                             <div class="mt-6 flex items-center text-lg">
