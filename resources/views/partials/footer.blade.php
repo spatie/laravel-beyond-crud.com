@@ -20,8 +20,6 @@
                 <div>
                     <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
                         Testing Laravel
-                        <span class="ml-1 py-1 px-3 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest text-xs font-bold">NEW</span>
-
                     </h3>
                     <p class="text-sm">
                     A new video course to get started with Pest and PHPUnit <br>by Brent Roose & Freek Van der Herten
