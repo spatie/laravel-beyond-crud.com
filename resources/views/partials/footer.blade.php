@@ -20,14 +20,31 @@
                 <div>
                     <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
                         Testing Laravel
-                        <span class="ml-1 py-1 px-3 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest text-xs font-bold">NEW</span>
-
                     </h3>
                     <p class="text-sm">
                     A new video course to get started with Pest and PHPUnit <br>by Brent Roose & Freek Van der Herten
                     </p>
                     <p class="text-xs">
                         <a class="underline text-red-300" href="https://testing-laravel.com/" target="_blank">testing-laravel.com/</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 xs:flex items-center text-lg">
+                <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-white overflow-hidden">
+                    <a href="https://writing-readable-php.com" target="_blank">
+                        <img src="/images/php.jpg" class="z-10" alt="Writing Readable PHP">
+                    </a>
+                </div>
+                <div>
+                    <h3 class="uppercase text-lg font-display font-semibold tracking-wider">
+                        Writing Readable PHP
+                    </h3>
+                    <p class="text-sm">
+                        A large collection of tips on trick on how to write PHP code <br>to is a joy to read for years to come
+                    </p>
+                    <p class="text-xs">
+                        <a class="underline text-red-300" href="https://writing-readable-php.com/" target="_blank">writing-readable-php.com/</a>
                     </p>
                 </div>
             </div>

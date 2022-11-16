@@ -13,13 +13,16 @@
 
     <header class="z-20 sticky top-0 overflow-hidden pb-8">
         <div class="px-8 bg-red-100 shadow-nav">
-            <div class="max-w-2xl mx-auto h-24 flex items-center justify-between">
+            <div class="max-w-2xl mx-auto h-24 flex items-center justify-between gap-2">
                 <span class="flex items-center uppercase text-sm font-display font-semibold tracking-wider leading-none">
                     <img class="h-auto w-4 mr-3" src="/images/logo.svg" alt="logo">
-                    Laravel Beyond CRUD
+                    Laravel Beyond&nbsp;CRUD
+                    <span class="whitespace-no-wrap ml-2 py-2 px-2 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest font-bold">
+                        2nd Edition
+                    </span>
                 </span>
                 <a href="{{spatieUrl('https://spatie.be/products/laravel-beyond-crud')}}">
-                    <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
+                    <button class="whitespace-no-wrap px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
                         Buy course
                     </button>
                 </a>
@@ -47,6 +50,9 @@
 
             <div class="px-8">
                 <div class="z-10 mt-48 md:mt-64 max-w-2xl mx-auto text-red-100 pointer-events-none">
+                    <div class="inline-block whitespace-no-wrap py-2 px-2 font-display text-gray-900 font-semibold border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest">
+                        2ND EDITION: updates for<br/>Laravel 9 / PHP 8.2
+                    </div>
                     <h1 class="text-5xl uppercase font-display font-bold leading-tight tracking-wider">
                         Laravel<br>
                         Beyond CRUD
@@ -216,7 +222,7 @@
                             <li>Improving code clarity by using meaningful names</li>
                             <li>Keep controllers light by using view models</li>
                             <li>Adding behaviour to collections</li>
-                            <li>Testing actions, DTOs and model-related classes</li>
+                            <li>Testing actions, Data Objects and model-related classes</li>
                             <li>Using enhanced test factories to seed data for every scenario</li>
                             <li>Using PhpStorm's refactoring tools to manage classes and namespaces</li>
                             <li>Scaffold different types of classes using PhpStorm templates</li>
@@ -235,7 +241,7 @@
                         </p>
 
                         <ul class="sm:text-sm">
-                            <li>Data transfer objects always have a significant impact, regardless of project size</li>
+                            <li>Data objects always have a significant impact, regardless of project size</li>
                             <li>Whatever type of project, you will be dealing with controllers, so view models will improve your workflow</li>
                             <li>Actions are a structured solution for code that would otherwise end up spread across the project</li>
                             <li>Even the smallest MVC app also deals with querying models, understanding Laravel's query builders will be an asset</li>
@@ -261,27 +267,49 @@
 
             <section class="px-8 pb-24">
                 <div class="max-w-2xl mx-auto flex justify-end">
-                    <div class="xs:w-2/3 xs:pl-8">
-                        <h2 class="font-display font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
+                    <div class="flex flex-col xs:w-2/3 xs:pl-8 gap-16">
+                        <div>
+                            <h2 class="font-display font-bold text-4xl leading-tight  mb-16 mt-2">About the author</h2>
 
-                        <p class="text-lg leading-relaxed">
-                            Brent has been working almost exclusively on large web applications for the past few years now. In addition, he has taught himself topics like DDD and event sourcing.
-                        </p>
-                        <p class="mt-4 text-lg leading-relaxed">
-                            Doing so, he applied much of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
-                        </p>
-                        <p class="mt-4 text-lg leading-relaxed">
-                            Besides his work at Spatie, Brent is also very active in the PHP community, most notably with <a class="text-red-600 hover:text-red-500 underline" href="https://stitcher.io/">his blog</a> where he writes about programming, PHP and the web in general.
-                        </p>
+                            <p class="text-lg leading-relaxed">
+                                Brent has years of experience working on large web applications. In addition, he has taught himself topics like DDD and event sourcing.
+                            </p>
+                            <p class="mt-4 text-lg leading-relaxed">
+                                Doing so, he applied much of the theoretical knowledge to modern day Laravel projects; a method that has paid of: most modern-day Spatie projects follow these practices.
+                            </p>
 
-                        <div class="mt-6 flex items-center text-lg">
-                            <div class="mr-6">
-                                <img src="/images/avatar.jpg" class="z-10 w-16 h-16 md:w-24 md:h-24" alt="Avatar">
-                                <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-yellow-400"></div>
+                            <div class="mt-6 flex items-center text-lg">
+                                <div class="mr-6">
+                                    <img src="/images/avatars/brent.jpg" class="z-10 w-16 h-16 md:w-24 md:h-24" alt="Avatar">
+                                    <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-yellow-400"></div>
+                                </div>
+                                <div class="leading-tight">
+                                    <div class="font-display font-semibold">Brent Roose</div>
+                                    <a class="font-display text-base hover:text-red-500" href="https://twitter.com/brendt_gd">@brendt_gd</a>
+                                </div>
                             </div>
-                            <div class="leading-tight">
-                                <div class="font-display font-semibold">Brent Roose</div>
-                                <a class="font-display text-base hover:text-red-500" href="https://twitter.com/brendt_gd">@brendt_gd</a>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-3xl leading-tight mb-8 mt-2">
+                                2nd Edition
+                                <span class="ml-1 py-1 px-3 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest text-sm font-bold">NEW</span>
+                            </h3>
+
+
+
+                            <p class="mt-4 text-lg leading-relaxed">
+                                This book was revised by Freek Van der Herten in October 2022. The code samples were updated to PHP 8.2 / Laravel 9, and various chapters were updated to have we currently build projects at Spatie.
+                            </p>
+
+                            <div class="mt-6 flex items-center text-lg">
+                                <div class="mr-6">
+                                    <img src="/images/avatars/freek.jpg" class="z-10 w-16 h-16 md:w-24 md:h-24" alt="Avatar">
+                                    <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-blue-300"></div>
+                                </div>
+                                <div class="leading-tight">
+                                    <div class="font-display font-semibold">Freek Van der Herten</div>
+                                    <a class="font-display text-base hover:text-red-500" href="https://twitter.com/freekmurze">@freekmurze</a>
+                                </div>
                             </div>
                         </div>
                     </div>

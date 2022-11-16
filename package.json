@@ -18,18 +18,5 @@
         "lint-staged": "^8.1.5",
         "prettier": "^1.18.2",
         "tailwindcss": "^1.4.0"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "linters": {
-            "*.php": [
-                "php ./vendor/bin/php-cs-fixer fix --config .php_cs",
-                "git add"
-            ]
-        }
     }
 }
