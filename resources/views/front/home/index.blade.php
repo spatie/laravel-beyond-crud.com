@@ -13,16 +13,16 @@
 
     <header class="z-20 sticky top-0 overflow-hidden pb-8">
         <div class="px-8 bg-red-100 shadow-nav">
-            <div class="max-w-2xl mx-auto h-24 flex items-center justify-between">
+            <div class="max-w-2xl mx-auto h-24 flex items-center justify-between gap-2">
                 <span class="flex items-center uppercase text-sm font-display font-semibold tracking-wider leading-none">
                     <img class="h-auto w-4 mr-3" src="/images/logo.svg" alt="logo">
-                    Laravel Beyond CRUD
-                    <span class="ml-2 py-1 px-3 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest font-bold">
+                    Laravel Beyond&nbsp;CRUD
+                    <span class="whitespace-no-wrap ml-2 py-2 px-2 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest font-bold">
                         2nd Edition
                     </span>
                 </span>
                 <a href="{{spatieUrl('https://spatie.be/products/laravel-beyond-crud')}}">
-                    <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
+                    <button class="whitespace-no-wrap px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
                         Buy course
                     </button>
                 </a>
@@ -50,6 +50,9 @@
 
             <div class="px-8">
                 <div class="z-10 mt-48 md:mt-64 max-w-2xl mx-auto text-red-100 pointer-events-none">
+                    <div class="inline-block whitespace-no-wrap py-2 px-2 font-display text-gray-900 font-semibold border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest">
+                        2ND EDITION: updates for<br/>Laravel 9 / PHP 8.2
+                    </div>
                     <h1 class="text-5xl uppercase font-display font-bold leading-tight tracking-wider">
                         Laravel<br>
                         Beyond CRUD
