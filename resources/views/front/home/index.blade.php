@@ -50,6 +50,9 @@
 
             <div class="px-8">
                 <div class="z-10 mt-48 md:mt-64 max-w-2xl mx-auto text-red-100 pointer-events-none">
+                    <div class="inline-block whitespace-no-wrap py-2 px-2 font-display text-gray-900 font-semibold border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest">
+                        2ND EDITION: updates for<br/>Laravel 9 / PHP 8.2
+                    </div>
                     <h1 class="text-5xl uppercase font-display font-bold leading-tight tracking-wider">
                         Laravel<br>
                         Beyond CRUD
