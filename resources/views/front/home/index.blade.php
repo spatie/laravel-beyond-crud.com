@@ -51,7 +51,7 @@
             <div class="px-8">
                 <div class="z-10 mt-48 md:mt-64 max-w-2xl mx-auto text-red-100 pointer-events-none">
                     <div class="inline-block whitespace-no-wrap ml-1 mb-2 py-2 px-4 font-display text-gray-900 font-semibold text-sm border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest">
-                        Updated for Laravel 9 / PHP 8.2
+                        Updated for Laravel 10 / PHP 8.2
                     </div>
                     <h1 class="text-5xl uppercase font-display font-bold leading-tight tracking-wider">
                         Laravel<br>
@@ -298,7 +298,7 @@
 
 
                             <p class="mt-4 text-lg leading-relaxed">
-                                This book was revised by Freek Van der Herten in October 2022. The code samples were updated to PHP 8.2 / Laravel 9, and various chapters were updated to how we currently build projects at Spatie.
+                                This book was revised by Freek Van der Herten in October 2022. The code samples were updated to PHP 8.2 / Laravel 10, and various chapters were updated to how we currently build projects at Spatie.
                             </p>
 
                             <div class="mt-6 flex items-center text-lg">
