@@ -434,7 +434,7 @@
                     </p>
                     <p><br /></p>
                     <p>
-                        As of PHP 7.0, its type system has been improved quite a lot. So
+                        In the latest versions, PHP's type system has been improved quite a lot. So
                         much so that tools like PHPStan, Phan and Psalm started to become
                         very popular lately.
                     </p>
@@ -585,9 +585,7 @@
                             {
                         </p>
                         <p class="s11" style="padding-top: 2pt;padding-left: 27pt;">
-                            public <span style=" color: #E22C28;">string </span><span style=" color: #2D9B42;">$name</span>
-
-                            <span style=" color: #0E0E0E;">; <br></span>public
+                            public <span style=" color: #E22C28;">string </span><span style=" color: #2D9B42;">$name</span><span style=" color: #0E0E0E;">; <br></span>public
                             <span style=" color: #E22C28;">string </span><span style=" color: #2D9B42;">$email</span><span style=" color: #0E0E0E;">; </span>
                             <br>
                             public
@@ -753,102 +751,6 @@
                             in the domain, now has to know about the </span><span class="s6" style=" background-color: #F5FAFB;">CustomerRequest</span><span class="s15"> </span><span class="p">class, which lives in the application layer.</span>
                     </p>
                     <div class="code">
-                        <p class="s11" style="padding-left: 8pt;">
-                            use
-                            <span style=" color: #E22C28;">Spatie\DataTransferObject\DataTransferObject</span><span style=" color: #0E0E0E;">;</span>
-                        </p>
-                        <p><br /></p>
-                        <p class="s11" style="padding-left: 8pt;">
-                            class <span style=" color: #E22C28;">CustomerData </span>extends
-                            <span style=" color: #E22C28;">DataTransferObject</span>
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 8pt;">
-                            {
-                        </p>
-                        <p class="s10" style="padding-top: 2pt;padding-left: 27pt;">
-                            // …
-                        </p>
-                        <p><br /></p>
-                        <p class="s8" style="padding-left: 47pt;text-indent: -19pt;">
-                            <span style=" color: #346DF1;">public static function </span><span style=" color: #2D9B42;">fromRequest</span>(
-                            <br>
-                            <span style=" color: #E22C28;">CustomerRequest </span>$request
-                        </p>
-                        <p class="s8" style="padding-left: 27pt;">
-                            ): <span style=" color: #E22C28;">self </span>{
-                        </p>
-                        <p class="s11" style="padding-top: 2pt;padding-left: 47pt;">
-                            return new <span style=" color: #E22C28;">self</span><span style=" color: #0E0E0E;">([</span>
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 66pt;">
-                            <span style=" color: #1A1A1A;">&#39;name&#39; </span>=&gt;
-                            $request-&gt;<span style=" color: #2D9B42;">get</span>(<span style=" color: #1A1A1A;">&#39;name&#39;</span>),
-                            <br>
-                            <span style=" color: #1A1A1A;">&#39;email&#39; </span>=&gt;
-                            $request-&gt;<span style=" color: #2D9B42;">get</span>(<span style=" color: #1A1A1A;">&#39;email&#39;</span>),
-                            <br>
-                            <span style=" color: #1A1A1A;">&#39;birth_date&#39; </span>=&gt;
-                            <span style=" color: #E22C28;">Carbon</span>::make(
-                        </p>
-                        <p class="s8" style="padding-left: 85pt;">
-                            $request-&gt;<span style=" color: #2D9B42;">get</span>(<span style=" color: #1A1A1A;">&#39;birth_date&#39;</span>)
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 66pt;">
-                            ),
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 47pt;">
-                            ]);
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 27pt;">
-                            }
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 8pt;">
-                            }
-                        </p>
-                    </div>
-                    <p>
-                        Obviously, mixing application-specific code within the domain
-                        isn&#39;t the best of ideas. However, it is my preference.
-                        There&#39;s two reasons for that.
-                    </p>
-                    <p><br /></p>
-                    <p>
-                        First of all, we already established that DTOs are the entry point
-                        for data into the codebase. As soon as we&#39;re working with data
-                        from the outside, we want to convert it to a DTO. We need to do this
-                        mapping <i>somewhere</i>, so we might as well do it within the class
-                        that it&#39;s meant for.
-                    </p>
-                    <p><br /></p>
-                    <p>
-                        Secondly, and this is the more important reason; I prefer this
-                        approach because of one of PHP&#39;s own limitations: it doesn&#39;t
-                        support named parameters - yet.
-                    </p>
-                    <p><br /></p>
-                    <p>
-                        See, you don&#39;t want your DTOs to end up having a constructor
-                        with an individual parameter for each property: this doesn&#39;t
-                        scale, and is very confusing when working with nullable or
-                        default-value properties. That&#39;s why I prefer the approach of
-                        passing an array to the DTO, and have it construct itself based on
-                        the data in that array. As an aside: we use our
-                        <span class="s6" style=" background-color: #F5FAFB;">spatie/data-transfer-object</span><span class="s15"> </span><span class="p">package to do exactly this.</span>
-                    </p>
-                    <p><br /></p>
-                    <p>
-                        Because named parameters aren&#39;t supported, there&#39;s also no
-                        static analysis available, meaning you&#39;re in the dark about what
-                        data is needed whenever you&#39;re constructing a DTO. I prefer to
-                        keep this &quot;being in the dark&quot; within the DTO class, so
-                        that it can be used without an extra thought from the outside.
-                    </p>
-                    <p><br /></p>
-                    <p>
-                        If PHP were to support something like named parameters though, which
-                        it will in PHP 8, I would say the factory pattern is the way to go:
-                    </p>
-                    <div class="code">
                         <p class="s8" style="padding-left: 27pt;text-indent: -19pt;">
                             <span style=" color: #346DF1;">public function </span><span style=" color: #2D9B42;">fromRequest</span>(
                             <br>
@@ -882,145 +784,44 @@
                         </p>
                     </div>
                     <p>
-                        Until PHP supports this, I would choose the pragmatic solution over
-                        the theoretically correct one. It&#39;s up to you though. Feel free
-                        to choose what fits your team best.
+                        Obviously, mixing application-specific code within the domain
+                        isn&#39;t the best of ideas. However, it is my preference.
+                        There&#39;s two reasons for that.
                     </p>
                     <p><br /></p>
+                    <p>
+                        First of all, we already established that DTOs are the entry point
+                        for data into the codebase. As soon as we&#39;re working with data
+                        from the outside, we want to convert it to a DTO. We need to do this
+                        mapping <i>somewhere</i>, so we might as well do it within the class
+                        that it&#39;s meant for.
+                    </p>
+                    <p><br /></p>
+                    <p>
+                        Secondly, and this is the more important reason; I prefer this
+                        approach because of one of PHP&#39;s own limitations: it doesn&#39;t
+                        support named parameters - yet.
+                    </p>
+                    <p><br /></p>
+                    <p>
+                        See, you don&#39;t want your DTOs to end up having a constructor
+                        with an individual parameter for each property: this doesn&#39;t
+                        scale, and is very confusing when working with nullable or
+                        default-value properties. That&#39;s why I prefer the approach of
+                        passing an array to the DTO, and have it construct itself based on
+                        the data in that array.
+                    </p>
+                    <p><br /></p>
+
                     <h4>
-                        An alternative to typed properties
+                        Defining DTOs
                     </h4>
                     <p><br /></p>
                     <p>
-                        There is an alternative to using typed properties: DocBlocks. Our
-                        DTO package I mentioned earlier also supports them.
-                    </p>
-                    <div class="code">
-                        <p class="s11" style="padding-left: 8pt;">
-                            use
-                            <span style=" color: #E22C28;">Spatie\DataTransferObject\DataTransferObject</span><span style=" color: #0E0E0E;">;</span>
-                        </p>
-                        <p><br /></p>
-                        <p class="s11" style="padding-left: 8pt;">
-                            class <span style=" color: #E22C28;">CustomerData </span>extends
-                            <span style=" color: #E22C28;">DataTransferObject</span>
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 8pt;">
-                            {
-                        </p>
-                        <p class="s10" style="padding-top: 2pt;padding-left: 27pt;">
-                            /** <span style=" color: #1A1A1A;">@var </span>string */
-                            <br>
-                            <span style=" color: #346DF1;">public </span><span style=" color: #2D9B42;">$name</span><span style=" color: #0E0E0E;">;</span>
-                        </p>
-                        <p><br /></p>
-                        <p class="s10" style="padding-left: 27pt;">
-                            /** <span style=" color: #1A1A1A;">@var </span>string */
-                            <br>
-                            <span style=" color: #346DF1;">public </span><span style=" color: #2D9B42;">$email</span><span style=" color: #0E0E0E;">;</span>
-                        </p>
-                        <p><br /></p>
-                        <p class="s10" style="padding-left: 27pt;">
-                            /** <span style=" color: #1A1A1A;">@var </span>\Carbon\Carbon */
-                            <br>
-                            <span style=" color: #346DF1;">public </span><span style=" color: #2D9B42;">$birth_date</span><span style=" color: #0E0E0E;">;</span>
-                        </p>
-                        <p class="s8" style="padding-left: 8pt;">
-                            }
-                        </p>
-                    </div>
-                    <p>
-                        <span class="p">In some cases, DocBlocks offer advantages: they support </span><span class="s6" style=" background-color: #F5FAFB;">array of</span><span class="s15"> </span><span class="p">types and generics. But by default though, DocBlocks don&#39;t
-                            give any guarantees that the data is of the type they say it is.
-                            Luckily PHP has its reflection API, and with it, a lot more is
-                            possible.</span>
+                        PHP supports named arguments, as well as constructor property
+                        promotion. You can use those two features to write a compact DTO.
                     </p>
                     <p><br /></p>
-                    <p>
-                        The solution provided by this package can be thought of as an
-                        extension of PHP&#39;s type system. While there&#39;s only so much
-                        one can do in userland and at runtime, still it adds value. If
-                        you&#39;re unable to use PHP 7.4 and want a little more certainty
-                        that your DocBlock types are actually respected, this package has
-                        you covered.
-                    </p>
-                    <p><br /></p>
-                    <h4>
-                        A note on DTO&#39;s in PHP 8
-                    </h4>
-                    <p><br /></p>
-                    <p>
-                        PHP 8 will support named arguments, as well as constructor property
-                        promotion. Those two features will have an immense impact on the
-                        amount of boilerplate code you&#39;ll need to write.
-                    </p>
-                    <p><br /></p>
-                    <p>
-                        Here&#39;s what a small DTO class would look like in PHP 7.4.
-                    </p>
-                    <div class="code">
-                        <p class="s11" style="padding-left: 8pt;">
-                            class <span style=" color: #E22C28;">CustomerData </span>extends
-                            <span style=" color: #E22C28;">DataTransferObject</span>
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 8pt;">
-                            {
-                        </p>
-                        <p class="s11" style="padding-top: 2pt;padding-left: 27pt;">
-                            public <span style=" color: #E22C28;">string </span><span style=" color: #2D9B42;">$name</span><span style=" color: #0E0E0E;">; </span>
-                            <br>
-                            <br>
-                            public
-                            <span style=" color: #E22C28;">string </span><span style=" color: #2D9B42;">$email</span><span style=" color: #0E0E0E;">; </span>
-                            <br>
-                            <br>
-                            public
-                            <span style=" color: #E22C28;">Carbon </span><span style=" color: #2D9B42;">$birth_date</span><span style=" color: #0E0E0E;">;</span>
-                        </p>
-                        <p><br></p>
-                        <p class="s8" style="padding-left: 47pt;text-indent: -19pt;">
-                            <span style=" color: #346DF1;">public static function </span><span style=" color: #2D9B42;">fromRequest</span>(
-                            <span style=" color: #E22C28;">CustomerRequest </span>$request
-                        </p>
-                        <p class="s8" style="padding-left: 27pt;">
-                            ): <span style=" color: #E22C28;">self </span>{
-                        </p>
-                        <p class="s11" style="padding-top: 2pt;padding-left: 47pt;">
-                            return new self<span style=" color: #0E0E0E;">([</span>
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 66pt;">
-                            <span style=" color: #1A1A1A;">&#39;name&#39; </span>=&gt;
-                            $request-&gt;<span style=" color: #2D9B42;">get</span>(<span style=" color: #1A1A1A;">&#39;name&#39;</span>),
-                            <br>
-                            <span style=" color: #1A1A1A;">&#39;email&#39; </span>=&gt;
-                            $request-&gt;<span style=" color: #2D9B42;">get</span>(<span style=" color: #1A1A1A;">&#39;email&#39;</span>),
-                            <br>
-                            <span style=" color: #1A1A1A;">&#39;birth_date&#39; </span>=&gt;
-                            <span style=" color: #E22C28;">Carbon</span>::<span style=" color: #2D9B42;">make</span>(
-                        </p>
-                        <p class="s8" style="padding-left: 85pt;">
-                            $request-&gt;<span style=" color: #2D9B42;">get</span>(<span style=" color: #1A1A1A;">&#39;birth_date&#39;</span>)
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 66pt;">
-                            ),
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 47pt;">
-                            ]);
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 27pt;">
-                            }
-                        </p>
-                        <p class="s8" style="padding-top: 2pt;padding-left: 8pt;">
-                            }
-                        </p>
-                        <p><br /></p>
-                        <p class="s8" style="padding-left: 8pt;">
-                            $data = <span style=" color: #E22C28;">CustomerData</span>::<span style=" color: #2D9B42;">fromRequest</span>($customerRequest);
-                        </p>
-                    </div>
-                    <p>
-                        And this is what it would look like in PHP 8.
-                    </p>
                     <div class="code">
                         <p class="s11" style="padding-left: 8pt;">
                             class <span style=" color: #E22C28;">CustomerData</span>
