@@ -2,6 +2,10 @@
 
 This repo contains the source code of laravel-beyond-crud.com
 
+## Deployment
+
+This site runs on [Laravel Cloud](https://cloud.laravel.com). Every push to `main` is deployed automatically.
+
 ## Support us
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-beyond-crudcom.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-beyond-crud.com)
