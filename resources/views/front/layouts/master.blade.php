@@ -35,7 +35,6 @@
         <meta property="og:description"
             content="@yield('description')"/>
         <meta property="og:image" content="https://laravel-beyond-crud.com/images/social-card.jpg"/>
-        <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 
         <script src="/js/alpine.js" defer></script>
 

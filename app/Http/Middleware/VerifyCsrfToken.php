@@ -14,6 +14,6 @@ class VerifyCsrfToken extends Middleware
     protected $addHttpCookie = true;
 
     protected $except = [
-        'paddle-webhooks',
+        //
     ];
 }
