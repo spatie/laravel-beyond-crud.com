@@ -2,11 +2,12 @@
 
 namespace App\Http\Front\Controllers;
 
+use Illuminate\Contracts\View\View;
 use Spatie\PriceApi\SpatiePriceApi;
 
 class HomeController
 {
-    public function __invoke()
+    public function __invoke(): View
     {
         $purchasableId = config('services.spatie_prices_api.purchasable_id');
 

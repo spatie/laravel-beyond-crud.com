@@ -9,14 +9,17 @@ use Spatie\Flash\Flash;
 
 class AppServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function register(): void
     {
-        Model::unguard();
-
         Flash::levels([
             'success' => 'alert-success',
             'error' => 'alert-error',
         ]);
+    }
+
+    public function boot(): void
+    {
+        Model::unguard();
 
         Blade::directive('markdown', function () {
             return "<?php echo (new \League\CommonMark\CommonMarkConverter())->convertToHtml(<<<HEREDOC";

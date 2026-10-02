@@ -2,24 +2,12 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Third Party Services
-    |--------------------------------------------------------------------------
-    |
-    | This file is for storing the credentials for third party services such
-    | as Mailgun, Postmark, AWS and more. This file provides the de facto
-    | location for this type of information, allowing packages to have
-    | a conventional file to locate the various service credentials.
-    |
-    */
-
     'spatie_prices_api' => [
-        'purchasable_id' => env('PURCHASABLE_ID')
+        'purchasable_id' => env('PURCHASABLE_ID'),
     ],
 
     'mailcoach' => [
-        'subscription_uuid' => env('MAILCOACH_SUBSCRIPTION_UUID')
-    ]
+        'subscription_uuid' => env('MAILCOACH_SUBSCRIPTION_UUID'),
+    ],
 
 ];

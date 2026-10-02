@@ -38,8 +38,6 @@
 
         <script src="/js/alpine.js" defer></script>
 
-        @bukStyles()
-        @bukScripts()
     </head>
     <body class="bg-red-150 overflow-x-hidden font-sans">
         @yield('content')

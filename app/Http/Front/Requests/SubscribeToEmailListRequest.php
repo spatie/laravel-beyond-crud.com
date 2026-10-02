@@ -6,10 +6,10 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class SubscribeToEmailListRequest extends FormRequest
 {
-    public function rules()
+    public function rules(): array
     {
         return [
-            'email' => ['required', 'email']
+            'email' => ['required', 'email'],
         ];
     }
 }
