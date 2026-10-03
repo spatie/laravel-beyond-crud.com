@@ -14,7 +14,7 @@
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-testinglaravel-100 overflow-hidden">
                     <a href="https://testing-laravel.com" target="_blank">
-                        <img src="/images/testing-laravel.png" class="z-10 w-10 h-10" alt="Laravel Package Training">
+                        <img src="/images/testing-laravel.webp" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>
                 </div>
                 <div>
@@ -33,7 +33,7 @@
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-white overflow-hidden">
                     <a href="https://writing-readable-php.com" target="_blank">
-                        <img src="/images/php.jpg" class="z-10" alt="Writing Readable PHP">
+                        <img src="/images/php.webp" class="z-10" alt="Writing Readable PHP">
                     </a>
                 </div>
                 <div>

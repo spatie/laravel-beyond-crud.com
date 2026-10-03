@@ -117,7 +117,7 @@
                             <span class="ml-2">Get Laravel Beyond CRUD &amp; <a class="markup-link" href="https://testing-laravel.com">Testing Laravel</a> with a <strong class="font-semibold">20% discount</strong>!</span>
                             </li>
                     </ul>
-                    <img src="/images/bundle_trans.png" alt="cover image bundle Testing Laravel & Laravel Beyond Crud">
+                    <img src="/images/bundle_trans.webp" alt="cover image bundle Testing Laravel & Laravel Beyond Crud">
                 </div>
             </div>
         </div>
