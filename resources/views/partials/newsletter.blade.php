@@ -9,7 +9,6 @@
         accept-charset="utf-8"
         class=""
     >
-        @csrf
         @honeypot
 
         <div class="flex mt-2">

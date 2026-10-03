@@ -3,47 +3,35 @@
         <div class="-mt-6 flex-grow flex flex-col shadow-2xl">
             <div class="flex-none bg-yellow-500 h-6"></div>
             <div class="flex-grow flex flex-col border-l border-r border-b border-gray-200 bg-white">
-                <div class="flex-none text-center py-4 leading-none">
+                <div class="flex-none text-center py-4 leading-none" x-data="spatiePrice({{ config('services.spatie_prices_api.purchasable_id') }})" x-init="init()">
                     <div class="font-display font-semibold text-3xl">
-                        @if($couldFetchPrice)
-                            @if($discount->active)
+                        <div x-show="discount.active" style="display: none">
+                            <div
+                                class="flex flex-col items-center mb-2 text-center text-green-500 uppercase text-xs tracking-widest leading-snug">
+                                <div><span x-text="discount.name"></span> ending in</div>
                                 <div
-                                    class="flex flex-col items-center mb-2 text-center text-green-500 uppercase text-xs tracking-widest leading-snug">
-                                    <div>{{ $discount->name }} ending in</div>
-                                    <div
-                                        class="z-10 transform rotate-0 bg-green-400 font-normal text-white px-1 py-1 shadow-md"
-                                        style="--transform-rotate: -1.5deg !important">
-                                        <x-countdown :expires="$discount->expiresAt()">
-                                        <span class="bg-green-500 px-1"><span
-                                                x-text="timer.days">{{ $component->days() }}</span> days</span>
-                                            <span class="bg-green-500 px-1"><span
-                                                    x-text="timer.hours">{{ $component->hours() }}</span> hours</span>
-                                            <span class="bg-green-500 px-1"><span
-                                                    x-text="timer.minutes">{{ $component->minutes() }}</span> minutes</span>
-                                        </x-countdown>
-                                    </div>
+                                    class="z-10 transform rotate-0 bg-green-400 font-normal text-white px-1 py-1 shadow-md"
+                                    style="--transform-rotate: -1.5deg !important">
+                                    <span class="bg-green-500 px-1"><span x-text="countdown.days"></span> days</span>
+                                    <span class="bg-green-500 px-1"><span x-text="countdown.hours"></span> hours</span>
+                                    <span class="bg-green-500 px-1"><span x-text="countdown.minutes"></span> minutes</span>
                                 </div>
-                            @endif
-                        @endif
+                            </div>
+                        </div>
                         Videos & ebook
                     </div>
 
 
                     <div class="flex justify-center mt-6">
-                        @if($couldFetchPrice)
-                            <div class="font-display">
-                                <span
-                                    class="font-bold text-5xl"
-                                    data-id="current-price-{{ config('services.paddle.product_id') }}">{{ $price->formattedPrice() }}</span>
-                                @if($discount->active)
-                                    <span class="absolute right-full mr-4 top-0 mt-2">
-                                        <span class="text-gray-500 line-through">
-                                            {{ $priceWithoutDiscount->formattedPrice() }}
-                                         </span>
-                                    </span>
-                                @endif
-                            </div>
-                        @endif
+                        <div class="font-display" x-show="couldFetchPrice" style="display: none">
+                            <span
+                                class="font-bold text-5xl"
+                                data-id="current-price-{{ config('services.paddle.product_id') }}"
+                                x-text="price"></span>
+                            <span class="absolute right-full mr-4 top-0 mt-2" x-show="discount.active" style="display: none">
+                                <span class="text-gray-500 line-through" x-text="priceWithoutDiscount"></span>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="flex-none text-center z-10 -mb-3">
@@ -80,20 +68,14 @@
         <div class="md:-mt-6 flex flex-col shadow-2xl">
             <div class="bg-red-500  h-6"></div>
             <div class="border-l border-r border-b border-gray-200 bg-white">
-                <div class="text-center py-4 leading-none">
+                <div class="text-center py-4 leading-none" x-data="spatieBundlePrice(2)" x-init="init()">
                     <div class="font-display font-semibold text-3xl">
                         Course bundle
                     </div>
 
                     <div class='flex justify-center mt-6 '>
                         <div class="font-display">
-                            <span class="font-bold text-5xl">
-                                @if($couldFetchBundlePrice)
-                                    {{ $bundlePrice->formattedPrice() }}
-                                @else
-                                –
-                                @endif
-                            </span>
+                            <span class="font-bold text-5xl" x-text="couldFetchPrice ? price : '–'">–</span>
                         </div>
                     </div>
 

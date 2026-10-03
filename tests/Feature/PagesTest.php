@@ -4,70 +4,59 @@ use Illuminate\Support\Facades\Http;
 
 beforeEach(function () {
     Http::preventStrayRequests();
+
+    config()->set('services.spatie_prices_api.purchasable_id', 20);
 });
 
-function fakePriceApi(bool $discountActive = false): void
-{
-    Http::fake([
-        'spatie.be/api/price/*' => Http::response([
-            'actual' => ['price_in_cents' => 9730, 'currency_code' => 'EUR', 'currency_symbol' => '€', 'formatted_price' => '€ 97.30'],
-            'without_discount' => ['price_in_cents' => 13900, 'currency_code' => 'EUR', 'currency_symbol' => '€', 'formatted_price' => '€ 139'],
-            'discount' => ['active' => $discountActive, 'percentage' => 30, 'name' => 'BLACK FRIDAY', 'expires_at' => now()->addDays(3)->timestamp],
-        ]),
-        'spatie.be/api/bundle-price/*' => Http::response([
-            'actual' => ['price_in_cents' => 19900, 'currency_code' => 'EUR', 'currency_symbol' => '€', 'formatted_price' => '€ 199'],
-            'without_discount' => ['price_in_cents' => 24900, 'currency_code' => 'EUR', 'currency_symbol' => '€', 'formatted_price' => '€ 249'],
-            'discount' => ['active' => false, 'percentage' => 0, 'name' => '', 'expires_at' => now()->addDays(3)->timestamp],
-        ]),
-    ]);
-}
-
-it('shows the home page with the prices', function () {
-    fakePriceApi();
-
+it('shows the home page without fetching prices on the server', function () {
     $this->get('/')
         ->assertOk()
         ->assertSee('Laravel beyond CRUD')
         ->assertSee('Buy Course')
-        ->assertSee('97.30')
-        ->assertSee('199')
-        ->assertDontSee('ending in');
+        ->assertSee('Buy bundle')
+        ->assertSee('https://spatie.be/products/laravel-beyond-crud')
+        ->assertSee('x-data="spatiePrice(20)"', false)
+        ->assertSee('x-data="spatieBundlePrice(2)"', false)
+        ->assertSee('window.spatiePrice', false)
+        ->assertSee('countdown.days', false);
+
+    Http::assertNothingSent();
 });
 
-it('shows a countdown when a discount is active', function () {
-    fakePriceApi(discountActive: true);
-
-    $this->get('/')
-        ->assertOk()
-        ->assertSee('BLACK FRIDAY ending in')
-        ->assertSee('timer.days', false)
-        ->assertSee('139');
-});
-
-it('shows the home page when the prices cannot be fetched', function () {
-    Http::fake(['spatie.be/api/*' => Http::response(status: 500)]);
-
-    $this->get('/')
-        ->assertOk()
-        ->assertSee('Buy Course')
-        ->assertSee('Buy bundle');
-});
-
-it('remembers the referrer in the buy links', function () {
-    fakePriceApi();
-
-    $this->get('/?referrer=newsletter')
-        ->assertOk()
-        ->assertSee('https://spatie.be/products/laravel-beyond-crud?referrer=newsletter');
-});
-
-it('shows the sample chapter', function () {
-    fakePriceApi();
-
+it('shows the sample chapter without fetching prices on the server', function () {
     $this->get('/sample-chapter')
         ->assertOk()
         ->assertSee('Working with data')
-        ->assertSee('97.30');
+        ->assertSee('x-data="spatiePrice(20)"', false)
+        ->assertSee('x-data="spatieBundlePrice(2)"', false);
+
+    Http::assertNothingSent();
+});
+
+it('does not add the referrer to links on the server', function () {
+    $this->get('/?referrer=newsletter')
+        ->assertOk()
+        ->assertDontSee('?referrer=newsletter', false)
+        ->assertSee('document.cookie = `referrer=', false);
+});
+
+it('confirms a newsletter subscription', function () {
+    $this->get('/?subscribed=1')
+        ->assertOk()
+        ->assertSee('Thanks for your interest! We will keep you posted with updates on the course.');
+});
+
+it('shows that a subscription failed', function () {
+    $this->get('/?subscription-failed=1')
+        ->assertOk()
+        ->assertSee('We could not subscribe you.')
+        ->assertDontSee('Thanks for your interest!');
+});
+
+it('does not show subscription messages by default', function () {
+    $this->get('/')
+        ->assertDontSee('Thanks for your interest!')
+        ->assertDontSee('We could not subscribe you.');
 });
 
 it('shows the static pages', function (string $url, string $text) {
@@ -76,6 +65,13 @@ it('shows the static pages', function (string $url, string $text) {
     ['/terms-of-use', 'Terms of use'],
     ['/privacy', 'Privacy'],
 ]);
+
+it('serves robots.txt', function () {
+    $this->get('/robots.txt')
+        ->assertOk()
+        ->assertHeader('Content-Type', 'text/plain; charset=UTF-8')
+        ->assertSee('User-agent: *');
+});
 
 it('serves the downloadable sample chapter', function () {
     expect(public_path('downloads/laravel-beyond-crud-chapter-2.pdf'))->toBeFile();

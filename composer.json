@@ -11,7 +11,7 @@
         "spatie/laravel-flare": "^3.6",
         "spatie/laravel-flash": "^1.10",
         "spatie/laravel-honeypot": "^4.7",
-        "spatie/spatie-price-api": "^1.6"
+        "spatie/spatie-price-api": "^1.7"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

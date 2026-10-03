@@ -24,8 +24,6 @@ beforeEach(function () {
 });
 
 it('serves the pages without a database', function (string $url) {
-    Http::fake(['spatie.be/api/*' => Http::response(status: 500)]);
-
     $this->get($url)->assertOk();
 })->with([
     '/',
@@ -36,18 +34,15 @@ it('serves the pages without a database', function (string $url) {
 ]);
 
 it('subscribes to the waiting list without a database', function () {
+    app()->detectEnvironment(fn () => 'production');
+
     Http::fake(['spatie.be/mailcoach/subscribe/*' => Http::response()]);
 
-    $this->from('/')
-        ->post('/subscribe', ['email' => 'freek@spatie.be'])
-        ->assertRedirect('/');
-
-    expect(flash()->message)->toContain('Thanks for your interest');
+    $this->post('/subscribe', ['email' => 'freek@spatie.be'])
+        ->assertRedirect('/?subscribed=1');
 });
 
 it('does not resolve a database connection', function () {
-    Http::fake(['spatie.be/api/*' => Http::response(status: 500)]);
-
     $this->get('/')->assertOk();
 
     expect(DB::getConnections())->toBeEmpty();
