@@ -13,3 +13,5 @@ Route::get('sample-chapter', SampleChapterController::class)->name('sample-chapt
 
 Route::view('terms-of-use', 'front.legal.terms-of-use')->name('termsOfUse');
 Route::view('privacy', 'front.legal.privacy')->name('privacy');
+
+Route::get('robots.txt', fn () => response(file_get_contents(resource_path('robots.txt')))->header('Content-Type', 'text/plain'));

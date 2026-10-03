@@ -1,9 +1,12 @@
 <?php
 
-use App\Http\Middleware\RemembersReferrer;
+use App\Http\Middleware\CacheAtEdge;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
+use Illuminate\Session\Middleware\StartSession;
+use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Spatie\LaravelFlare\Facades\Flare;
 
 return Application::configure(basePath: dirname(__DIR__))
@@ -15,8 +18,12 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->trustProxies(at: '*');
 
-        $middleware->web(append: [
-            RemembersReferrer::class,
+        $middleware->append(CacheAtEdge::class);
+
+        $middleware->web(remove: [
+            StartSession::class,
+            ShareErrorsFromSession::class,
+            PreventRequestForgery::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {

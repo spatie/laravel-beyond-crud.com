@@ -1,3 +1,4 @@
+@use('Spatie\PriceApi\SpatiePriceApi')
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -36,6 +37,8 @@
             content="@yield('description')"/>
         <meta property="og:image" content="https://laravel-beyond-crud.com/images/social-card.jpg"/>
 
+        @include('partials.referrer')
+        {{ SpatiePriceApi::scripts() }}
         <script src="/js/alpine.js" defer></script>
 
     </head>

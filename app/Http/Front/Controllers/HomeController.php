@@ -3,27 +3,15 @@
 namespace App\Http\Front\Controllers;
 
 use Illuminate\Contracts\View\View;
-use Spatie\PriceApi\SpatiePriceApi;
+use Illuminate\Http\Request;
 
 class HomeController
 {
-    public function __invoke(): View
+    public function __invoke(Request $request): View
     {
-        $purchasableId = config('services.spatie_prices_api.purchasable_id');
-
-        $prices = SpatiePriceApi::getPriceForPurchasable($purchasableId);
-
-        $bundlePrices = SpatiePriceApi::getPriceForBundle(2);
-
         return view('front.home.index', [
-            'couldFetchPrice' => $prices['couldFetchPrice'],
-            'price' => $prices['actual'],
-            'priceWithoutDiscount' => $prices['withoutDiscount'],
-            'discount' => $prices['discount'],
-            'couldFetchBundlePrice' => $bundlePrices['couldFetchPrice'],
-            'bundlePrice' => $bundlePrices['actual'],
-            'bundlePriceWithoutDiscount' => $bundlePrices['withoutDiscount'],
-            'bundleDiscount' => $bundlePrices['discount'],
+            'subscribed' => $request->has('subscribed'),
+            'subscriptionFailed' => $request->has('subscription-failed'),
         ]);
     }
 }
