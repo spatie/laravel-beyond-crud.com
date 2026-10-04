@@ -60,6 +60,19 @@ return [
             'report' => false,
         ],
 
+        'assets' => [
+            'driver' => 's3',
+            'key' => env('ASSETS_BUCKET_ACCESS_KEY_ID'),
+            'secret' => env('ASSETS_BUCKET_SECRET_ACCESS_KEY'),
+            'region' => 'auto',
+            'bucket' => env('ASSETS_BUCKET'),
+            'url' => env('ASSETS_BUCKET_URL'),
+            'endpoint' => env('ASSETS_BUCKET_ENDPOINT'),
+            'use_path_style_endpoint' => false,
+            'throw' => true,
+            'report' => false,
+        ],
+
     ],
 
     /*

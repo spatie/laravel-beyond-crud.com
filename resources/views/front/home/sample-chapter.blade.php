@@ -883,9 +883,9 @@
                 <section class="h-full px-8">
                     <div class="h-full max-w-2xl mx-auto flex justify-start">
                         <div class="w-1/3 pr-8">
-                            <img style="right:2rem; width:33vw" class="absolute max-w-none h-full object-cover object-right-top" srcset="/images/fragment-800.webp 800w,
-                                    /images/fragment-600.webp 600w,
-                                    /images/fragment-400.webp 400w" sizes="33vw" alt="Abstract painting" src="/images/fragment-800.webp">
+                            <img style="right:2rem; width:33vw" class="absolute max-w-none h-full object-cover object-right-top" srcset="{{ asset('images') }}/fragment-800.webp 800w,
+                                    {{ asset('images') }}/fragment-600.webp 600w,
+                                    {{ asset('images') }}/fragment-400.webp 400w" sizes="33vw" alt="Abstract painting" src="{{ asset('images') }}/fragment-800.webp">
                         </div>
                         <div>
                 </section>

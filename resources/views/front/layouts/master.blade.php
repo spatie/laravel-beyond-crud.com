@@ -26,7 +26,7 @@
         <meta name="twitter:title" content="@yield('title')"/>
         <meta name="twitter:description"
         content="@yield('description')"/>
-        <meta name="twitter:image" content="https://laravel-beyond-crud.com/images/social-card.jpg"/>
+        <meta name="twitter:image" content="{{ asset('images/social-card.jpg') }}"/>
 
         <meta property="og:site_name" content="Laravel beyond CRUD">
         <meta property="og:locale" content="en_US">
@@ -35,11 +35,11 @@
         <meta property="og:title" content="@yield('title')"/>
         <meta property="og:description"
             content="@yield('description')"/>
-        <meta property="og:image" content="https://laravel-beyond-crud.com/images/social-card.jpg"/>
+        <meta property="og:image" content="{{ asset('images/social-card.jpg') }}"/>
 
         @include('partials.referrer')
         {{ SpatiePriceApi::scripts() }}
-        <script src="/js/alpine.js" defer></script>
+        <script src="{{ asset('js') }}/alpine.js" defer></script>
 
     </head>
     <body class="bg-red-150 overflow-x-hidden font-sans">
