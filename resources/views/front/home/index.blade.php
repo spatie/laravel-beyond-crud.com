@@ -15,7 +15,7 @@
         <div class="px-8 bg-red-100 shadow-nav">
             <div class="max-w-2xl mx-auto h-24 flex items-center justify-between gap-2">
                 <span class="flex items-center uppercase text-sm font-display font-semibold tracking-wider leading-none">
-                    <img class="h-auto w-4 mr-3" src="/images/logo.svg" alt="logo">
+                    <img class="h-auto w-4 mr-3" src="{{ asset('images') }}/logo.svg" alt="logo">
                     Laravel Beyond&nbsp;CRUD
                     <span class="whitespace-no-wrap ml-2 py-2 px-2 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest font-bold">
                         2nd Edition
@@ -42,9 +42,9 @@
     <main class="bg-white">
         <div class="pt-8 pb-16 -mt-48">
             <div class="absolute inset-0 w-full">
-                <img class="absolute w-full h-full object-cover object-bottom bg-green-600" srcset="/images/painting-2400.webp 2400w,
-                        /images/painting-1600.webp 1600w,
-                        /images/painting-800.webp 800w" sizes="100vw" alt="Abstract painting" src="/images/painting-2400.webp">
+                <img class="absolute w-full h-full object-cover object-bottom bg-green-600" srcset="{{ asset('images') }}/painting-2400.webp 2400w,
+                        {{ asset('images') }}/painting-1600.webp 1600w,
+                        {{ asset('images') }}/painting-800.webp 800w" sizes="100vw" alt="Abstract painting" src="{{ asset('images') }}/painting-2400.webp">
                 <div class="absolute inset-0" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5))"></div>
             </div>
 
@@ -65,9 +65,9 @@
 
                 <div class="xs:absolute bottom-0 right-0 mx-auto mb-4 w-2/3 sm:-mr-4 md:-mr-8 lg:-mr-12 xl:-mr-16 xs:w-1/2" x-data="{ open: false }">
                     <div class="w-full bg-gray-800 group">
-                        <img class="w-full opacity-75 group-hover:opacity-100 transition-opacity duration-300" srcset="/images/intro-2400.webp 2400w,
-                        /images/intro-1600.webp 1600w,
-                        /images/intro-800.webp 800w" sizes="33vw" alt="Video still" src="/images/intro-2400.webp">
+                        <img class="w-full opacity-75 group-hover:opacity-100 transition-opacity duration-300" srcset="{{ asset('images') }}/intro-2400.webp 2400w,
+                        {{ asset('images') }}/intro-1600.webp 1600w,
+                        {{ asset('images') }}/intro-800.webp 800w" sizes="33vw" alt="Video still" src="{{ asset('images') }}/intro-2400.webp">
                         <button class="absolute inset-0 w-full flex items-center justify-center" @click="open = true">
                             <div class="py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
                                 Watch intro <i class="ml-2 fas fa-play"></i>
@@ -126,9 +126,9 @@
                 <div class="mb-12 xs:mb-0 w-2/3 xs:w-1/2 xs:pr-8">
                     <div class="h-full xs:-ml-4">
                         <div class="bg-gray-900 xs:absolute left-0 bottom-0 w-full shadow-2xl">
-                            <img srcset="/images/cover-1000.webp 1000w,
-                                    /images/cover-500.webp 500w" sizes="(max-width: 420px) 75vw,
-                                    360px" alt="Ebook cover" src="/images/cover-1000.webp"
+                            <img srcset="{{ asset('images') }}/cover-1000.webp 1000w,
+                                    {{ asset('images') }}/cover-500.webp 500w" sizes="(max-width: 420px) 75vw,
+                                    360px" alt="Ebook cover" src="{{ asset('images') }}/cover-1000.webp"
                                     class="w-full">
                             <span class="absolute w-4 h-full bg-green-600 top-0 left-0"></span>
                             <div class="absolute inset-0 w-full flex items-end justify-end">
@@ -142,7 +142,7 @@
                                     </button>
                                 </a>
 
-                                <a target="_blank" href="/downloads/laravel-beyond-crud-chapter-2.pdf">
+                                <a target="_blank" href="{{ asset('downloads') }}/laravel-beyond-crud-chapter-2.pdf">
                                     <button class="-mr-4 py-2 px-3 font-display text-gray-900 border-l-2 border-yellow-600 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
                                         PDF
                                     </button>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="group mt-12 w-2/3 xs:w-1/2 xs:pr-8" x-data="{ video: false }">
                     <div class="w-full bg-gray-900">
-                        <img class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" src="/images/example-video.webp" alt="Video still"/>
+                        <img class="w-full opacity-100 group-hover:opacity-75 transition-opacity duration-300" src="{{ asset('images') }}/example-video.webp" alt="Video still"/>
                         <span class="absolute w-full h-4 bg-gray-900 bottom-0 left-0 opacity-25"></span>
                         <div class="absolute inset-0 w-full flex items-end justify-end cursor-pointer" @click="video = true">
                             <button class="-mb-4 -mr-4  py-2 px-3 font-display text-gray-900 bg-yellow-500 uppercase tracking-widest text-xs font-bold">
@@ -256,9 +256,9 @@
                 <section class="h-full px-8">
                     <div class="h-full max-w-2xl mx-auto flex justify-start">
                         <div class="w-1/3 pr-8">
-                            <img style="right:2rem; width:33vw" class="absolute max-w-none h-full object-cover object-right-top" srcset="/images/fragment-800.webp 800w,
-                                    /images/fragment-600.webp 600w,
-                                    /images/fragment-400.webp 400w" sizes="33vw" alt="Abstract painting" src="/images/fragment-800.webp">
+                            <img style="right:2rem; width:33vw" class="absolute max-w-none h-full object-cover object-right-top" srcset="{{ asset('images') }}/fragment-800.webp 800w,
+                                    {{ asset('images') }}/fragment-600.webp 600w,
+                                    {{ asset('images') }}/fragment-400.webp 400w" sizes="33vw" alt="Abstract painting" src="{{ asset('images') }}/fragment-800.webp">
                         </div>
                         <div>
                 </section>
@@ -279,7 +279,7 @@
 
                             <div class="mt-6 flex items-center text-lg">
                                 <div class="mr-6">
-                                    <img src="/images/avatars/brent.webp" class="z-10 w-16 h-16 md:w-24 md:h-24" alt="Avatar">
+                                    <img src="{{ asset('images') }}/avatars/brent.webp" class="z-10 w-16 h-16 md:w-24 md:h-24" alt="Avatar">
                                     <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-yellow-400"></div>
                                 </div>
                                 <div class="leading-tight">
@@ -302,7 +302,7 @@
 
                             <div class="mt-6 flex items-center text-lg">
                                 <div class="mr-6">
-                                    <img src="/images/avatars/freek.webp" class="z-10 w-16 h-16 md:w-24 md:h-24" alt="Avatar">
+                                    <img src="{{ asset('images') }}/avatars/freek.webp" class="z-10 w-16 h-16 md:w-24 md:h-24" alt="Avatar">
                                     <div class="absolute w-full h-full top-0 left-0 mt-2 ml-2 bg-blue-300"></div>
                                 </div>
                                 <div class="leading-tight">
@@ -328,7 +328,7 @@
 
                         <a href="https://twitter.com/enunomaduro" target="_blank" class="mt-4 flex items-center font-display text-lg">
                             <div class="mr-4">
-                                <img src="/images/nuno.webp" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
+                                <img src="{{ asset('images') }}/nuno.webp" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
                                 <div class="absolute w-full h-full top-0 left-0 mt-1 ml-1 bg-gray-800 opacity-25"></div>
                             </div>
                             <div>
@@ -348,7 +348,7 @@
 
                         <a href="https://twitter.com/themsaid" class="mt-4 flex items-center font-display text-lg">
                             <div class="mr-4">
-                                <img src="/images/mohamed.webp" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
+                                <img src="{{ asset('images') }}/mohamed.webp" class="z-10 w-8 h-8 bg-gray-200" alt="Avatar">
                                 <div class="absolute w-full h-full top-0 left-0 mt-1 ml-1 bg-gray-800 opacity-25"></div>
                             </div>
                             <div>
