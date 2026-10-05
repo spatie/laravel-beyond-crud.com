@@ -6,7 +6,7 @@ This repo contains the source code of laravel-beyond-crud.com
 
 This site runs on [Laravel Cloud](https://cloud.laravel.com). Every push to `main` is deployed automatically.
 
-The static files in `public` are served from a public Laravel Cloud bucket, so requests for them never wake the app. The build command ends with `php artisan upload-assets-to-bucket`, which uploads them under a versioned prefix with a long `Cache-Control` header and points `asset()` and `mix()` to that prefix. The bucket is configured with the `ASSETS_BUCKET`, `ASSETS_BUCKET_ENDPOINT`, `ASSETS_BUCKET_URL`, `ASSETS_BUCKET_ACCESS_KEY_ID` and `ASSETS_BUCKET_SECRET_ACCESS_KEY` environment variables. Without them, the app serves its own assets.
+The static files in `public` are served from a public Laravel Cloud bucket, so requests for them never wake the app. The build command ends with `php artisan upload-assets-to-bucket`, which uploads them under a versioned prefix with a long `Cache-Control` header and points `asset()` and `mix()` to that prefix. The bucket is attached to the Cloud environment as the `assets` disk (not the default disk). Locally, the disk can be configured with the `ASSETS_BUCKET`, `ASSETS_BUCKET_ENDPOINT`, `ASSETS_BUCKET_URL`, `ASSETS_BUCKET_ACCESS_KEY_ID` and `ASSETS_BUCKET_SECRET_ACCESS_KEY` environment variables. Without a bucket, the app serves its own assets.
 
 ## Support us
 
