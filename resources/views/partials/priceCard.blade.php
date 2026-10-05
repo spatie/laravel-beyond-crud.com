@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="flex-none text-center z-10 -mb-3">
-                    <a href="{{spatieUrl('https://spatie.be/products/laravel-beyond-crud')}}">
+                    <a href="https://spatie.be/products/laravel-beyond-crud">
                         <button
                             class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-yellow-500 text-gray-800 uppercase font-display font-bold tracking-wider leading-none shadow-lg hover:shadow-xl hover:bg-yellow-600">
                             <span style="bottom: -0.05rem">Buy Course</span>
@@ -81,7 +81,7 @@
 
                 </div>
                 <div class="text-center z-10 -mb-3">
-                    <a href="{{spatieUrl('https://spatie.be/bundles/solid-applications-bundle')}}">
+                    <a href="https://spatie.be/bundles/solid-applications-bundle">
                         <button
                             class="mx-auto flex items-center pl-6 pr-3 h-12 text-xl bg-red-500 text-white uppercase  font-display font-bold tracking-wider leading-none shadow-lg hover:shadow-xl hover:bg-red-600">
                             <span style="bottom: -0.05rem">Buy bundle</span>
