@@ -7,17 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
-use Spatie\Flash\Flash;
 
 class AppServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        Flash::levels([
-            'success' => 'alert-success',
-            'error' => 'alert-error',
-        ]);
-
         $this->throwOnFailedAssetUploads();
     }
 

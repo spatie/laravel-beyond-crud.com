@@ -13,7 +13,7 @@ class SubscribeToEmailListController
     {
         $subscriptionUuid = config('services.mailcoach.subscription_uuid');
 
-        if (! app()->environment('production') || empty($subscriptionUuid)) {
+        if (! app()->environment('production') || ! $subscriptionUuid) {
             return redirect()->action(HomeController::class, ['subscription-failed' => 1]);
         }
 

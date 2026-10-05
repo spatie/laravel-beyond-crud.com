@@ -7,7 +7,7 @@
         <div class="px-8 bg-red-100 shadow-nav">
             <div class="max-w-2xl mx-auto h-24 flex items-center justify-between">
                 <a href="/" class="flex items-center uppercase text-sm font-display font-semibold tracking-wider leading-none">
-                    <img class="h-auto w-4 mr-3" src="{{ asset('images') }}/logo.svg" alt="logo">
+                    <img class="h-auto w-4 mr-3" src="{{ asset('images/logo.svg') }}" alt="logo">
                     Laravel Beyond Crud
                 </a>
                 <button class="px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
@@ -20,9 +20,9 @@
     <main class="bg-white">
         <div class="pt-8 pb-16 -mt-48">
             <div class="absolute inset-0 w-full">
-                <img class="absolute w-full h-full object-cover object-bottom bg-green-600" srcset="{{ asset('images') }}/painting-2400.webp 2400w,
-                        {{ asset('images') }}/painting-1600.webp 1600w,
-                        {{ asset('images') }}/painting-800.webp 800w" sizes="100vw" alt="Abstract painting" src="{{ asset('images') }}/painting-2400.webp">
+                <img class="absolute w-full h-full object-cover object-bottom bg-green-600" srcset="{{ asset('images/painting-2400.webp') }} 2400w,
+                        {{ asset('images/painting-1600.webp') }} 1600w,
+                        {{ asset('images/painting-800.webp') }} 800w" sizes="100vw" alt="Abstract painting" src="{{ asset('images/painting-2400.webp') }}">
                 <div class="absolute inset-0" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5))"></div>
             </div>
         </div>
@@ -38,9 +38,9 @@
                 <section class="h-full px-8">
                     <div class="h-full max-w-2xl mx-auto flex justify-start">
                         <div class="w-1/3 pr-8">
-                            <img style="right:2rem; width:33vw" class="absolute max-w-none h-full object-cover object-right-top" srcset="{{ asset('images') }}/fragment-800.webp 800w,
-                                    {{ asset('images') }}/fragment-600.webp 600w,
-                                    {{ asset('images') }}/fragment-400.webp 400w" sizes="33vw" alt="Abstract painting" src="{{ asset('images') }}/fragment-800.webp">
+                            <img style="right:2rem; width:33vw" class="absolute max-w-none h-full object-cover object-right-top" srcset="{{ asset('images/fragment-800.webp') }} 800w,
+                                    {{ asset('images/fragment-600.webp') }} 600w,
+                                    {{ asset('images/fragment-400.webp') }} 400w" sizes="33vw" alt="Abstract painting" src="{{ asset('images/fragment-800.webp') }}">
                         </div>
                         <div>
                 </section>
