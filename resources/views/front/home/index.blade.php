@@ -21,7 +21,7 @@
                         2nd Edition
                     </span>
                 </span>
-                <a href="{{spatieUrl('https://spatie.be/products/laravel-beyond-crud')}}">
+                <a href="https://spatie.be/products/laravel-beyond-crud">
                     <button class="whitespace-no-wrap px-3 h-8 bg-gray-300 hover:bg-gray-400 text-gray-800 uppercase text-sm font-display font-bold tracking-wider leading-none">
                         Buy course
                     </button>

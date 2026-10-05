@@ -127,7 +127,7 @@
 
 <small class="block px-8 pt-8 pb-8 bg-red-500 text-red-100 overflow-hidden">
     <div class="max-w-2xl mx-auto flex items-center">
-        <a href="{{ spatieUrl() }}" class="z-10 h-6 xs:h-8 text-red-600 hover:opacity-75">
+        <a href="https://spatie.be" class="z-10 h-6 xs:h-8 text-red-600 hover:opacity-75">
             @include('partials.logo')
         </a>
         <a href="{{route('termsOfUse')}}" class="underline ml-auto hover:opacity-75">Terms of Use</a>

@@ -10,7 +10,6 @@
         "laravel/tinker": "^3.0",
         "league/flysystem-aws-s3-v3": "^3.0",
         "spatie/laravel-flare": "^3.6",
-        "spatie/laravel-flash": "^1.10",
         "spatie/laravel-honeypot": "^4.7",
         "spatie/spatie-price-api": "^1.7"
     },
@@ -27,10 +26,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        },
-        "files": [
-            "app/helpers.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {

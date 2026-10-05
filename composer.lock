@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80b39b295cc33acc4ba00b3d63648f87",
+    "content-hash": "51c13d49761a1ec045c35b5a380aee65",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -3961,67 +3961,6 @@
                 }
             ],
             "time": "2026-09-09T09:54:07+00:00"
-        },
-        {
-            "name": "spatie/laravel-flash",
-            "version": "1.10.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-flash.git",
-                "reference": "3cbb476c455ee4c8ce7048398d0aa6112837cd9e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-flash/zipball/3cbb476c455ee4c8ce7048398d0aa6112837cd9e",
-                "reference": "3cbb476c455ee4c8ce7048398d0aa6112837cd9e",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/session": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0|^10.0|^11.0",
-                "phpunit/phpunit": "^9.4|^10.5|^11.5.3|^12.5.12"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Spatie\\Flash\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A lightweight package to flash messages",
-            "homepage": "https://github.com/spatie/laravel-flash",
-            "keywords": [
-                "laravel-flash",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-flash/issues",
-                "source": "https://github.com/spatie/laravel-flash/tree/1.10.2"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                }
-            ],
-            "time": "2026-02-21T21:49:50+00:00"
         },
         {
             "name": "spatie/laravel-honeypot",
