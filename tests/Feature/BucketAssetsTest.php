@@ -2,6 +2,7 @@
 
 use App\Providers\AppServiceProvider;
 use App\Support\BucketAssets;
+use Illuminate\Foundation\CloudBootstrapper;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
@@ -21,6 +22,8 @@ beforeEach(function () {
 
 afterEach(function () {
     File::delete(BucketAssets::versionFilePath());
+
+    unset($_SERVER['LARAVEL_CLOUD_DISK_CONFIG']);
 
     File::delete(public_path('css/bucket-assets-test.css'));
 });
@@ -117,4 +120,28 @@ it('points the asset urls of pages to the bucket', function () {
         ->assertSee("{$bucketAssetsUrl}/images/social-card.jpg", false)
         ->assertSee("{$bucketAssetsUrl}/favicon-32x32.png", false)
         ->assertSee('href="/site.webmanifest"', false);
+});
+
+it('keeps throwing on failed asset uploads when Laravel Cloud configures the bucket', function () {
+    $_SERVER['LARAVEL_CLOUD_DISK_CONFIG'] = json_encode([[
+        'disk' => 'assets',
+        'access_key_id' => 'key',
+        'access_key_secret' => 'secret',
+        'bucket' => 'fls-assets',
+        'url' => 'https://fls-assets.laravel.cloud',
+        'endpoint' => 'https://r2.example.com',
+        'is_default' => false,
+    ]]);
+
+    CloudBootstrapper::configureDisks(app());
+
+    app()->getProvider(AppServiceProvider::class)->register();
+
+    expect(config('filesystems.disks.assets'))->toMatchArray([
+        'driver' => 's3',
+        'bucket' => 'fls-assets',
+        'url' => 'https://fls-assets.laravel.cloud',
+        'throw' => true,
+    ]);
+    expect(config('filesystems.default'))->toBe('local');
 });
