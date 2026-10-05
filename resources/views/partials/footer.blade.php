@@ -14,7 +14,7 @@
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-testinglaravel-100 overflow-hidden">
                     <a href="https://testing-laravel.com" target="_blank">
-                        <img src="{{ asset('images') }}/testing-laravel.webp" class="z-10 w-10 h-10" alt="Laravel Package Training">
+                        <img src="{{ asset('images/testing-laravel.webp') }}" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>
                 </div>
                 <div>
@@ -33,7 +33,7 @@
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-white overflow-hidden">
                     <a href="https://writing-readable-php.com" target="_blank">
-                        <img src="{{ asset('images') }}/php.webp" class="z-10" alt="Writing Readable PHP">
+                        <img src="{{ asset('images/php.webp') }}" class="z-10" alt="Writing Readable PHP">
                     </a>
                 </div>
                 <div>
@@ -52,7 +52,7 @@
             <div class="mt-16 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-200 overflow-hidden">
                     <a class="" href="https://event-sourcing-laravel.com" target="_blank">
-                        <img src="{{ asset('images') }}/event-sourcing.svg" class="z-10 w-10 h-10" alt="Event Sourcing in Laravel">
+                        <img src="{{ asset('images/event-sourcing.svg') }}" class="z-10 w-10 h-10" alt="Event Sourcing in Laravel">
                     </a>
                 </div>
                 <div>
@@ -71,7 +71,7 @@
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-red-500 overflow-hidden">
                     <a class="" href="https://laravelpackage.training" target="_blank">
-                        <img src="{{ asset('images') }}/laravel-package-training.svg" class="z-10 w-10 h-10" alt="Laravel Package Training">
+                        <img src="{{ asset('images/laravel-package-training.svg') }}" class="z-10 w-10 h-10" alt="Laravel Package Training">
                     </a>
                 </div>
                 <div>
@@ -90,7 +90,7 @@
             <div class="mt-8 xs:flex items-center text-lg">
                 <div class="flex-none mr-8 my-6 flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-frontline-100 to-frontline-300 overflow-hidden">
                     <a class="" href="https://laravelpackage.training" target="_blank">
-                        <img src="{{ asset('images') }}/front-line.svg" class="z-10 w-10 h-10" alt="Front line PHP">
+                        <img src="{{ asset('images/front-line.svg') }}" class="z-10 w-10 h-10" alt="Front line PHP">
                     </a>
                 </div>
                 <div>

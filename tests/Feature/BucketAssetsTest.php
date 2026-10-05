@@ -57,7 +57,6 @@ it('uploads the public files under a versioned prefix', function () {
 
     $disk->assertMissing([
         "{$version}/index.php",
-        "{$version}/index.php",
         "{$version}/favicon.ico",
         "{$version}/site.webmanifest",
         "{$version}/browserconfig.xml",

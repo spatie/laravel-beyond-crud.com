@@ -39,7 +39,7 @@
 
         @include('partials.referrer')
         {{ SpatiePriceApi::scripts() }}
-        <script src="{{ asset('js') }}/alpine.js" defer></script>
+        <script src="{{ asset('js/alpine.js') }}" defer></script>
 
     </head>
     <body class="bg-red-150 overflow-x-hidden font-sans">
