@@ -10,7 +10,7 @@ The static files in `public` are served from a public Laravel Cloud bucket, so r
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-beyond-crudcom.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-beyond-crud.com)
+[<img src="https://spatie.be/github-ad-image/laravel-beyond-crud.com.jpg" width="419px" />](https://spatie.be/github-ad-click/laravel-beyond-crud.com)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
