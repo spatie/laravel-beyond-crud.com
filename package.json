@@ -12,10 +12,10 @@
         "build": "npm run production"
     },
     "devDependencies": {
-        "cross-env": "^5.1",
-        "laravel-mix": "^4.0.7",
+        "cross-env": "^5.2",
+        "laravel-mix": "^4.1.4",
         "laravel-mix-purgecss": "^4.2.0",
-        "tailwindcss": "^1.4.0",
-        "prettier": "^1.18.2"
+        "tailwindcss": "^1.9.6",
+        "prettier": "^1.19.1"
     }
 }
